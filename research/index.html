@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Metadata, OpenGraph and Schema.org -->
+
+
+
+
+<!-- Standard metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>
+  
+  
+    
+      Research | Hongseok Namkoong
+    
+  
+</title>
+<meta name="author" content="Hongseok Namkoong">
+<meta name="description" content="My team develops AI-driven approaches to decision-making, with a particular emphasis on trustworthy and responsible learning methods. This requires an interdisciplinary approach spanning several fields including machine learning, operations research, and statistics.">
+
+  <meta name="keywords" content="Hongseok Namkoong, Hongseok, Namkoong, Hong Namkoong, Hongseok Namkoong Stanford, Hongseok Stanford, Namkoong Stanford, Hong Namkoong Stanford, Hongseok Namkoong MS&amp;E, Hongseok MS&amp;E, Namkoong MS&amp;E, Hong Namkoong MS&amp;E, Hongseok Namkoong Machine Learning, Hongseok Machine Learning, Namkoong Machine Learning, Hong Namkoong Machine Learning, Hongseok Namkoong Operations Research, Hongseok Operations Research, Namkoong  Operations Research, Hong Namkoong  Operations Research, Hongseok Namkoong Columbia, Hongseok Columbia, Namkoong Columbia, Hong Namkoong Columbia, Hong Columbia, Hongseok Namkoong Columbia Business School, Hongseok Columbia Business School, Namkoong Columbia Business School, Hong Namkoong Columbia Business School, Hong Columbia Business School, Hongseok Namkoong Columbia DRO, Hongseok Columbia DRO, Namkoong Columbia DRO, Hong Namkoong Columbia DRO, Hong Columbia DRO, Hongseok Namkoong Decision Risk and Operations Division, Hongseok Decision Risk and Operations Division, Namkoong Decision Risk and Operations Division, Hong Namkoong Decision Risk and Operations Division, Hong Decision Risk and Operations Division, Hong Namkoong Columbia Decision Risk and Operations Division, Hong Columbia Decision Risk and Operations Division, Hongseok Namkoong Facebook, Hongseok Facebook, Namkoong Facebook, Hong Namkoong Facebook, Hongseok Namkoong Columbia Business, Hongseok Columbia Business, Namkoong  Columbia Business, Hong Namkoong  Columbia Business, Hongseok Namkoong DRO, Hongseok DRO, Namkoong  DRO, Hong Namkoong  DRO, Hongseok Namkoong AI, Hongseok AI, Namkoong  AI, Hong Namkoong  AI, Hong Namkoong ML, Uncertainty quantification, autoregressive modeling, de finetti, adaptive experimentation, autodifferentiation planning">
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+<!-- Bootstrap Table -->
+
+
+<!-- Fonts & Icons -->
+<link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5">
+<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
+
+<!-- Code Syntax Highlighting -->
+<link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
+
+
+
+<!-- Styles -->
+
+<!-- pseudocode -->
+
+
+
+  <link rel="shortcut icon" href="/assets/img/ai-ops.png?95e81b98820a4b52480a374dca055d6a">
+
+<link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
+<link rel="canonical" href="https://hsnamkoong.github.io/research/">
+
+<!-- Dark Mode -->
+<script src="/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script>
+
+
+<!-- GeoJSON support via Leaflet -->
+
+
+<!-- diff2html -->
+
+
+
+
+
+
+    
+      <!-- Medium Zoom JS -->
+      <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+      <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script>
+    
+    <!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    
+  
+    <!-- MathJax -->
+    <script type="text/javascript">
+      window.MathJax = {
+        tex: {
+          tags: 'ams',
+        },
+      };
+    </script>
+    <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.min.js" integrity="sha256-rjmgmaB99riUNcdlrDtcAiwtLIojSxNyUFdl+Qh+rB4=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
+  
+
+
+    <!-- Distill js -->
+    <script src="/assets/js/distillpub/template.v2.js"></script>
+    <script src="/assets/js/distillpub/transforms.v2.js"></script>
+    <script src="/assets/js/distillpub/overrides.js"></script>
+    
+      <!-- Page/Post style -->
+      <style type="text/css">
+        .fake-img {
+  background: #bbb;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+} .fake-img p {
+  font-family: monospace;
+  color: white;
+  text-align: left;
+  margin: 12px 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+      </style>
+    
+  </head>
+
+  <body>
+<d-front-matter>
+    <script async type="text/json">
+      {
+            "title": "Research",
+            "description": "My team develops AI-driven approaches to decision-making, with a particular emphasis on trustworthy and responsible learning methods. This requires an interdisciplinary approach spanning several fields including machine learning, operations research, and statistics.",
+            "published": "",
+            "authors": [
+              
+            ],
+            "katex": {
+              "delimiters": [
+                {
+                  "left": "$",
+                  "right": "$",
+                  "display": false
+                },
+                {
+                  "left": "$$",
+                  "right": "$$",
+                  "display": true
+                }
+              ]
+            }
+          }
+    </script>
+  </d-front-matter>
+
+  
+    <!-- Header -->
+    <header>
+  <!-- Nav Bar -->
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+    <div class="container">
+      
+        <a class="navbar-brand title font-weight-lighter" href="/">
+          
+            
+              <span class="font-weight-bold">Hongseok</span>
+            
+            
+            Namkoong
+          
+        </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          
+
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">Bio
+              
+            </a>
+          </li>
+
+          <!-- Other pages -->
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                <li class="nav-item active">
+                  
+                  <a class="nav-link" href="/research/">Research
+                    
+                      <span class="sr-only">(current)</span>
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/publications/">Publications
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/people/">Team
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/repositories/">Code &amp; Data
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/teaching/">Teaching
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+          
+          
+            <!-- Search -->
+            <li class="nav-item">
+              <button id="search-toggle" title="Search" onclick="openSearchModal()">
+                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+              </button>
+            </li>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <!-- Scrolling Progress Bar -->
+    <progress id="progress" value="0">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  
+</header>
+
+
+    <!-- Content -->
+    <div class="post distill">
+      <d-title>
+        <h1>Research</h1>
+        <p>My team develops AI-driven approaches to decision-making, with a particular emphasis on trustworthy and responsible learning methods. This requires an interdisciplinary approach spanning several fields including machine learning, operations research, and statistics.</p>
+      </d-title>
+      
+
+      <d-article>
+        
+          <d-contents>
+            <nav class="l-text figcaption">
+              <h3>Contents</h3>
+              
+                <div>
+                  <a href="#research-philosophy-and-methodology">Research philosophy and methodology</a>
+                </div>
+                
+              
+                <div>
+                  <a href="#trustworthy-ai">Trustworthy AI</a>
+                </div>
+                
+                  <ul>
+                    
+                      <li>
+                        <a href="#language-for-distribution-shifts">Language for distribution shifts</a>
+                      </li>
+                    
+                      <li>
+                        <a href="#foundations-of-distributional-robustness">Foundations of distributional robustness</a>
+                      </li>
+                    
+                  </ul>
+                
+              
+                <div>
+                  <a href="#ai-driven-decisions">AI-driven decisions</a>
+                </div>
+                
+                  <ul>
+                    
+                      <li>
+                        <a href="#adaptive-experimentation-at-scale">Adaptive experimentation at scale</a>
+                      </li>
+                    
+                      <li>
+                        <a href="#online-decision-making-with-scalable-ml-tools">Online decision-making with scalable ML tools</a>
+                      </li>
+                    
+                      <li>
+                        <a href="#ai-based-service-systems">AI-based service systems</a>
+                      </li>
+                    
+                  </ul>
+                
+              
+                <div>
+                  <a href="#robust-causality">Robust causality</a>
+                </div>
+                
+                  <ul>
+                    
+                      <li>
+                        <a href="#external-validity">External validity</a>
+                      </li>
+                    
+                      <li>
+                        <a href="#unobserved-confounding">Unobserved confounding</a>
+                      </li>
+                    
+                  </ul>
+                
+              
+            </nav>
+          </d-contents>
+        
+        <h2 id="research-philosophy-and-methodology">Research philosophy and methodology</h2>
+
+<p>I take a holistic “industrial engineering” view of AI systems, studying them from data collection to deployment &amp; monitoring.</p>
+
+<div class="img l-body">
+  <div class="text-center">
+  <img src="/assets/img/ai-overview.png" alt="AI overview" width="330" height="130" border="10">
+  </div>
+  <div class="caption">
+    <strong> Process view of AI (not just a single model): </strong>
+        Methodological development in ML largely focuses on model training. Taking a system-level view, my research identifies bottlenecks in the process and algorithms to resolve them.     
+    </div>
+</div>
+
+<p>My research group identifies central intellectual bottlenecks in real-world problems, and resolves them by building computational and data-centric foundations borne out of mathematical principles. While theoretical insights can provide invaluable principles, their successful operationalization requires recognizing and internalizing the limitations of crude approximations and unverifiable assumptions we put in place for mathematical convenience. Our research methodology aims to connect two disparate yet complementary worldviews:</p>
+<ul>
+  <li>computational tools and mathematical insights from statistical learning, optimization, applied probability, and casual inference</li>
+  <li>rigorous empirical benchmarking practices arising from the AI research community’s data-centric approach.</li>
+</ul>
+
+<p>I take inspiration from <a href="/assets/pdf/TheMathematician.pdf">Von Neumann’s perspective on mathematical sciences</a>, which I paraphrase below:</p>
+
+<blockquote style="font-size: 1em;">
+    As a mathematical discipline travels far from its empirical source only indirectly inspired from ideas coming from 'reality', it is beset with grave dangers that it will develop along the line of least resistance and become more and more purely aestheticizing. This need not be bad if the discipline is under the influence of researchers with an exceptionally well-developed taste, but the only general remedy is the rejuvenating return to the source: the reinjection of directly empirical ideas. I am convinced that this is a necessary condition to conserve the freshness and the vitality of the subject, and that this will remain so in the future. 
+</blockquote>
+
+<p>I am fortunate to be able to learn from the well-developed taste of my colleagues. Concurrent to this personal education, I (try to) inject empirical ideas to formulate research directions to increase the impact of my research.</p>
+
+<h2 id="trustworthy-ai">Trustworthy AI</h2>
+
+<p>Modern data collection systems acquire data from heterogeneous sources, and classical approaches that optimize average-case performance yield brittle AI systems. They fail to
+i) make good predictions on underrepresented groups,
+ii) generalize to new environments, even those similar to that seen during training, and iii) be robust to adversarial examples and long-tailed inputs.
+Yes, even the largest models trained on the entirety of the internet!</p>
+
+<p>Despite recent successes, lack of understanding on the failure modes of AI systems highlights the need for models that i) reliably work and ii) rigorous evaluation schemes and diagnostics that maintain their quality.</p>
+
+<h3 id="language-for-distribution-shifts">Language for distribution shifts</h3>
+
+<p>Different distribution shifts require different solutions. Understanding <em>why</em> model performance worsened is a fundamental step for informing subsequent methodological and operational interventions. Heterogeneity in data helps robustness, but the cost of data collection is often a binding constraint. We build a nuanced modeling language for quantifying data heterogeneity (or lack thereof), and use it to make optimally allocate limited resources in the AI production pipeline. To learn more, watch the following <a href="https://nips.cc/virtual/2023/tutorial/73953" rel="external nofollow noopener" target="_blank">NeurIPS tutorial</a> and take a look at the following two papers.</p>
+
+<div class="img l-body">
+  <div class="text-center">
+        <!-- 
+            <p style="font-size: 1.3em;"><a href="https://nips.cc/virtual/2023/tutorial/73953" target="_blank"><strong>NeurIPS 2023 Tutorial</strong></a></p> 
+            -->
+            <a href="https://nips.cc/virtual/2023/tutorial/73953" target="_blank" rel="external nofollow noopener">
+                <img src="/assets/img/neurips-tutorial-2023.png" alt="Watch the tutorial" width="460" height="130" border="10">
+            </a>
+  </div>
+  <div class="publications">
+        <ol class="bibliography"><li>
+<div class="row">
+ 
+    <div class="col col-sm-2 abbr">
+<abbr class="badge rounded w-130" style="background-color: #FFB3BA;">
+          
+            <div>Trustworthy AI</div>
+          
+        </abbr>
+      
+      
+    </div>
+  
+  <!-- Entry bib key -->
+  <div id="CaiNaYa23" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">
+      
+        <a href="https://arxiv.org/abs/2303.02011" target="_blank" rel="external nofollow noopener">Diagnosing Model Performance Under Distribution Shift</a>
+      
+    </div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <a href="https://tc2718.github.io/" rel="external nofollow noopener" target="_blank">Tiffany
+              Cai</a>, <em>Hongseok
+            Namkoong</em>, and <a href="https://www.syadlowsky.com/" rel="external nofollow noopener" target="_blank">Steve
+              Yadlowsky</a>
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>arXiv:2303.02011 [stat.ML]</em>,  2023
+    </div>
+    <div class="periodical">
+      Major revision in Operations Research; Conference version appeared Symposium on Foundations of Responsible Computing 2023
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+        <a href="http://arxiv.org/abs/2303.02011" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+      
+        <a href="https://gsb-columbia-edu.zoom.us/rec/play/sKowK1a0T6cGx8IJELKEISEZs9MbUPB58xtmOmBjs09MfLY3RjEmUQ16AHdGL8PaipX2KAkW_gr4XIMT.T1PcyxmM_7XVve5H?canPlayFromShare=true&amp;from=share_recording_detail&amp;continueMode=true&amp;componentName=rec-play&amp;originRequestUrl=https%3A%2F%2Fgsb-columbia-edu.zoom.us%2Frec%2Fshare%2F_Dqv3yqQl8Gj27n-c8j5Cdpp9MJPoQGRNIUyFHQGskOhGsa6KneLYgmH3Qx-ogK2.-Qp9jC6bs7_RCZWA" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Video</a>
+      
+      
+      
+        <a href="https://github.com/namkoong-lab/disde" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+      
+      
+      
+        
+          <a href="/assets/pdf/LiuWaCuNa24-slides.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
+        
+      
+      
+    </div>
+    
+      
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>Recent advances in AI present significant opportunities to
+                  rethink the design of service systems with AI at the
+                  forefront. Even in the era of LLMs, managing a
+                  workforce of human agents (“servers”) is a crit-
+                  ical problem. Crowdsourcing workers are vital for
+                  aligning LLMs with human values (e.g., ChatGPT) and
+                  in many domains, the cost of human annotation is a
+                  binding constraint (e.g., medical diagnosis from
+                  radiologists). This work models and analyzes modern
+                  service systems involving human reviewers and
+                  state-of-the-art AI models. A key intellectual
+                  challenge in managing con- gestion within such
+                  service systems is endogeneity. Prediction is never
+                  the goal, and the link between predictive
+                  performance and downstream decision-making
+                  performance is not straightforward due to
+                  endogeneity. Our work crystallizes how classical
+                  tools from queueing theory provide managerial
+                  insights into the design of AI-based service
+                  systems.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">CaiNaYa23</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Diagnosing Model Performance Under Distribution Shift}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Cai, Tiffany and Namkoong, Hongseok and Yadlowsky, Steve}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv:2303.02011 [stat.ML]}</span><span class="p">,</span>
+  <span class="na">note</span> <span class="p">=</span> <span class="s">{Major revision in Operations Research; Conference version appeared Symposium on Foundations of Responsible Computing 2023}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://arxiv.org/abs/2303.02011}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li></ol>
+        <ol class="bibliography"><li>
+<div class="row">
+ 
+    <div class="col col-sm-2 abbr">
+<abbr class="badge rounded w-130" style="background-color: #FFB3BA;">
+          
+            <div>Trustworthy AI</div>
+          
+        </abbr>
+      
+      
+    </div>
+  
+  <!-- Entry bib key -->
+  <div id="LiuWaCuNa24" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">
+      
+        <a href="https://arxiv.org/abs/2307.05284" target="_blank" rel="external nofollow noopener">On the Need for a Language Describing Distribution Shifts: Illustrations on Tabular Datasets</a>
+      
+    </div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <a href="https://ljsthu.github.io/" rel="external nofollow noopener" target="_blank">Jiashuo
+              Liu*</a>, <a href="https://wangtianyu61.github.io/" rel="external nofollow noopener" target="_blank">Tianyu
+              Wang*</a>, <a href="https://pengcui.thumedialab.com/" rel="external nofollow noopener" target="_blank">Peng
+              Cui</a>, and <em>Hongseok
+            Namkoong</em>
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>arXiv:2307.05284 [cs.LG]</em>,  2024
+    </div>
+    <div class="periodical">
+      Conference version appeared in NeurIPS 2023.
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+        <a href="http://arxiv.org/abs/2307.05284" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+      
+        <a href="https://gsb-columbia-edu.zoom.us/rec/play/sKowK1a0T6cGx8IJELKEISEZs9MbUPB58xtmOmBjs09MfLY3RjEmUQ16AHdGL8PaipX2KAkW_gr4XIMT.T1PcyxmM_7XVve5H?canPlayFromShare=true&amp;from=share_recording_detail&amp;continueMode=true&amp;componentName=rec-play&amp;originRequestUrl=https%3A%2F%2Fgsb-columbia-edu.zoom.us%2Frec%2Fshare%2F_Dqv3yqQl8Gj27n-c8j5Cdpp9MJPoQGRNIUyFHQGskOhGsa6KneLYgmH3Qx-ogK2.-Qp9jC6bs7_RCZWA" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Video</a>
+      
+      
+      
+      
+      
+        
+          <a href="/assets/pdf/LiuWaCuNa24-slides.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
+        
+      
+      
+        <a href="https://github.com/namkoong-lab/whyshift" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
+      
+    </div>
+    
+      
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>Different distribution shifts require different interventions, and algorithms must be grounded in the specific shifts they address. Advocating for an inductive approach to research on distributional robustness, we build an empirical testbed, "WhyShift", comprising of natural shifts across 5 tabular datasets and 60,000 model configurations encompassing imbalanced learning algorithms and distributionally robust optimization (DRO) methods. We find Y|X-shifts are most prevalent on our testbed, in stark contrast to the heavy focus on X (covariate)-shifts in the ML literature. We conduct
+an in-depth empirical analysis of DRO methods and find that the underlying model class (e.g.,
+neural networks, XGBoost) and hyperparameter selection have a first-order impact in practice
+despite being overlooked by DRO researchers. To further bridge that gap between methodological
+research and practice, we design case studies that illustrate how such a refined understanding of
+distribution shifts can enhance both data-centric and algorithmic interventions.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">LiuWaCuNa24</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{On the Need for a Language Describing Distribution Shifts: Illustrations on Tabular Datasets}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Liu$*$, Jiashuo and Wang$*$, Tianyu and Cui, Peng and Namkoong, Hongseok}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv:2307.05284 [cs.LG]}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://arxiv.org/abs/2307.05284}</span><span class="p">,</span>
+  <span class="na">note</span> <span class="p">=</span> <span class="s">{Conference version appeared in NeurIPS 2023.}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li></ol>
+  </div>
+</div>
+
+<h3 id="foundations-of-distributional-robustness">Foundations of distributional robustness</h3>
+
+<p>Our vision is to build robust and reliable learning procedures that make decisions with a guaranteed level of performance over its inputs. My Ph.D. thesis built the statistical<d-cite key="DuchiGlNa21,DuchiNa21"></d-cite>, and computational<d-cite key="NamkoongDu16"></d-cite> foundations of robust machine learning. As robustness is a central topic spanning across multiple fields, my subsequent works have developed robust algorithms for deep learning <d-cite key="SinhaNaVoDu18,VolpiNaSeDuMuSa18"></d-cite>, causal inference<d-cite key="YadlowskyNaBaDuTi22,JeongNa22"></d-cite>, reinforcement learning<d-cite key="NamkoongKeYaBr20"></d-cite>, and safety evaluation of autonomous vehicles<d-cite key="OKellySiNaDuTe18"></d-cite>. These works have led to new approaches toward fairness by characterizing fundamental connections between robustness and fairness<d-cite key="HashimotoSrNaLi18,DuchiHaNa22,LiNaXi24"></d-cite>. Watch my talk (@ Google Brain, 2021) and the following two representative papers to learn more.</p>
+
+<div class="img l-body">
+  <div class="text-center">
+  
+
+<figure>
+  
+    <iframe src="https://www.youtube.com/embed/DRlF5sdCkKY?si=d1t8-_HYudo-K1qY" class="img-fluid rounded z-depth-1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" width="auto" height="auto"></iframe>
+  
+  
+</figure>
+
+  </div>
+  <div class="publications">
+      <ol class="bibliography"><li>
+<div class="row">
+ 
+    <div class="col col-sm-2 abbr">
+<abbr class="badge rounded w-130" style="background-color: #FFB3BA;">
+          
+            <div>Trustworthy AI</div>
+          
+        </abbr>
+      
+      
+    </div>
+  
+  <!-- Entry bib key -->
+  <div id="DuchiNa21" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">
+      
+        <a href="https://projecteuclid.org/journals/annals-of-statistics/volume-49/issue-3/Learning-models-with-uniform-performance-via-distributionally-robust-optimization/10.1214/20-AOS2004.full" target="_blank" rel="external nofollow noopener">Learning Models with Uniform Performance via Distributionally
+                  Robust Optimization</a>
+      
+    </div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      
+          John C.
+            Duchi, and <em>Hongseok
+            Namkoong</em>
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>Annals of Statistics</em>,  2021
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+      
+        <a href="http://arxiv.org/abs/1810.08750" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+      
+        <a href="https://youtu.be/DRlF5sdCkKY?si=U8J_zUzrPaRAoNLj" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Video</a>
+      
+      
+      
+        <a href="https://github.com/namkoong-lab/chi-squared-dro" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+      
+      
+      
+        
+          <a href="/assets/pdf/dro-slides.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
+        
+      
+      
+    </div>
+    
+      
+      
+      
+      
+    
+
+    
+
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">DuchiNa21</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Duchi, John C. and Namkoong, Hongseok}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Learning Models with Uniform Performance via Distributionally
+                    Robust Optimization}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{49}</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{3}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{1378-1406}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Annals of Statistics}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://projecteuclid.org/journals/annals-of-statistics/volume-49/issue-3/Learning-models-with-uniform-performance-via-distributionally-robust-optimization/10.1214/20-AOS2004.full}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li></ol>
+      <ol class="bibliography"><li>
+<div class="row">
+ 
+    <div class="col col-sm-2 abbr">
+<abbr class="badge rounded w-130" style="background-color: #FFB3BA;">
+          
+            <div>Trustworthy AI</div>
+          
+        </abbr>
+      
+      
+    </div>
+  
+  <!-- Entry bib key -->
+  <div id="DuchiHaNa22" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">
+      
+        <a href="https://pubsonline.informs.org/doi/10.1287/opre.2022.2363" target="_blank" rel="external nofollow noopener">Distributionally Robust Losses Against Mixture Covariate Shifts</a>
+      
+    </div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      
+          John C.
+            Duchi, <a href="https://thashim.github.io/" rel="external nofollow noopener" target="_blank">Tatsunori
+              Hashimoto</a>, and <em>Hongseok
+            Namkoong</em>
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>Operations Research</em>,  2022
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+      
+        <a href="http://arxiv.org/abs/2007.13982" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+      
+        <a href="https://youtu.be/DRlF5sdCkKY?si=U8J_zUzrPaRAoNLj" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Video</a>
+      
+      
+      
+        <a href="https://github.com/namkoong-lab/marginal-dro" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+      
+      
+      
+      
+    </div>
+    
+      
+      
+      
+      
+    
+
+    
+
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">DuchiHaNa22</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Duchi, John C. and Hashimoto, Tatsunori and Namkoong, Hongseok}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Distributionally Robust Losses Against Mixture Covariate Shifts}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Operations Research}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://pubsonline.informs.org/doi/10.1287/opre.2022.2363}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li></ol>
+  </div>
+</div>
+
+<h2 id="ai-driven-decisions">AI-driven decisions</h2>
+
+<p>Decision-making problems in OR/MS concerns the optimal allocation of scarce resources. We build scalable computational frameworks for learning operational decisions by leveraging i) auto-differentiable simulators, and ii) empirically rigorous benchmarking. Our goal is to build a algorithmic development paradigm based on computation rather than theoretical approximations.</p>
+
+<h3 id="adaptive-experimentation-at-scale">Adaptive experimentation at scale</h3>
+
+<p>Experimentation is the foundation of scientific decision-making. Adaptive methods can significantly improve data efficiency, but standard algorithms are primarily designed to satisfy good upper bounds on their performance (regret bounds) and do not model important operational constraints and are challenging to implement due to infrastructural/organizational difficulties.</p>
+
+<p>We focus on underpowered, short-horizon, and large-batch problems that typically arise in practice. Instead of the typical theory-driven paradigm, we use PyTorch and empirical benchmarking for algorithm development.</p>
+
+<div class="img l-body">
+  <div class="text-center">
+  
+
+<figure>
+  
+    <iframe src="https://www.youtube.com/embed/CLzRcOw9eyk?si=8v_F9ODlpHC588Ei" class="img-fluid rounded z-depth-1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" width="auto" height="auto"></iframe>
+  
+  
+</figure>
+
+  </div>
+  </div>
+
+<p>Our main observation is that normal approximations, which are universal in statistical inference, can also guide the design of adaptive algorithms. Using large batch normal approximations, we derive an MDP formulation that 
+ optimizes instance-specific constants, instead of relying on regret bounds that only hold in large horizons.</p>
+
+<div class="img l-body">
+  <div class="text-center">
+  <img src="/assets/img/arm-diagram.png" alt="AI overview" width="430" height="180" border="10">
+  </div>
+  </div>
+
+<p>By using standard computational tools, our adaptive designs significantly outperform even Bayesian bandit algorithms (e.g., Thompson sampling) that require full distributional knowledge of individual rewards.</p>
+
+<div class="img l-body">
+  <div class="publications">
+      <ol class="bibliography"><li>
+<div class="row">
+ 
+    <div class="col col-sm-2 abbr">
+<abbr class="badge rounded w-130" style="background-color: #D3BAFF;">
+          
+            <div>AI-driven Decisions</div>
+          
+        </abbr>
+      
+      
+    </div>
+  
+  <!-- Entry bib key -->
+  <div id="CheNa23" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">
+      
+        <a href="https://arxiv.org/abs/2303.11582" target="_blank" rel="external nofollow noopener">Adaptive Experimentation at Scale: A Computational Framework for Flexible Batches</a>
+      
+    </div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <a href="https://ethche.github.io/" rel="external nofollow noopener" target="_blank">Ethan
+              Che</a>, and <em>Hongseok
+            Namkoong</em>
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>arXiv:2303.11582 [cs.LG]</em>,  2023
+    </div>
+    <div class="periodical">
+      Major revision in Operations Research
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+        <a href="http://arxiv.org/abs/2303.11582" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+      
+        <a href="https://youtu.be/CLzRcOw9eyk" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Video</a>
+      
+      
+      
+      
+      
+        
+          <a href="/assets/pdf/CheNa23-slides.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
+        
+      
+      
+        <a href="https://aes-batch.streamlit.app/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
+      
+    </div>
+    
+      
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>Starting with my one-year stint at Meta’s adaptive
+                  experimentation team, I’ve been pondering on how
+                  bandit algorithms are largely designed by
+                  theoreticians to achieve good regret bounds and are
+                  rarely used in practice due to the difficulty of
+                  implementation and poor empirical performance. In
+                  this work, we focus on underpowered, short-horizon,
+                  and large-batch problems that typically arise in
+                  practice. We use large batch normal approximations
+                  to derive an MDP formulation for deriving the
+                  optimal adaptive design. Our formulation allows the
+                  use of computational tools for designing adaptive
+                  algorithms, a break from the existing theory-driven
+                  paradigm.
+                  Our approach significantly improves statistical power over standard 
+                  methods, even when compared to Bayesian bandit algorithms 
+                  (e.g., Thompson sampling) that require full distributional knowledge 
+                  of individual rewards. Overall, we expand the scope of 
+                  adaptive experimentation to settings that are difficult 
+                  for standard methods, involving limited adaptivity, 
+                  low signal-to-noise ratio, and unknown reward distributions.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">CheNa23</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Adaptive Experimentation at Scale: A Computational Framework for Flexible Batches}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Che, Ethan and Namkoong, Hongseok}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv:2303.11582 [cs.LG]}</span><span class="p">,</span>
+  <span class="na">note</span> <span class="p">=</span> <span class="s">{Major revision in Operations Research}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://arxiv.org/abs/2303.11582}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li></ol>
+  </div>
+</div>
+
+<h3 id="online-decision-making-with-scalable-ml-tools">Online decision-making with scalable ML tools</h3>
+
+<p>Real-world decision-making requires grappling with a perpetual lack of data as environments
+change. Intelligent agents must comprehend uncertainty and actively gather information to resolve
+it. Leveraging scalable computational tools in ML—neural networks, SGD based on auto-differentiation, 
+validation losses—to balance exploration and exploitation is a longstanding challenge.</p>
+
+<p>Consider cold-start problem on recommender systems, where an online platform must learn high-quality items
+among a large catalogue. The standard ML approach uses item features to predict engagement—the de facto 
+industry standard. Instead, we propose a <em>sequence modeling approach</em> where we predict
+the <em>sequence of engagements</em> observed for the item using an autoregressive model (e.g., transformer).</p>
+
+<div class="img l-body">
+  <div class="text-center">
+  <img src="/assets/img/imputation.png" alt="AI overview" width="630" height="180" border="10">
+  </div>
+  <div class="caption">
+    <strong> Main insight</strong>: Recommending items based on autoregressively imputed observations implements 
+    Thompson sampling that uses prior learned over vast historical data. Training good autoregressive sequence models thus allows you to solve complex online decision-making problems! 
+  </div>
+    <div class="publications">
+      <ol class="bibliography"><li>
+<div class="row">
+ 
+    <div class="col col-sm-2 abbr">
+<abbr class="badge rounded w-130" style="background-color: #D3BAFF;">
+          
+            <div>AI-driven Decisions</div>
+          
+        </abbr>
+      
+      
+    </div>
+  
+  <!-- Entry bib key -->
+  <div id="ZhangCaNaRu24" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">
+      
+        <a href="https://arxiv.org/abs/2405.19466" target="_blank" rel="external nofollow noopener">Posterior Sampling via Autoregressive Generation</a>
+      
+    </div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <a href="https://kellywzhang.github.io/" rel="external nofollow noopener" target="_blank">Kelly
+              Zhang</a>, <a href="https://tc2718.github.io/" rel="external nofollow noopener" target="_blank">Tiffany
+              Cai</a>, <em>Hongseok
+            Namkoong</em>, and <a href="https://djrusso.github.io/" rel="external nofollow noopener" target="_blank">Daniel
+              Russo</a>
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>arXiv:2405.19466 [cs.LG]</em>,  2024
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+      
+        <a href="http://arxiv.org/abs/2405.19466" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+      
+      
+    
+
+    
+
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">ZhangCaNaRu24</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Posterior Sampling via Autoregressive Generation}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Zhang, Kelly and Cai, Tiffany and Namkoong, Hongseok and Russo, Daniel}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv:2405.19466 [cs.LG]}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://arxiv.org/abs/2405.19466}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li></ol>
+  </div>
+</div>
+
+<h3 id="ai-based-service-systems">AI-based service systems</h3>
+
+<p>Recent advances in AI present significant opportunities to rethink the design of service 
+systems with AI at the forefront.
+Endogeneity presents a key intellectual challenge to managing congestion. 
+Prediction is never the goal, but the link between 
+predictive performance and downstream decision-making performance is not straightforward: 
+prioritizing a job based on predictions impacts the delay of other jobs!</p>
+
+<div class="img l-body">
+    <p>
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      <source class="responsive-img-srcset" srcset="/assets/img/queue-ml-480.webp 480w,/assets/img/queue-ml-800.webp 800w,/assets/img/queue-ml-1400.webp 1400w," sizes="95vw" type="image/webp"></source>
+    
+    <img src="/assets/img/queue-ml.png" class="img-fluid rounded z-depth-1" width="100%" height="auto" title="queue-ml" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+ </p>
+  <div class="caption">
+    Example of a service system based on state-of-the-art AI models: large-scale content moderation systems in online platforms.
+    AI models help human reviewers prioritize toward violating contents most likely to go viral.
+  </div>
+</div>
+
+<p>We crystallize how classical tools from queueing theory provide managerial 
+insights into the design and operation of AI-based service systems: i) simple policies with heavy traffic optimality guarantees, ii) novel model selection procedure for prediction models with 
+downstream queueing performance as a central concern, and iii) AI-based triage by trading off predictive performance, hiring costs, and congestion costs.</p>
+
+<div class="img l-body">
+  <div class="publications">
+      <ol class="bibliography"><li>
+<div class="row">
+ 
+    <div class="col col-sm-2 abbr">
+<abbr class="badge rounded w-130" style="background-color: #D3BAFF;">
+          
+            <div>AI-driven Decisions</div>
+          
+        </abbr>
+      
+      
+    </div>
+  
+  <!-- Entry bib key -->
+  <div id="LeeNaZe24" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">
+      
+        Design and Scheduling of an AI-based Queueing System
+      
+    </div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      Jiung
+            Lee, <em>Hongseok
+            Namkoong</em>, and <a href="https://scholar.google.com/citations?user=4bIBeOgAAAAJ&amp;hl=en" rel="external nofollow noopener" target="_blank">Yibo
+              Zeng</a>
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>Working paper</em>,  2024
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+      
+      
+    
+
+    
+
+    
+      <!-- Hidden abstract block -->
+      <div class="abstract hidden">
+        <p>Recent advances in AI present significant opportunities to
+                  rethink the design of service systems with AI at the
+                  forefront. Even in the era of LLMs, managing a
+                  workforce of human agents (“servers”) is a crit-
+                  ical problem. Crowdsourcing workers are vital for
+                  aligning LLMs with human values (e.g., ChatGPT) and
+                  in many domains, the cost of human annotation is a
+                  binding constraint (e.g., medical diagnosis from
+                  radiologists). This work models and analyzes modern
+                  service systems involving human reviewers and
+                  state-of-the-art AI models. A key intellectual
+                  challenge in managing con- gestion within such
+                  service systems is endogeneity. Prediction is never
+                  the goal, and the link between predictive
+                  performance and downstream decision-making
+                  performance is not straightforward due to
+                  endogeneity. Our work crystallizes how classical
+                  tools from queueing theory provide managerial
+                  insights into the design of AI-based service
+                  systems.</p>
+      </div>
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">LeeNaZe24</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Design and Scheduling of an AI-based Queueing System}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Lee, Jiung and Namkoong, Hongseok and Zeng, Yibo}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Working paper}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li></ol>
+  </div>
+</div>
+
+<!-- 
+### Auto-differentiable discrete event simulation
+
+Typical operational decision-making problems (e.g., queueing, inventory management) are often distinguished by two characteristics: i) the dynamics of the system are relatively simple and ii) action space is combinatorially large. Despite their flexibility, black-box reinforcement learning methods are unreliable and require prohibitive amounts of data. We develop auto-differentiable simulators that can directly optimize policies at scale and showcase the promise of this algorithmic development paradigm on the benchmark problems we develop.
+
+E. Che, J. Dong, and H. Namkoong. Auto-differentiable discrete event simulation for queuing network control. Working paper, 2024.
+-->
+
+<h2 id="robust-causality">Robust causality</h2>
+
+<p>Off-policy methods can learn sequential decision policies using the rich reservoir of previously collected (non-experimental / observational) data. While prediction models can be easily evaluated on previously collected data, assessing decision-making performance requires counterfactual reasoning. Traditional modeling assumptions that allow adjusting prediction models to learn counterfactuals rarely hold in practice. The growth in the nominal volume of data is no panacea: observed data typically only covers a portion of the state-action space, posing challenges in counterfactual learning. Concomitant to unseen data sparsity, shifts in the data distribution are common. Observed decisions depend on unrecorded confounders, and learning good policies requires causal reasoning. Marginalized demographic groups are severely underrepresented; for example, among 10000+ cancer clinical trials the National Cancer Institute funds, fewer than 5% of participants were non-white.</p>
+
+<p>Our existing statistical language falls woefully short as it relies on unverifiable (and often false) assumptions, and we lack diagnostics that can identify failure modes. We develop data analysis tools that can guarantee robust scientific findings and perhaps more importantly, fail in expected ways by highlighting the fundamental epistemic uncertainty in the data.</p>
+
+<div class="img l-body">
+<div class="text-center">
+    
+
+<figure>
+  
+    <iframe src="https://www.youtube.com/embed/FqdH75RazNQ?si=yr19pw3ygvcDQtHu" class="img-fluid rounded z-depth-1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" width="auto" height="auto"></iframe>
+  
+  
+</figure>
+
+</div>
+</div>
+
+<h3 id="external-validity">External validity</h3>
+
+<p>While large-scale randomized studies offer a “gold standard” for internal validity, their external validity can be called into question over spatiotemporal changes in the population, particularly when the treatment effect is heterogeneous across the population. To assess and improve external validity, we develop sensitivity analysis frameworks that allows researchers to assess the extent to which existing experiments inform the treatment effect in a new target site and quantify an expected range of the policy effect for each new site.</p>
+
+<div class="img l-body">
+<div class="publications">
+    <ol class="bibliography"><li>
+<div class="row">
+ 
+    <div class="col col-sm-2 abbr">
+<abbr class="badge rounded w-130" style="background-color: #BAE1FF;">
+          
+            <div>Robust Causality</div>
+          
+        </abbr>
+      
+      
+    </div>
+  
+  <!-- Entry bib key -->
+  <div id="JeongNa22" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">
+      
+        <a href="https://arxiv.org/abs/2007.02411" target="_blank" rel="external nofollow noopener">Assessing External Validity via Worst-case Subpopulation Treatment Effects</a>
+      
+    </div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <a href="https://eytan.github.io/" rel="external nofollow noopener" target="_blank">Sookyo
+              Jeong</a>, and <em>Hongseok
+            Namkoong</em>
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>arXiv:2007.02411 [stat.ML]</em>,  2022
+    </div>
+    <div class="periodical">
+      Short version appeared in Conference on Learning Theory 2020
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+      
+        <a href="http://arxiv.org/abs/2007.02411" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+      
+        <a href="https://youtu.be/FqdH75RazNQ?si=x0H5IOyf-Iy8h7g4" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Video</a>
+      
+      
+      
+        <a href="https://github.com/sookyojeong/worst-ate" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+      
+      
+      
+        
+          <a href="/assets/pdf/JeongNa22-slides.pdf" class="btn btn-sm z-depth-0" role="button">Slides</a>
+        
+      
+      
+    </div>
+    
+      
+      
+      
+      
+    
+
+    
+
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">JeongNa22</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Assessing External Validity via Worst-case Subpopulation Treatment Effects}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Jeong, Sookyo and Namkoong, Hongseok}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv:2007.02411 [stat.ML]}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">note</span> <span class="p">=</span> <span class="s">{Short version appeared in Conference on Learning Theory 2020}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://arxiv.org/abs/2007.02411}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li></ol>
+</div>
+</div>
+
+<h3 id="unobserved-confounding">Unobserved confounding</h3>
+
+<p>Off-policy methods can learn decision policies using the rich reservoir of previously collected (observational) data. A universal assumption that enable counterfactual reasoning requires observed decisions do not depend on any unrecorded confounders that simultaneously affect future states/rewards. This condition is frequently violated in medicine, e-commerce, and public policy, e.g., emergency department patients often do not have an existing record in the hospital’s electronic health system, leaving essential patient-specific information unobserved in subsequent counterfactual analysis.</p>
+
+<div class="img l-body">
+  <div class="d-flex justify-content-center">
+      <div class="text-center">
+        <img src="/assets/img/confounding.png" alt="Confounding" width="250" height="190" border="10">
+      </div>
+  </div>
+</div>
+<p>In the presence of unobserved confounding, even with large samples, it is impossible to precisely estimate the performance of the evaluation policy. To guard against spurious counterfactual evaluations, we propose a worst-case approach where we first posit a realistic notion of bounded unobserved confounding that limits the influence of unrecorded variables on observed decisions and develop corresponding worst-case bounds on the reward.</p>
+
+<div class="img l-body">
+  <div class="publications">
+      <ol class="bibliography"><li>
+<div class="row">
+ 
+    <div class="col col-sm-2 abbr">
+<abbr class="badge rounded w-130" style="background-color: #BAE1FF;">
+          
+            <div>Robust Causality</div>
+          
+        </abbr>
+      
+      
+    </div>
+  
+  <!-- Entry bib key -->
+  <div id="YadlowskyNaBaDuTi22" class="col-sm-8">
+    <!-- Title -->
+    <div class="title">
+      
+        <a href="https://projecteuclid.org/journals/annals-of-statistics/volume-50/issue-5/Bounds-on-the-conditional-and-average-treatment-effect-with-unobserved/10.1214/22-AOS2195.full" target="_blank" rel="external nofollow noopener">Bounds on the Conditional and Average Treatment Effect 
+                  with Unobserved Confounding Factors</a>
+      
+    </div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      
+      <a href="https://www.syadlowsky.com/" rel="external nofollow noopener" target="_blank">Steve
+              Yadlowsky</a>, <em>Hongseok
+            Namkoong</em>, Sanjay
+            Basu, <a href="http://stanford.edu/~jduchi" rel="external nofollow noopener" target="_blank">John
+              Duchi</a>, and
+        <span class="more-authors" title="click to view 1 more author" onclick="
+              var element = $(this);
+              element.attr('title', '');
+              var more_authors_text = element.text() == '1 more author' ? 'Lu Tian' : '1 more author';
+              var cursorPosition = 0;
+              var textAdder = setInterval(function(){
+                element.text(more_authors_text.substring(0, cursorPosition + 1));
+                if (++cursorPosition == more_authors_text.length){
+                  clearInterval(textAdder);
+                }
+            }, '10');
+          ">1 more author</span>
+      
+    </div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="periodical">
+      <em>Annals of Statistics</em>,  2022
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      
+      
+      
+        <a href="http://arxiv.org/abs/1808.09521" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+      
+      
+        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+      
+      
+      
+      
+      
+        <a href="https://youtu.be/FqdH75RazNQ?si=x0H5IOyf-Iy8h7g4" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Video</a>
+      
+      
+      
+      
+      
+      
+    </div>
+    
+      
+      
+      
+      
+    
+
+    
+
+    
+
+    
+      <!-- Hidden bibtex block -->
+      <div class="bibtex hidden">
+        <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">YadlowskyNaBaDuTi22</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Bounds on the Conditional and Average Treatment Effect 
+                    with Unobserved Confounding Factors}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Yadlowsky, Steve and Namkoong, Hongseok and Basu, Sanjay and Duchi, John and Tian, Lu}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Annals of Statistics}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{50}</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{5}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{2587--2615}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://projecteuclid.org/journals/annals-of-statistics/volume-50/issue-5/Bounds-on-the-conditional-and-average-treatment-effect-with-unobserved/10.1214/22-AOS2195.full}</span><span class="p">,</span>
+  <span class="na">slide</span> <span class="p">=</span> <span class="s">{YadlowskyNaBaDuTi22-slides.pdf}</span>
+<span class="p">}</span></code></pre></figure>
+      </div>
+    
+
+    
+  </div>
+</div>
+</li></ol>
+  </div>
+</div>
+
+<!-- ### Unforeseen data sparsity
+
+A central challenge in observational analysis is that the effective sample size is difficult to gauge. Even when a nominally large dataset is collected, the effective sample size may be prohibitively small when there is little overlap between trajectories seen under the data-generating and proposed policies. Data sparsity becomes more pronounced in modern problems that involve high-dimensional covariates representations; causal identification becomes difficult on parts of the covariate space with limited effective sample size. Existing observational methods are only valid in the large sample limit and silently fail in practical instances, where the effective sample size is limited. 
+
+We propose a new inferential framework that provides always-valid uncertainty quantification. Unlike asymptotic methods, we quantify instance-specific uncertainty that accurately scales with the level of overlap Our proposed counterfactual evaluation paradigm i) provides always-valid uncertainty estimates, spurring engineering progress through rigorous empirical evaluations, and ii) guides the optimal design of experiments based on previously collected (observational) data.
+ -->
+
+      </d-article>
+
+      <d-appendix>
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+      </d-appendix>
+
+      <d-bibliography src="/assets/bibliography/mybib.bib"></d-bibliography>
+
+      
+      
+    </div>
+
+    <!-- Footer -->
+    
+  <footer class="fixed-bottom" role="contentinfo">
+    <div class="container mt-0">
+      © Copyright 2024
+      Hongseok
+      
+      Namkoong. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Photos from <a href="https://unsplash.com" target="_blank" rel="external nofollow noopener">Unsplash</a>.
+
+      
+      
+    </div>
+  </footer>
+
+
+    <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="/assets/js/mdb.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    
+
+
+    
+  <!-- Scrolling Progress Bar -->
+  <script type="text/javascript">
+    /*
+     * This JavaScript code has been adapted from the article
+     * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar,
+     * published on the website https://css-tricks.com on the 7th of May, 2014.
+     * Couple of changes were made to the original code to make it compatible
+     * with the `al-foio` theme.
+     */
+    const progressBar = $('#progress');
+    /*
+     * We set up the bar after all elements are done loading.
+     * In some cases, if the images in the page are larger than the intended
+     * size they'll have on the page, they'll be resized via CSS to accomodate
+     * the desired size. This mistake, however, breaks the computations as the
+     * scroll size is computed as soon as the elements finish loading.
+     * To account for this, a minimal delay was introduced before computing the
+     * values.
+     */
+    window.onload = function () {
+      setTimeout(progressBarSetup, 50);
+    };
+    /*
+     * We set up the bar according to the browser.
+     * If the browser supports the progress element we use that.
+     * Otherwise, we resize the bar thru CSS styling
+     */
+    function progressBarSetup() {
+      if ('max' in document.createElement('progress')) {
+        initializeProgressElement();
+        $(document).on('scroll', function () {
+          progressBar.attr({ value: getCurrentScrollPosition() });
+        });
+        $(window).on('resize', initializeProgressElement);
+      } else {
+        resizeProgressBar();
+        $(document).on('scroll', resizeProgressBar);
+        $(window).on('resize', resizeProgressBar);
+      }
+    }
+    /*
+     * The vertical scroll position is the same as the number of pixels that
+     * are hidden from view above the scrollable area. Thus, a value > 0 is
+     * how much the user has scrolled from the top
+     */
+    function getCurrentScrollPosition() {
+      return $(window).scrollTop();
+    }
+
+    function initializeProgressElement() {
+      let navbarHeight = $('#navbar').outerHeight(true);
+      $('body').css({ 'padding-top': navbarHeight });
+      $('progress-container').css({ 'padding-top': navbarHeight });
+      progressBar.css({ top: navbarHeight });
+      progressBar.attr({
+        max: getDistanceToScroll(),
+        value: getCurrentScrollPosition(),
+      });
+    }
+    /*
+     * The offset between the html document height and the browser viewport
+     * height will be greater than zero if vertical scroll is possible.
+     * This is the distance the user can scroll
+     */
+    function getDistanceToScroll() {
+      return $(document).height() - $(window).height();
+    }
+
+    function resizeProgressBar() {
+      progressBar.css({ width: getWidthPercentage() + '%' });
+    }
+    // The scroll ratio equals the percentage to resize the bar
+    function getWidthPercentage() {
+      return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+    }
+  </script>
+
+
+    <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script>
+<script>
+  
+    addBackToTop();
+  
+</script>
+
+  
+</body>
+</html>
