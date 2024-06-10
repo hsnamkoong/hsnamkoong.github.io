@@ -1,12 +1,11 @@
-github_users:
-  - torvalds
-  - alshedivat
-
-github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+repos:
+  - namkoong-lab/whyshift
+  - namkoong-lab/disde
+  - namkoong-lab/marginal-dro
+  - namkoong-lab/robustopt
+  - namkoong-lab/dro
+  - ricvolpi/adversarial-feature-augmentation
+  - StanfordAI4HI/off_policy_confounding
+  - mlfoundations/wise-ft
+  - mlfoundations/model-soups
+  - mlfoundations/open_clip

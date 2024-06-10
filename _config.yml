@@ -3,19 +3,20 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
-email: you@example.com
+first_name: Hongseok
+middle_name: 
+last_name: Namkoong
+email: namkoong@gsb.columbia.edu
+cv: /assets/pdf/cv.pdf
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Hongseok Namkoong, Columbia University
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
+keywords: Hongseok Namkoong, Hongseok, Namkoong, Hong Namkoong, Hongseok Namkoong Stanford, Hongseok Stanford, Namkoong Stanford, Hong Namkoong Stanford, Hongseok Namkoong MS&E, Hongseok MS&E, Namkoong MS&E, Hong Namkoong MS&E, Hongseok Namkoong Machine Learning, Hongseok Machine Learning, Namkoong Machine Learning, Hong Namkoong Machine Learning, Hongseok Namkoong Operations Research, Hongseok Operations Research, Namkoong  Operations Research, Hong Namkoong  Operations Research, Hongseok Namkoong Columbia, Hongseok Columbia, Namkoong Columbia, Hong Namkoong Columbia, Hong Columbia, Hongseok Namkoong Columbia Business School, Hongseok Columbia Business School, Namkoong Columbia Business School, Hong Namkoong Columbia Business School, Hong Columbia Business School, Hongseok Namkoong Columbia DRO, Hongseok Columbia DRO, Namkoong Columbia DRO, Hong Namkoong Columbia DRO, Hong Columbia DRO, Hongseok Namkoong Decision Risk and Operations Division, Hongseok Decision Risk and Operations Division, Namkoong Decision Risk and Operations Division, Hong Namkoong Decision Risk and Operations Division, Hong Decision Risk and Operations Division, Hong Namkoong Columbia Decision Risk and Operations Division, Hong Columbia Decision Risk and Operations Division, Hongseok Namkoong Facebook, Hongseok Facebook, Namkoong Facebook, Hong Namkoong Facebook, Hongseok Namkoong Columbia Business, Hongseok Columbia Business, Namkoong  Columbia Business, Hong Namkoong  Columbia Business, Hongseok Namkoong DRO, Hongseok DRO, Namkoong  DRO, Hong Namkoong  DRO, Hongseok Namkoong AI, Hongseok AI, Namkoong  AI, Hong Namkoong  AI, Hong Namkoong ML, Uncertainty quantification, autoregressive modeling, de finetti, adaptive experimentation, autodifferentiation planning # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: ai-ops.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://hsnamkoong.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -41,7 +42,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -77,7 +78,7 @@ dblp_url: # your DBLP profile url
 discord_id: # your discord id (18-digit unique numerical identifier)
 facebook_id: # your facebook id
 flickr_id: # your flickr id
-github_username: # your GitHub user name
+github_username: namkoong-lab # your GitHub user name
 gitlab_username: # your GitLab user name
 ieee_id: # your ieeexplore.ieee.org/author/id
 instagram_id: # your instagram id
@@ -94,7 +95,7 @@ pinterest_id: # your pinterest id
 publons_id: # your ID on Publons
 quora_username: # your Quora username
 research_gate_profile: # your profile on ResearchGate
-scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
+scholar_userid: dyXX1EgAAAAJ # your Google Scholar ID
 scopus_id: # your profile on Scopus
 semanticscholar_id: # your Semantic Scholar ID
 spotify_id: # your spotify id
@@ -106,13 +107,13 @@ whatsapp_number: # your WhatsApp number (full phone number in international form
 wikidata_id: # your wikidata id
 wikipedia_id: # your wikipedia id (Case sensitive)
 work_url: # work page URL
-x_username: # your X handle
+x_username: hsnamkoong # your X handle
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
-
+  I am unable to respond to most inquiries regarding openings for Ph.D. positions as admissions are handled at the departmental level.
+  
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
 # -----------------------------------------------------------------------------
@@ -140,7 +141,7 @@ pagination:
   enabled: true
 
 related_blog_posts:
-  enabled: true
+  enabled: false
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
@@ -193,7 +194,7 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 
@@ -292,22 +293,22 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+display_tags: ["formatting", "images", "links", "math", "code"] # these tags will be displayed on the front page of your blog
+display_categories: ["blockquotes"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Namkoong]
+  first_name: [Hongseok]
 
   style: apa
   locale: en
 
   source: /_bibliography/
-  bibliography: papers.bib
+  bibliography: mybib-novenue.bib
   bibliography_template: bib
   # Note: if you have latex math in your bibtex, the latex filter
   # preprocessing may conflict with MathJAX if the latter is enabled.
@@ -321,7 +322,7 @@ scholar:
   details_link: Details
 
   query: "@*"
-  group_by: year
+  group_by: none
   group_order: descending
 
 # Display different badges withs stats for your publications
@@ -355,7 +356,7 @@ filtered_bibtex_keywords:
   ]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 3 # leave blank to always show all authors
+max_author_limit: 4 # leave blank to always show all authors
 more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
@@ -414,7 +415,7 @@ enable_bing_verification: false # enables bing site verification
 enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
 enable_tooltips: false # enables automatic tooltip links generated for each section titles on pages and posts
-enable_darkmode: true # enables switching between light/dark modes
+enable_darkmode: false # enables switching between light/dark modes
 enable_navbar_social: false # enables displaying social links in the navbar on the about page
 enable_project_categories: true # enables categorization of projects into multiple categories
 enable_medium_zoom: true # enables image zoom feature (as on medium.com)

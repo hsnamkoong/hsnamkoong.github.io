@@ -180,9 +180,54 @@ ul.task-list input[type="checkbox"] {
   color: var(--global-theme-color);
 }
 
-// Profile
-
+// Profiler better spacing
+// Profile styling
 .profile {
+  margin-bottom: 20px; // Add some space between rows
+
+  .profile-name {
+    font-size: 1.2em; // Adjust this value as needed
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .profile-department {
+    font-size: 0.9em; // Smaller font size for the department line
+    font-weight: normal;
+    color: #666; // Adjust color as needed
+  }
+}
+
+.profile img {
+  width: 100%;
+  height: auto;
+  max-width: 200px; // Adjust based on your preferred size
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover; // Ensure the image covers the container
+  object-position: center; // Center the image
+  height: 200px; // Fixed height to ensure uniformity
+}
+
+// Container and row styling for better alignment
+.container {
+  max-width: 1200px;
+  margin: 0 auto; // Center the container
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; // Ensure profiles wrap to the next row
+  justify-content: space-around; // Distribute space evenly
+}
+
+.col-12.col-sm-6.col-md-4.col-lg-3 {
+  padding: 10px; // Adjust padding for better spacing
+}
+
+
+ .profile-about {
   width: 100%;
 
   .more-info {
@@ -196,17 +241,17 @@ ul.task-list input[type="checkbox"] {
     }
   }
 }
-
-.profile.float-right {
+ 
+.profile-about.float-right {
   margin-left: 1rem;
 }
 
-.profile.float-left {
+.profile-about.float-left {
   margin-right: 1rem;
 }
 
 @media (min-width: 576px) {
-  .profile {
+  .profile-about {
     width: 30%;
 
     .address {
@@ -230,6 +275,35 @@ ul.task-list input[type="checkbox"] {
     }
   }
 }
+
+
+.about-page .post-description {
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
+.profile-about img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover; // Ensure the image covers the container
+  object-position: center; // Center the image
+}
+
+
+/* General profile styles can be defined here for other pages if needed */
+
 
 // Navbar customization
 
@@ -497,6 +571,7 @@ footer.sticky-bottom {
   }
 }
 
+
 // Blog
 
 .header-bar {
@@ -624,10 +699,6 @@ footer.sticky-bottom {
     }
   }
 
-  .col {
-    padding-bottom: 1rem;
-  }
-
   .grid-sizer,
   .grid-item {
     width: 250px;
@@ -648,6 +719,9 @@ footer.sticky-bottom {
 
 .publications {
   margin-top: 2rem;
+  font-size: 1em; /* Decrease the font size */
+  max-width: 120%; /* Ensure it doesn't exceed 45% of the container width */
+  line-height: 2; /* Further reduce line-height */
 
   h1 {
     color: var(--global-theme-color);

@@ -1,36 +1,52 @@
 ---
-layout: page
+layout: default
 ---
 <div class="post">
   <article>
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.description }}</p>
     {% if page.profiles %}
-      {% for profile in page.profiles %}
-        <hr>
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
-          {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            {% if profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-            {% endif %}
-            {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-          {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
-          {% endif %}
+      <div class="container">
+        <div class="row justify-content-center">
+          {% assign random_seed = site.time | date: "%s%N" %}
+          {% assign shuffled_profiles = page.profiles | sort: random_seed %}
+          {% for profile in shuffled_profiles %}
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+              <div class="profile text-center">
+                {% if profile.image %}
+                  {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+                  {% if profile.image_circular %}
+                    {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+                  {% else %}
+                    {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+                  {% endif %}
+                  {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
+                  {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.name %}
+                {% endif %}
+                {% if profile.name %}
+                  {% if profile.link %}
+                    <p class="profile-name"><a href="{{ profile.link }}" target="_blank">{{ profile.name }}</a></p>
+                  {% else %}
+                    <p class="profile-name">{{ profile.name }}</p>
+                  {% endif %}
+                {% endif %}
+                {% if profile.department %}
+                  <p class="profile-department">{{ profile.department }}</p>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
         </div>
-
-        <div class="clearfix">
-          {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-          {% else %}
-            {{ content }}
-          {% endif %}
-        </div>
-      {% endfor %}
+      </div>
     {% endif %}
   </article>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var container = document.getElementById('profiles-row');
+    for (var i = container.children.length; i >= 0; i--) {
+      container.appendChild(container.children[Math.random() * i | 0]);
+    }
+  });
+</script>

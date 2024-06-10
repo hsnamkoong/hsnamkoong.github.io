@@ -1,34 +1,107 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"boyarsky":
+  - firstname: ["Ari", "A."]
+    url: https://www.ariboyarsky.com/
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"liu":
+  - firstname: ["Jiashuo", "J."]
+    url: https://ljsthu.github.io/
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"wang":
+  - firstname: ["Tianyu", "T."]
+    url: https://wangtianyu61.github.io/
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"cui":
+  - firstname: ["Peng", "P."]
+    url: https://pengcui.thumedialab.com/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"pouget-abadie":
+  - firstname: ["Jean", "J."]
+    url: https://jean.pouget-abadie.com/
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"che":
+  - firstname: ["Ethan", "E."]
+    url: https://ethche.github.io/
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"che":
+  - firstname: ["Ethan", "E."]
+    url: https://ethche.github.io/
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"yadlowsky":
+  - firstname: ["Steve", "S."]
+    url: https://www.syadlowsky.com/
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"cai":
+  - firstname: ["Tiffany", "T."]
+    url: https://tc2718.github.io/
+
+"ma":
+  - firstname: ["Yuanzhe", "Y."]
+    url: https://yuanzhe-ma.com/
+
+"glynn":
+  - firstname: ["Peter", "P."]
+    url: http://web.stanford.edu/~glynn
+
+"wortsman":
+  - firstname: ["Mitchell", "M."]
+    url: https://mitchellnw.github.io/
+
+"ilharco":
+  - firstname: ["Gabriel", "G."]
+    url: http://gabrielilharco.com/
+
+"schmidt":
+  - firstname: ["Ludwig", "L."]
+    url: https://people.csail.mit.edu/ludwigs/
+
+"daulton":
+  - firstname: ["Samuel", "S."]
+    url: https://sdaulton.github.io/
+
+"bakshy":
+  - firstname: ["Eytan", "E."]
+    url: https://eytan.github.io/
+
+"jeong":
+  - firstname: ["Sookyo", "S."]
+    url: https://eytan.github.io/
+
+"bakshy":
+  - firstname: ["Eytan", "E."]
+    url: https://eytan.github.io/
+
+"brunskill":
+  - firstname: ["Emma", "E."]
+    url: https://cs.stanford.edu/people/ebrun/
+
+"duchi":
+  - firstname: ["John", "J.", "J. C.", "John Christopher"]
+    url: http://stanford.edu/~jduchi
+
+"hashimoto":
+  - firstname: ["Tatsunori", "T."]
+    url: https://thashim.github.io/
+
+"brunskill":
+  - firstname: ["Emma", "E."]
+    url: https://cs.stanford.edu/people/ebrun/
+
+"zeng":
+  - firstname: ["Yibo", "Y."]
+    url: https://scholar.google.com/citations?user=4bIBeOgAAAAJ&hl=en
+
+"zhang":
+  - firstname: ["Kelly", "K."]
+    url: https://kellywzhang.github.io/
+
+"russo":
+  - firstname: ["Daniel", "D.", "D. J."]
+    url: https://djrusso.github.io/
+
+"dong":
+  - firstname: ["Jing", "J."]
+    url: https://www.columbia.edu/~jd2736/
+
+"fonseca":
+  - firstname: ["Yuri", "Y.", "Yuri Resende", "Y. R."]
+    url: https://yuriresende.github.io/
