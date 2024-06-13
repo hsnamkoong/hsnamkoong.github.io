@@ -148,7 +148,7 @@ Our main observation is that normal approximations, which are universal in stati
 
   <div class="img l-body">
   <div class="text-center">
-  <img src="/assets/img/arm-diagram.png" alt="AI overview" width="430" height="180" border="10" />
+    <img src="/assets/img/arm-diagram.png" alt="AI overview" width="630" height="180" style="max-width: 100%; height: auto; border: 10px;"/>
   </div>
   </div>
 
