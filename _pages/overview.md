@@ -174,7 +174,7 @@ the *sequence of engagements* observed for the item using an autoregressive mode
 
 <div class="img l-body">
   <div class="text-center">
-  <img src="/assets/img/imputation.png" alt="AI overview" width="630" height="180" border="10" />
+  <img src="/assets/img/imputation.png" alt="AI overview" width="630" height="180" style="max-width: 100%; height: auto; border: 10px;"/>
   </div>
   <div class="caption">
     <strong> Main insight</strong>: Recommending items based on autoregressively imputed observations implements 

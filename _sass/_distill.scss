@@ -1,6 +1,11 @@
 /*******************************************************************************
  * Style overrides for distill blog posts.
  ******************************************************************************/
+ .responsive-img {
+  max-width: 100%;
+  height: auto;
+  border: 10px; /* You can keep the border styling here */
+}
 
 .publications {
   font-size: 1em; /* Decrease the font size */
@@ -102,6 +107,7 @@ d-article {
       minmax(8px, 1fr) [toc] auto
       minmax(8px, 1fr) [toc-line] 1px
       minmax(32px, 2fr);
+      overflow-x: auto; /* Add horizontal scrolling */
 
     nav {
       grid-column: toc;
@@ -172,8 +178,9 @@ d-appendix {
       padding-bottom: 0.5em;
       margin-bottom: 1em;
       padding-top: 0.5em;
-      width: 140%;
+      width: 100%;
       border: 1px solid var(--global-divider-color);
+      overflow-x: auto; /* Ensure horizontal scrolling */
       nav {
         grid-column: none;
       }
