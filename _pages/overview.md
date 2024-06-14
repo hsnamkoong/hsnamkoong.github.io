@@ -2,7 +2,7 @@
 layout: distill
 title: Research
 permalink: /research/
-description: My team develops AI-driven approaches to decision-making, with a particular emphasis on trustworthy and responsible learning methods. This requires an interdisciplinary approach spanning several fields including machine learning, operations research, and statistics. 
+description: My research group builds AI systems that optimize real-world business objectives, with a particular emphasis on trustworthy and responsible learning methods. We take an interdisciplinary approach spanning several fields including machine learning, operations research, and statistics. 
 nav: true
 nav_order: 2
 
@@ -15,7 +15,6 @@ bibliography: mybib.bib
 #   - we may want to automate TOC generation in the future using
 #     jekyll-toc plugin (https://github.com/toshimaru/jekyll-toc).
 toc:
-  - name: Research philosophy and methodology
     # if a section has subsections, you can add them as follows:
     # subsections:
     #   - name: Example Child Subsection 1
@@ -36,6 +35,7 @@ toc:
       - name: External validity
       - name: Unobserved confounding
 #      - name: Unforeseen data sparsity
+  - name: Research philosophy and methodology
 
 # Below is an example of injecting additional post-specific styles.
 # If you use this post as a template, delete this _styles block.
@@ -56,9 +56,11 @@ _styles: >
   }
 ---
 
-## Research philosophy and methodology
 
-I take a holistic “industrial engineering” view of AI systems, studying them from data collection to deployment & monitoring.
+AI models pre-trained on internet data can understand text, code, audio, and video. However, as public data sources become exhausted, it is evident that enabling applications beyond consumer chatbots requires a thoughtful approach to data curation. Mistakes are costly in business applications, and
+intelligent agents must carefully collect and leverage proprietary data, such as customer feedback and user interactions. 
+
+My research group develops trustworthy AI-driven decision-making systems that optimize long-term outcomes. In particular, we take a holistic "process view" of AI systems. 
 
 <div class="img l-body">
   <div class="text-center">
@@ -70,17 +72,7 @@ I take a holistic “industrial engineering” view of AI systems, studying them
     </div>
 </div>
 
-My research group identifies central intellectual bottlenecks in real-world problems, and resolves them by building computational and data-centric foundations borne out of mathematical principles. While theoretical insights can provide invaluable principles, their successful operationalization requires recognizing and internalizing the limitations of crude approximations and unverifiable assumptions we put in place for mathematical convenience. Our research methodology aims to connect two disparate yet complementary worldviews:
-- computational tools and mathematical insights from statistical learning, optimization, applied probability, and casual inference
-- rigorous empirical benchmarking practices arising from the AI research community’s data-centric approach.
-
-I take inspiration from [Von Neumann’s perspective on mathematical sciences](/assets/pdf/TheMathematician.pdf), which I paraphrase below:
-
-<blockquote style="font-size: 1em;">
-    As a mathematical discipline travels far from its empirical source only indirectly inspired from ideas coming from 'reality', it is beset with grave dangers that it will develop along the line of least resistance and become more and more purely aestheticizing. This need not be bad if the discipline is under the influence of researchers with an exceptionally well-developed taste, but the only general remedy is the rejuvenating return to the source: the reinjection of directly empirical ideas. I am convinced that this is a necessary condition to conserve the freshness and the vitality of the subject, and that this will remain so in the future. 
-</blockquote>
-
-I am fortunate to be able to learn from the well-developed taste of my colleagues. Concurrent to this personal education, I (try to) inject empirical ideas to formulate research directions to increase the impact of my research.
+We identify central bottlenecks in AI systems and resolve them by building computational and data-centric foundations. 
 
 
 ## Trustworthy AI
@@ -261,6 +253,22 @@ In the presence of unobserved confounding, even with large samples, it is imposs
       {% bibliography -q @*[key=YadlowskyNaBaDuTi22]* %}
   </div>
 </div>
+
+
+## Research philosophy and methodology
+
+While theoretical insights can provide invaluable principles, their successful operationalization requires recognizing and internalizing the limitations of crude approximations and unverifiable assumptions we put in place for mathematical convenience. My group's research methodology aims to connect two disparate yet complementary worldviews:
+- computational tools and mathematical insights from statistical learning, optimization, applied probability, and casual inference
+- rigorous empirical benchmarking practices arising from the AI research community’s data-centric approach.
+
+I take inspiration from [Von Neumann’s perspective on mathematical sciences](/assets/pdf/TheMathematician.pdf), which I paraphrase below:
+
+<blockquote style="font-size: 1em;">
+    As a mathematical discipline travels far from its empirical source only indirectly inspired from ideas coming from 'reality', it is beset with grave dangers that it will develop along the line of least resistance and become more and more purely aestheticizing. This need not be bad if the discipline is under the influence of researchers with an exceptionally well-developed taste, but the only general remedy is the rejuvenating return to the source: the reinjection of directly empirical ideas. I am convinced that this is a necessary condition to conserve the freshness and the vitality of the subject, and that this will remain so in the future. 
+</blockquote>
+
+I am fortunate to be able to learn from the well-developed taste of my colleagues. Concurrent to this personal education, I (try to) inject empirical ideas to formulate research directions to increase the impact of my research.
+
 
 <!-- ### Unforeseen data sparsity
 
