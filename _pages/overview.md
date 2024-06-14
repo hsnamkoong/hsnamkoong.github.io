@@ -81,7 +81,6 @@ Modern data collection systems acquire data from heterogeneous sources, and clas
 i) make good predictions on underrepresented groups,
 ii) generalize to new environments, even those similar to that seen during training, and iii) be robust to adversarial examples and long-tailed inputs.
 Yes, even the largest models trained on the entirety of the internet! 
-
 Despite recent successes, lack of understanding on the failure modes of AI systems highlights the need for models that i) reliably work and ii) rigorous evaluation schemes and diagnostics that maintain their quality. 
 
 ### Language for distribution shifts
@@ -120,8 +119,12 @@ Our vision is to build robust and reliable learning procedures that make decisio
 
 ## AI-driven decisions
 
-Decision-making problems in OR/MS concerns the optimal allocation of scarce resources. We build scalable computational frameworks for learning operational decisions by leveraging i) auto-differentiable simulators, and ii) empirically rigorous benchmarking. Our goal is to build a algorithmic development paradigm based on computation rather than theoretical approximations. 
-
+Prediction is never the final goal. To align AI-models optimized to predict 
+short-term (e.g., clicks) with downstream long-term business outcomes (e.g., user utility), 
+we design scalable computational frameworks for learning operational decisions.
+We derive algorithms from mathematical principles, but test them 
+using rigorous empirical benchmarking practrices rather than relying on 
+theoretical guarantees in idealized, contrived settings.
 
 ### Adaptive experimentation at scale
 
