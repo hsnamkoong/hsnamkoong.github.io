@@ -68,11 +68,10 @@ My research group develops trustworthy AI-driven decision-making systems that op
   </div>
   <div class="caption">
     <strong> Process view of AI (not just a single model): </strong>
-        Methodological development in ML largely focuses on model training. Taking a system-level view, my research identifies bottlenecks in the process and algorithms to resolve them.     
+        Methodological development in ML largely focuses on model training. Taking a system-level view, we identify central bottlenecks in AI systems and resolve them by building computational and data-centric foundations. 
     </div>
 </div>
 
-We identify central bottlenecks in AI systems and resolve them by building computational and data-centric foundations. 
 
 
 ## Trustworthy AI
