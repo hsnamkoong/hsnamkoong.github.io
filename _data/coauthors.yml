@@ -1,14 +1,17 @@
 "boyarsky":
   - firstname: ["Ari", "A."]
     url: https://www.ariboyarsky.com/
+  - student: true
 
 "liu":
   - firstname: ["Jiashuo", "J."]
     url: https://ljsthu.github.io/
+  - student: true
 
 "wang":
   - firstname: ["Tianyu", "T."]
     url: https://wangtianyu61.github.io/
+  - student: true
 
 "cui":
   - firstname: ["Peng", "P."]
@@ -21,10 +24,7 @@
 "che":
   - firstname: ["Ethan", "E."]
     url: https://ethche.github.io/
-
-"che":
-  - firstname: ["Ethan", "E."]
-    url: https://ethche.github.io/
+  - student: true
 
 "yadlowsky":
   - firstname: ["Steve", "S."]
@@ -33,10 +33,12 @@
 "cai":
   - firstname: ["Tiffany", "T."]
     url: https://tc2718.github.io/
+  - student: true
 
 "ma":
   - firstname: ["Yuanzhe", "Y."]
     url: https://yuanzhe-ma.com/
+  - student: true
 
 "glynn":
   - firstname: ["Peter", "P."]
@@ -89,10 +91,12 @@
 "zeng":
   - firstname: ["Yibo", "Y."]
     url: https://scholar.google.com/citations?user=4bIBeOgAAAAJ&hl=en
+  - student: true
 
 "zhang":
   - firstname: ["Kelly", "K."]
     url: https://kellywzhang.github.io/
+  - student: true
 
 "russo":
   - firstname: ["Daniel", "D.", "D. J."]
@@ -105,3 +109,4 @@
 "fonseca":
   - firstname: ["Yuri", "Y.", "Yuri Resende", "Y. R."]
     url: https://yuriresende.github.io/
+  - student: true

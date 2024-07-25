@@ -39,6 +39,37 @@ layout: default
         </div>
       </div>
     {% endif %}
+    
+    <!-- Undergraduate Students Section -->
+    <div class="section undergraduate-students", style="margin-bottom: 20px;">
+      <h4> Undergraduate and M.S. students</h4>
+      I also get to work with amazing undergraduate and masters students, including 
+      {% for student in page.ug_profiles %}
+        {% if student.link %}
+          <a href="{{ student.link }}" target="_blank">{{ student.name }}</a>{% unless forloop.last %}, {% endunless %}
+        {% else %}
+          {{ student.name }}{% unless forloop.last %}, {% endunless %}
+        {% endif %}
+      {% endfor %}
+      .
+    </div>
+
+    <!-- PhD Collaborators Section -->
+    <div class="section phd-collaborators", style="margin-bottom: 20px;">
+      <h4>Ph.D. Collaborators</h4>
+      In addition to the students in my group, I have the privilege of 
+      collaborating with many student collaborators, including
+      {% for collaborator in page.phd_collaborator_profiles %}
+        {% if collaborator.link %}
+          <a href="{{ collaborator.link }}" target="_blank">{{ collaborator.name }}</a>{% unless forloop.last %}, {% endunless %}
+        {% else %}
+          {{ collaborator.name }}{% unless forloop.last %}, {% endunless %}
+        {% endif %}
+      {% endfor %}
+      .
+    </div>
+
+    
   </article>
 </div>
 

@@ -6,7 +6,7 @@ description: I am fortunate to work with exceptionally talented students and pos
 nav: true
 nav_order: 4
 body_class: team-page
-
+text: 
 
 profiles:
   - align: left
@@ -79,4 +79,52 @@ profiles:
     name: Isaac Scheinfeld
     department: Decision, Risk, and Operations
     link: "https://scholar.google.com/citations?user=V1K2TnwAAAAJ&hl=en"
+
+phd_collaborator_profiles:
+  - name: Sam Deng
+    department: Computer Science, Columbia University
+    link: https://samuel-deng.github.io/
+  - name: Yuri Fonseca
+    department: DRO, Columbia Business School
+    link: https://yuriresende.github.io/
+  - name: Jiashuo Liu
+    department: Computer Science, Tsinghua University
+    link: https://ljsthu.github.io/
+  - name: Tianyu Wang
+    department: IEOR, Columbia University
+    link: https://wangtianyu61.github.io/
+  - name: Yunbei Xu
+    department: DRO, Columbia Business School
+    link: https://yunbeixu.github.io/
+  - name: Tom Zollo
+    department: Computer Science, Columbia University
+    link: https://www.thomaszollo.com/
+
+ug_profiles:
+  - name: Jimmy Wang
+    department: Computer Science, Columbia University
+  - name: Leon Li
+    department: Computer Science, Columbia University
+  - name: Tony Chen
+    department: Computer Science, Columbia University
+    link: https://tonychen.xyz/
+  - name: Andrew Siah
+    department: Physics, Columbia University
+    link: https://andrewsiah.com/about/
+  - name: Hanming Yang
+    department: Computer Science, Columbia University
+  - name: Kaiwen Hou
+    department: Finance, Columbia Business School
+  - name: Shunri Zheng
+    department: Statistics, Columbia University
+  - name: Chris Lee
+    department: Computer Science, Columbia University
+  - name: Elise Han
+    department: Computer Science, Columbia University
+  - name: Andy Zhang
+    department: Data Science, Columbia University
+  
+
 ---
+
+

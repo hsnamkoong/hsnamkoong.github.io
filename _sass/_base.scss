@@ -227,7 +227,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 
- .profile-about {
+.profile-about {
   width: 100%;
 
   .more-info {
@@ -291,14 +291,18 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-.profile-about img {
-  width: 80%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: cover; // Ensure the image covers the container
-  object-position: center; // Center the image
+
+.profile-about {
+  img {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover; // Ensure the image covers the container
+    object-position: center; // Center the image
+    margin-top: -3cm; // This will move the image up by 2 cm
+  }
 }
 
 
