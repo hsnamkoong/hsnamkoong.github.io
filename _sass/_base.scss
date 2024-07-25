@@ -301,7 +301,10 @@ ul.task-list input[type="checkbox"] {
     margin-right: auto;
     object-fit: cover; // Ensure the image covers the container
     object-position: center; // Center the image
-    margin-top: -3cm; // This will move the image up by 2 cm
+    @media screen and (min-width: 1024px) {
+      // Your desktop-specific styles go here
+      margin-top: -3cm; // This will move the image up by 2 cm
+    }
   }
 }
 
