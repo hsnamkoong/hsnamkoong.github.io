@@ -1,4 +1,5 @@
 repos:
+  - namkoong-lab/aexgym
   - namkoong-lab/whyshift
   - namkoong-lab/disde
   - namkoong-lab/marginal-dro

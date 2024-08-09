@@ -110,3 +110,13 @@
   - firstname: ["Yuri", "Y.", "Yuri Resende", "Y. R."]
     url: https://yuriresende.github.io/
   - student: true
+
+"jiang":
+  - firstname: ["Daniel", "D."]
+    url: https://danielrjiang.github.io/
+  - student: false
+
+"siah":
+  - firstname: ["Andrew", "A."]
+    url: https://andrewsiah.com/about/
+  - student: true
