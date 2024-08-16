@@ -1,4 +1,5 @@
 repos:
+  - namkoong-lab/QGym
   - namkoong-lab/aexgym
   - namkoong-lab/whyshift
   - namkoong-lab/disde
