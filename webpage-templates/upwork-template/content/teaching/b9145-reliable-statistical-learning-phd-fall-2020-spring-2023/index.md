@@ -1,0 +1,7 @@
+---
+title: 'B9145: Reliable Statistical Learning (PHD: Fall 2020, Spring 2023)'
+filename : teaching/b9145-syllabus.pdf
+---
+As ML systems increasingly affect high-stakes decisions, it is critical that they maintain a reliable level of performance under operation. However, traditional modeling assumptions rarely hold in practice due to noisy inputs, shifts in environment, omitted variables, and even adversarial attacks. The standard machine learning paradigm that optimize average performance is brittle to even small distributional shifts, exhibiting poor performance on minority groups and tail inputs. Even performance of heavily engineered state-of-the-art models degrades significantly on domains that are slightly different from what the model was trained on. Lack of understanding of their failure modes highlights the need for models that reliably work, and rigorous safety tests to evaluate them.
+
+This course surveys a range of emerging topics on reliability and robustness in machine learning. Most of the topics discussed in this class are active research areas, and relevant reading materials will draw upon recent literature (to be posted on the website). The goal of this class is to foster discussion on new research questions. This will encompass theoretical and methodological developments, modeling considerations, novel application areas, and other concerns rising out of practice
