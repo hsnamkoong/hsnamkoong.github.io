@@ -120,3 +120,15 @@
   - firstname: ["Andrew", "A."]
     url: https://andrewsiah.com/about/
   - student: true
+
+"zollo":
+  - firstname: ["Thomas", "T."]
+    url: https://www.thomaszollo.com/
+  - student: true
+
+
+"dong":
+  - firstname: ["Jing", "J."]
+    url: https://www.columbia.edu/~jd2736/
+  - student: false
+
