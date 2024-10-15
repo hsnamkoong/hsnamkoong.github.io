@@ -10,19 +10,12 @@ text:
 
 profiles:
   - align: left
-    image: team/kelly-zhang.png
+    image: team/yanlin-qu.png
     content: none
     image_circular: false
-    name: Kelly Zhang
+    name: Yanlin Qu
     department: Postdoctoral Fellow
-    link: https://kellywzhang.github.io/
-  - align: left
-    image: team/yibo-zeng.jpeg
-    content: none
-    image_circular: false
-    name: Yibo Zeng
-    department: Industrial Engineering and Operations Research
-    link: https://scholar.google.com/citations?user=4bIBeOgAAAAJ&hl=en
+    link: "https://quyanlin.github.io/"
   - align: left
     image: team/tiffany-cai.jpeg
     content: none
@@ -79,6 +72,29 @@ profiles:
     name: Isaac Scheinfeld
     department: Decision, Risk, and Operations
     link: "https://scholar.google.com/citations?user=V1K2TnwAAAAJ&hl=en"
+  - align: left
+    image: team/thomson-yen.jpeg
+    content: none
+    image_circular: false
+    name: Thomson Yen
+    department: Decision, Risk, and Operations
+    link: "https://scholar.google.ca/citations?user=OK6RSVkAAAAJ&hl=en"
+
+alumni_profiles:
+  - align: left
+    image: team/kelly-zhang.png
+    content: none
+    image_circular: false
+    name: Kelly Zhang
+    department: Imperial College London
+    link: https://kellywzhang.github.io/
+  - align: left
+    image: team/yibo-zeng.jpeg
+    content: none
+    image_circular: false
+    name: Yibo Zeng
+    department: Virtual Reality Labs, Meta
+    link: https://scholar.google.com/citations?user=4bIBeOgAAAAJ&hl=en
 
 phd_collaborator_profiles:
   - name: Sam Deng
