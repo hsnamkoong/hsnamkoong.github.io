@@ -1,5 +1,7 @@
 repos:
   - namkoong-lab/QGym
+  - namkoong-lab/PersonalLLM
+  - namkoong-lab/LLM-Tabular-Shifts
   - namkoong-lab/aexgym
   - namkoong-lab/whyshift
   - namkoong-lab/disde
