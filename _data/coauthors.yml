@@ -132,3 +132,7 @@
     url: https://www.columbia.edu/~jd2736/
   - student: false
 
+"lam":
+  - firstname: ["Henry", "H."]
+    url: https://www.columbia.edu/~khl2114/
+  - student: false
