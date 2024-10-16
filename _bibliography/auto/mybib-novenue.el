@@ -2,11 +2,6 @@
  "mybib-novenue"
  (lambda ()
    (LaTeX-add-bibitems
-    "CheDoNa24"
-    "ZolloSiYeLiNa24"
-    "CheJiNaWa24"
-    "WangChJiNa24"
-    "YeYaSiNa24"
     "CaiFoHoNa24"
     "ZhangCaNaRu24"
     "LeeNaZe24"
