@@ -126,7 +126,6 @@
     url: https://www.thomaszollo.com/
   - student: true
 
-
 "dong":
   - firstname: ["Jing", "J."]
     url: https://www.columbia.edu/~jd2736/
@@ -136,3 +135,8 @@
   - firstname: ["Henry", "H."]
     url: https://www.columbia.edu/~khl2114/
   - student: false
+
+"chen":
+  - firstname: ["Tony", "T."]
+    url: https://tonychen.xyz/
+  - student: true

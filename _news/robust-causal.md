@@ -1,8 +1,9 @@
 ---
 layout: post
 date: 2023-05-15 16:11:00-0400
-inline: false
+inline: true
 related_posts: false
+show: false
 ---
 
 Watch my talk on [Robust Causal Inference](https://youtu.be/CLzRcOw9eyk)

@@ -121,7 +121,7 @@ ug_profiles:
     department: Computer Science, Columbia University
   - name: Leon Li
     department: Computer Science, Columbia University
-  - name: Tony Chen
+  - name: Haozhe Chen
     department: Computer Science, Columbia University
     link: https://tonychen.xyz/
   - name: Andrew Siah

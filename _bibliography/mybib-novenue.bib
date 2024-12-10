@@ -562,8 +562,20 @@ Learning Representations}}
 @string{msom = {Manufacturing and Service Operations Management}}
 @string{qs = {Queueing Systems}}
 
+@inproceedings{HsuDiSiNa24,
+      title={From Models to Systems: A Comprehensive Fairness Framework for Compositional Recommender Systems}, 
+      author={Brian Hsu and Cyrus DiCiccio and Natesh Sivasubramoniapillai and Hongseok Namkoong},
+      year={2024},
+      booktitle={Proceedings of Machine Learning Research},
+      abbr=tai,
+      bibtex_show={true},
+      arxiv={2412.04655},
+      url={https://arxiv.org/abs/2412.04655},
+      selected={false}
+}
+
 @article{ZengLiLaNa24,
-  title={{LLM} Embeddings Improve Test-time Adaptation to Tabular $Y|X$-Shifts},
+  title={{LLM} Embeddings Improve Test-time Adaptation to Tabular {$Y|X$}-Shifts},
   author={Zeng$*$, Yibo and Liu$*$, Jiashuo and Lam, Henry and Namkoong, Hongseok},
   journal={arXiv:2410.07395 [cs.LG]},
   year={2024},
@@ -597,7 +609,7 @@ Learning Representations}}
   bibtex_show={true},
   arxiv={2409.03740},
   url={https://arxiv.org/abs/2409.03740},
-  selected={true}
+  selected={false}
 }
 
 @article{ZolloSiYeLiNa24,
@@ -627,7 +639,43 @@ Learning Representations}}
   url={https://arxiv.org/abs/2408.04570},
   code={https://github.com/namkoong-lab/aexgym},
   slides={CheJiNaWa24-slides.pdf},
-  selected={true}
+  selected={true},
+  abstract={Adaptivity
+can significantly improve efficiency of experimentation, but it is challenging to implement even at large
+online platforms with mature experimentation systems. 
+As a result, many real-world
+experiments are deliberately implemented with large batches and a handful of
+opportunities to update the sampling allocation as a way to reduce operational
+costs of experimentation. 
+<br>
+In this work, we focus on adaptive experiments with limited adaptivity (short horizons T < 10). Bandit algorithms focusing on long-horizon settings are tailored to provide regret guarantees for each specific case, and  we find they often underperform
+static A/B tests on practical problem instances with
+batched feedback, non-stationarity, multiple objectives and constraints, and
+personalization.
+<br>
+In response, we develop a mathematical programming framework for
+developing adaptive experimentation algorithms. Instead of the
+problem-specific research paradigm (akin to an optimization solver developed
+for a particular linear program), we ask the modeler to write down a flexible
+optimization formulation and use modern machine learning systems to
+(heuristically) solve for adaptive designs. 
+Since a naive formulation of the adaptive
+experimentation problem as a dynamic program is intractable, 
+we propose a batched view of the experimentation process. We model the uncertainty around 
+batch-level sufficient
+statistics necessary to make allocation decisions, instead of attempting to
+model unit-level outcomes whose distributions are commonly unknown and leads
+to intractable dynamic programs with combinatorial action spaces. 
+
+<br>
+Sequential Gaussian approximations is the main intellectual vehicle
+powering our mathematical programming framework. CLT-based normal approximations are universal in statistical
+inference, and a sequential variant we prove provides a simple optimization formulation that lends itself to modern computational tools. Through extensive empirical
+evaluation, we observe that even a preliminary and heuristic solution
+approach can provide major robustness benefits. Unlike bespoke methods (e.g.,
+Thompson sampling variants), our mathematical programming framework provides
+consistent gains over static randomized control trials and exhibits robust
+performance across problem instances.}
 }
 
 @article{WangChJiNa24,
@@ -642,15 +690,16 @@ Learning Representations}}
   code={https://github.com/namkoong-lab/aexgym}
 }
 
-@article{YeYaSiNa24,
-  title={Exchangeable Sequence Models Can Naturally Quantify Uncertainty Over Latent Concepts},
-  author={Ye, Naimeng and Yang, Hanming and Siah, Andrew and Namkoong, Hongseok},
+@article{YeNa24,
+  title={Exchangeable Sequence Models Quantify Uncertainty Over Latent Concepts},
+  author={Ye, Naimeng and Namkoong, Hongseok},
   journal={arXiv:2408.03307 [stat.ML]},
   year={2024},
   abbr=tai,
   bibtex_show={true},
   arxiv={2408.03307},
-  url={https://arxiv.org/abs/2408.03307}
+  url={https://arxiv.org/abs/2408.03307},
+  selected=true
 }
 
 @article{CaiFoHoNa24,
@@ -661,7 +710,38 @@ Learning Representations}}
   abbr=rc,
   bibtex_show={true},
   arxiv={2405.09493},
-  url={https://arxiv.org/abs/2405.09493}
+  url={https://arxiv.org/abs/2405.09493},
+  abstract={
+  Causal inference provides the foundation of decision-making in sciences and industry alike, 
+  and our work addresses a longstanding gap between practical performance and theoretical guarantees in 
+  causal inference. Machine learning-based methods can provide a powerful way to control for confounding, 
+  and the de facto standard approach is to use debiased estimators, which enjoy guarantees like statistical
+efficiency and double robustness; examples include one-step
+estimation (i.e. augmented inverse propensity weighting (AIPW)) and targeted
+maximum likelihood estimation (TMLE). 
+<br>
+However, in practice, these estimators have been observed to be unstable when there is 
+limited overlap between treatment and control, necessitating ad hoc adjustments 
+such as truncating propensity scores. In contrast, naive plug-in estimators 
+using an ML model can be more stable but lack these desirable asymptotic properties. 
+This trade-off can make it difficult to choose an estimator and ultimately, 
+to reach a conclusion regarding the treatment effect. 
+<br>
+We propose a novel framework that combines the best of both worlds: 
+we derive the best plug-in estimator that is debiased, 
+retaining the stability of plug-ins while enjoying statistical efficiency and double robustness. 
+Our estimation framework is based on a constrained optimization problem and 
+can incorporate flexible modern ML techniques, including controlling for text-based confounders 
+using LLMs.  Empirically, we demonstrate our approach over a range of examples, 
+and observe that it outperforms standard debiased methods when there is limited overlap.
+<br>
+As low overlap settings are a persistent challenge in practice, 
+we expect these results will be of interest to a broad spectrum of researchers, 
+including practitioners in statistics, economics, and machine learning. 
+We are unusually excited by how our framework provides a novel and pragmatic approach 
+to a longstanding challenge in causal inference.
+By introducing an entirely new constrained optimization framework for semiparametric estimation, we hope to spur further progress in developing robust but theoretically grounded estimators.
+  }
 }
 
 
@@ -732,7 +812,7 @@ note={Conference version appeared in NeurIPS 2023.},
 slides={LiuWaCuNa24-slides.pdf},
 website={https://github.com/namkoong-lab/whyshift},
 video={https://gsb-columbia-edu.zoom.us/rec/play/sKowK1a0T6cGx8IJELKEISEZs9MbUPB58xtmOmBjs09MfLY3RjEmUQ16AHdGL8PaipX2KAkW_gr4XIMT.T1PcyxmM_7XVve5H?canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fgsb-columbia-edu.zoom.us%2Frec%2Fshare%2F_Dqv3yqQl8Gj27n-c8j5Cdpp9MJPoQGRNIUyFHQGskOhGsa6KneLYgmH3Qx-ogK2.-Qp9jC6bs7_RCZWA},
-  selected={true}
+  selected={false}
 }
 
 @article{CheNa23,
