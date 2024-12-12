@@ -19,8 +19,8 @@ social: true # includes social icons at the bottom of the page
 I am an assistant professor in the [Decision, Risk, and Operations](https://www8.gsb.columbia.edu/faculty-research/divisions/decision-risk-operations) division at [Columbia Business School](https://www8.gsb.columbia.edu) and a member of the [Data Science Institute](https://datascience.columbia.edu). I work on building trustworthy AI systems that are capable of 
 solving real-world decision-making problems. I'm a strong believer in algorithmic ideas 
 simultaneously grounded in empirical foundations and principled thinking. 
-I'm an interdisciplinary scholar---I connect and extend tools from machine learning, operations research, and statistics. 
-Read [this overview of my research]{./research} to learn more about my impact-driven agenda.
+As an interdisciplinary researcher, I  connect and extend tools from machine learning, operations research, and statistics. 
+Read [this overview of my research](/research) to learn more about my impact-driven agenda.
 
 
 Before joining Columbia, I received my Ph.D. from [Stanford University](http://www.stanford.edu) and spent a year at Meta's Adaptive Experimentation team as a research scientist. Outside of academia, I serve as a LinkedIn Scholar at LinkedIn's Core AI team.

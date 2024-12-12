@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Research
-permalink: /research/
+permalink: /research
 description: My research group builds AI systems that optimize real-world business objectives, with a particular emphasis on trustworthy and responsible learning methods. We take an interdisciplinary approach spanning several fields including machine learning, operations research, and statistics. 
 nav: true
 nav_order: 2
