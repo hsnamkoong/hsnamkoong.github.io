@@ -1,0 +1,67 @@
+# jemdoc: menu{MENU}{index.html}, showsource
+= B9145: Reliable Statistical Learning
+[http://hsnamkoong.github.io/ Hongseok Namkoong], Columbia University, Spring 2023
+
+== Description
+
+As ML systems increasingly affect high-stakes decisions, it is
+critical that they maintain a reliable level of performance under
+operation. However, traditional modeling assumptions rarely hold in
+practice due to noisy inputs, shifts in environment, omitted
+variables, and even adversarial attacks. The standard machine learning
+paradigm that optimize average performance is brittle to even small
+distributional shifts, exhibiting poor performance on minority groups
+and tail inputs. Even performance of heavily engineered
+state-of-the-art models degrades significantly on domains that are
+slightly different from what the model was trained on. Lack of
+understanding of their failure modes highlights the need for models
+that reliably work, and rigorous safety tests to evaluate them.
+
+This course surveys a range of emerging topics on reliability and
+robustness in machine learning. Most of the topics discussed in this
+class are active research areas, and relevant reading materials will
+draw upon recent literature (to be posted on the website). The goal of
+this class is to foster discussion on new research questions. This
+will encompass theoretical and methodological developments, modeling
+considerations, novel application areas, and other concerns rising out
+of practice.
+
+
+== Lectures  
+Thursdays, 2:00--5:15pm, Geffen 430
+
+
+== Course staff
+Hongseok Namkoong (Instructor)
+- Email: namkoong@gsb.columbia.edu
+- Office hours by appointment
+
+Tiffany Cai (TA)
+- Email: tc3100@gsb.columbia.edu
+- Office hours: Wednesdays 2:30-3:30PM 
+
+
+== Prerequisites
+There are no formal prerequisites, but the class will be fast-paced and
+will assume a strong background in machine learning, statistics, and
+optimization. This is a class intended for PhD students conducting research in
+related fields. Although some materials are of applied interest, this course
+has significant theoretical content that require mathematical maturity. The
+ability to read, write, and think rigorously is essential to understanding the
+material.
+
+== Grading  
+3 problem sets (50\%), final project (45\%), scribe for one lecture or one paper presentation (5\%)
+
+
+== Enrollment and HyFlex
+
+Non-GSB students can follow this
+[https://academics.gsb.columbia.edu/phd/academics/cross-registration-non-PhD-MS?_ga=2.256461965.70812060.1673725014-2046272528.1595387431
+instruction] to enroll in the class. If you experience difficulties,
+email the instructor to enroll in the class.
+
+== Previous course offering
+
+This is a research topics class that gets significantly updated with new materials every time it is offered.
+The course was last offered in Fall, 2020; you can access the previous materials in this [./2020/index.html link].

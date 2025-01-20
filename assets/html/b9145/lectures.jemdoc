@@ -1,42 +1,15 @@
 # jemdoc: menu{MENU}{lectures.html}, showsource
-= B9145: Reliable Statistical Learning
-[http://hsnamkoong.github.io/ Hongseok Namkoong], Columbia University, Spring 2023
+= B9145: Topics in Trustworthy AI
+[http://hsnamkoong.github.io/ Hongseok Namkoong], Columbia University, Spring 2025
 
 == Course Schedule
 ~~~
 {}{table}{TABLENAME}
 *Date* | *Topics* | * Lecture Notes * | *Readings*||
 
-Jan 26 | course overview | [./lecture-materials/01-overview.pdf slides], [./lecture-materials/01-overview-annotated.pdf annotated slides] |  ||
-Feb 2 | generalization bounds | [./lecture-materials/02-generalization-scribe.pdf scribe notes],  [./lecture-materials/02-generalization.pdf handwritten notes]  |  Ch. 2, 4.2-4.3, 5, Wainwright (2019) ||
-Feb 9 | SGD, information theoretic lower bounds |   [./lecture-materials/03-sgd-scribe.pdf scribe notes], [./lecture-materials/03-sgd.pdf handwritten notes], Minimax lower bound notes: Ch 5, Duchi (2016)  |  Ch. 2, Duchi (2016), Ch. 15, Wainwright (2019), [https://link.springer.com/chapter/10.1007/978-1-4612-1880-7_29 Yu (1997)], [https://ieeexplore.ieee.org/document/6142067 Agarwal et al. (2012)] ||
-Feb 16 |  implementation  | [https://colab.research.google.com/drive/1kDptNl40K5mjKIxa1-VAAoIx2nQ1Cbap  Intro to PyTorch], [https://colab.research.google.com/drive/1kDptNl40K5mjKIxa1-VAAoIx2nQ1Cbap  Cifar demo: Image classification], [https://colab.research.google.com/drive/1LPvBj7DMLXtRnplHwIMVcUtri0Dk1OWT  CLIP demo], [https://colab.research.google.com/drive/1cKDVvmmwr0eahUiJQLSB4tOwi0IVSW8E  Policy optimization] |  ||
-Feb 23 | domain adaptation | [./lecture-materials/05-domain-adaptation.pdf slides from Tatsu Hashimoto]  | [https://papers.nips.cc/paper/2006/hash/b1b0432ceafb0ce714426e9114852ac7-Abstract.html Ben-David et al. (2006)], [https://arxiv.org/abs/1505.07818 Ganin et al. (2016)], [https://arxiv.org/abs/1607.01719 Sun and Saenko (2016)]  ||
-Mar 1 | distributionally robustness optimization | [./lecture-materials/06-dro-scribe.pdf scribe notes], [./lecture-materials/06-notes.pdf notes], [./lecture-materials/06-slides.pdf slides]  | [https://arxiv.org/abs/1810.08750 Duchi and Namkoong (2022)], [https://pubsonline.informs.org/doi/abs/10.1287/moor.2018.0936 Blanchet and Murthy (2019)], [https://jmlr.org/papers/v20/17-750.html Duchi and Namkoong (2019)], [https://arxiv.org/abs/1610.05627 Blanchet et al. (2019)]  ||
- Mar 8 | Wasserstein DRO, empirical phenomena in robustness |  [./lecture-materials/07-wass-dro-scribe.pdf scribe notes], [./lecture-materials/07-slides.pdf empirical phenomena slides] | [https://modestyachts.github.io/imagenet-testbed/ Taori et al. (2020)],  [./lecture-materials/07-links.pdf additional references]  ||
- Mar 30 | pretraining and foundation models |  [./lecture-materials/08-zero-shot.pdf slides] | [https://openai.com/research/clip Radford et al. (2021)] ||
-April 6 | ethics, accountability, and fairness | [./lecture-materials/09-ethics.pdf introduction], [./lecture-materials/09-multicalibration.pdf multicalibration], [./lecture-materials/09-gerrymandering.pdf subgroup gerrymandering] |  [https://proceedings.mlr.press/v80/hebert-johnson18a.html Hebert-Johnson et al. (2018)], [https://sethstatistics.files.wordpress.com/2016/08/main.pdf Kearns et al. (2017)], [https://arxiv.org/abs/1808.08166 Kearns et al. (2018)] ||
-April 13 |  fairness definitions (cont.) and causal inference | [./lecture-materials/10-fairness-definitions.pdf fairness], [./lecture-materials/10-causality.pdf causality] |  [https://5harad.com/papers/fair-ml.pdf
-Corbette-Davies et al. (2023)] ||
-April 20 |  semiparametrics and sensitivity analysis | [./lecture-materials/11-causality.pdf semiparametrics], [./lecture-materials/11-sensitivity.pdf sensitivity], [./lecture-materials/11-tmle.pdf targeting] |  Imbens and Rubin (2015), [https://arxiv.org/abs/1808.09521 Yadlowsky et al. (2022)] || 
-# Dec 1 | causality | [./lecture-materials/10-causality.pdf slides], [./lecture-materials/10-causality-annotated.pdf annotated slides]  |  Imbens and Rubin (2015)  ||
-# Dec 8 | causality | [./lecture-materials/11-sensitivity.pdf slides], [./lecture-materials/11-sensitivity-annotated.pdf annotated slides]  |   [https://arxiv.org/abs/1808.09521 Yadlowsky et al. (2018)]
+Jan 30 | course overview |    ||
 ~~~
 
 
 \n\n
 Email the instructor if you want access to lecture recordings.
-
-== References
-
-- Martin J. Wainwright. High-dimensional statistics: A non-asymptotic viewpoint. Vol. 48. Cambridge University Press, 2019.
-
-- Aad W. van der Vaart. Asymptotic Statistics. Cambridge Series in Statistical and Probabilistic Mathematics. Cambridge University Press, 1998.
-
-- John C. Duchi. [http://web.stanford.edu/~jduchi/PCMIConvex/ Introductory lectures on stochastic convex optimization.] In The Mathematics of Data, IAS/Park City Mathematics Series. American Mathematical Society, 2018
-
-- Alexander Shapiro, Darinka Dentcheva, and Andrzej
-  Ruszczynski. Lectures on Stochastic Programming: Modeling and
-  Theory. Second Edition. SIAM and Mathematical Programming Society, 2014.
-
-- [https://www.cambridge.org/core/books/causal-inference-for-statistics-social-and-biomedical-sciences/71126BE90C58F1A431FE9B2DD07938AB Guido Imbens and Donald Rubin. Causal Inference for Statistics, Social, and Biomedical Sciences: An Introduction. Cambridge University Press. 2015.]
