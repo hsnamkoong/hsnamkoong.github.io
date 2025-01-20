@@ -9,7 +9,7 @@ nav_order: 6
 
 
 #### [[B9145] Topics in Trustworthy AI](/assets/html/b9145/index.html)
-##### Ph.D. 2020, 2023.
+##### Ph.D. 2020, 2023, 2025.
 
 As ML systems increasingly affect high-stakes decisions, it is critical that they maintain a reliable level of performance under operation. However, traditional modeling assumptions rarely hold in practice due to noisy inputs, shifts in environment, omitted variables, and even adversarial attacks. The standard machine learning paradigm that optimize average performance is brittle to even small distributional shifts, exhibiting poor performance on minority groups and tail inputs. Even performance of heavily engineered state-of-the-art models degrades significantly on domains that are slightly different from what the model was trained on. Lack of understanding of their failure modes highlights the need for models that reliably work, and rigorous safety tests to evaluate them.
 

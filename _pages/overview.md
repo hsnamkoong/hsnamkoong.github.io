@@ -1,8 +1,8 @@
 ---
 layout: distill
-title: Research
+title: Research Overview
 permalink: /research
-description: My research group builds AI systems that optimize real-world business objectives, with a particular emphasis on trustworthy and responsible learning methods. We take an interdisciplinary approach spanning several fields including machine learning, operations research, and statistics. 
+description: Our research group develops AI systems that optimize real-world business objectives, with a particular focus on trustworthy and responsible learning methods. We take a systems-level perspective that spans machine learning, operations research, and statistics to address fundamental challenges in deploying AI in high-stakes domains.
 nav: true
 nav_order: 2
 
@@ -57,8 +57,10 @@ _styles: >
 ---
 
 
-AI models pre-trained on internet data can understand text, code, audio, and video. However, as public data sources become exhausted, it is evident that enabling applications beyond consumer chatbots requires a thoughtful approach to data curation. Mistakes are costly in business applications, and
-intelligent agents must carefully collect and leverage proprietary data, such as customer feedback and user interactions. 
+AI models pre-trained on internet data can understand text, code, audio, and video. However, as public data sources become exhausted, it is evident that enabling applications beyond consumer chatbots requires a thoughtful approach to data curation. Mistakes are costly in decision-making problems, and intelligent agents must carefully collect and leverage proprietary data, such as customer feedback and user interactions.
+
+The widespread adoption of AI systems across critical domains has revealed fundamental gaps between academic research and practical deployment. While large language models trained on internet data have achieved impressive capabilities in general tasks, many real-world applications require specialized domain knowledge and careful consideration of reliability, fairness, and safety. Our work addresses these challenges through three key principles:
+
 
 My research group develops trustworthy AI-driven decision-making systems that optimize long-term outcomes. In particular, we take a holistic "process view" of AI systems. 
 
