@@ -8,8 +8,12 @@
 *Date* | *Topics* | * Lecture Notes * | *Readings*||
 
 Jan 30 | Course Overview |  [./lecture-materials/01-part1-overview.pdf Part 1: Course Overview],\n
-[./lecture-materials/01-part2-data-centric-view.pdf Part 2: Data-centric View of AI], \n
-[./lecture-materials/01-part3-operational.pdf Part 3: Operational View] | [https://openai.com/index/clip/ CLIP]   ||
+[./lecture-materials/01-part2-data-centric-view.pdf Part 2: Data-centric View of AI]
+ | [https://openai.com/index/clip/ CLIP]   ||
+
+Feb 6 | Language for Distribution Shifts |  [./lecture-materials/02-language.pdf Slides],~
+[./lecture-materials/02-dro.pdf DRO] 
+ | [https://arxiv.org/abs/2303.02011 DISDE]   ||
 
 ~~~
 
