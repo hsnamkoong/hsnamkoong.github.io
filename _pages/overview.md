@@ -270,7 +270,7 @@ accrues, the agent must increasingly rely more heavily on them by updating its b
     solve complex online decision-making problems! 
   </div>
     <div class="publications">
-      {% bibliography -q @*[key=ZhangCaNaRu24]* %}
+      {% bibliography -q @*[key=CaiNaRuZh25]* %}
   </div>
 </div>
 
