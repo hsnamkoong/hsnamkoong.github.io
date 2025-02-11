@@ -140,3 +140,13 @@
   - firstname: ["Tony", "T."]
     url: https://tonychen.xyz/
   - student: true
+
+"mittal":
+  - firstname: ["Daksh", "D."]
+    url: https://sites.google.com/view/dakshmittal/home
+  - student: true
+
+"joshi":
+  - firstname: ["Shalmali", "S."]
+    url: https://shalmalijoshi.github.io/reAIM/
+  - student: false
