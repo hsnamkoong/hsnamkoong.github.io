@@ -7,7 +7,7 @@ nav: true
 nav_order: 4
 body_class: team-page
 text: 
-
+  
 profiles:
   - align: left
     image: team/yanlin-qu.png
@@ -142,5 +142,3 @@ ug_profiles:
   
 
 ---
-
-
