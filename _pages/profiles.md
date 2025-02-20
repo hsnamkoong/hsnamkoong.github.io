@@ -121,24 +121,15 @@ ug_profiles:
     department: Computer Science, Columbia University
   - name: Leon Li
     department: Computer Science, Columbia University
-  - name: Haozhe Chen
+  - name: Tony Haozhe Chen
     department: Computer Science, Columbia University
     link: https://tonychen.xyz/
   - name: Andrew Siah
     department: Physics, Columbia University
     link: https://andrewsiah.com/about/
-  - name: Hanming Yang
-    department: Computer Science, Columbia University
-  - name: Kaiwen Hou
-    department: Finance, Columbia Business School
   - name: Shunri Zheng
     department: Statistics, Columbia University
-  - name: Chris Lee
-    department: Computer Science, Columbia University
   - name: Elise Han
     department: Computer Science, Columbia University
-  - name: Andy Zhang
-    department: Data Science, Columbia University
-  
 
 ---
