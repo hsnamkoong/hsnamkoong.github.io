@@ -19,8 +19,8 @@ Feb 20 | Domain Adaptation |  [./lecture-materials/03-underspecification.pdf Und
 [./lecture-materials/03-domain-adaptation.pdf Tatsu Hashimoto's slides] 
  | [./lecture-materials/Ben-David10.pdf A theory of learning from different domains]   ||
 
-Feb 20 | Invariance |   
- |  ||
+Feb 20 | Invariance |   [./lecture-materials/04-invariance.pdf Invariance],~[./lecture-materials/04-domain-generalization.pdf Domain Generalization]
+ | [https://arxiv.org/abs/2007.01434 In Search of Lost Domain Generalization]  ||
 
 
 ~~~
