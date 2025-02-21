@@ -97,21 +97,9 @@ alumni_profiles:
     link: https://scholar.google.com/citations?user=4bIBeOgAAAAJ&hl=en
 
 phd_collaborator_profiles:
-  - name: Sam Deng
-    department: Computer Science, Columbia University
-    link: https://samuel-deng.github.io/
-  - name: Yuri Fonseca
-    department: DRO, Columbia Business School
-    link: https://yuriresende.github.io/
   - name: Jiashuo Liu
     department: Computer Science, Tsinghua University
     link: https://ljsthu.github.io/
-  - name: Tianyu Wang
-    department: IEOR, Columbia University
-    link: https://wangtianyu61.github.io/
-  - name: Yunbei Xu
-    department: DRO, Columbia Business School
-    link: https://yunbeixu.github.io/
   - name: Tom Zollo
     department: Computer Science, Columbia University
     link: https://www.thomaszollo.com/

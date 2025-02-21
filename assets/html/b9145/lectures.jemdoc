@@ -15,12 +15,15 @@ Feb 6 | Language for Distribution Shifts |  [./lecture-materials/02-language.pdf
 [./lecture-materials/02-dro.pdf DRO] 
  | [https://arxiv.org/abs/2303.02011 DISDE]   ||
 
-Feb 20 | Domain Adaptation |  [./lecture-materials/03-underspecification.pdf Underspecification],~
+Feb 13 | Domain Adaptation |  [./lecture-materials/03-underspecification.pdf Underspecification],~
 [./lecture-materials/03-domain-adaptation.pdf Tatsu Hashimoto's slides] 
  | [./lecture-materials/Ben-David10.pdf A theory of learning from different domains]   ||
 
 Feb 20 | Invariance |   [./lecture-materials/04-invariance.pdf Invariance],~[./lecture-materials/04-domain-generalization.pdf Domain Generalization]
  | [https://arxiv.org/abs/2007.01434 In Search of Lost Domain Generalization]  ||
+
+Feb 27 | LLM pre-training, SFT, RLHF |   [./lecture-materials/05-operational-view.pdf Overview],~[./lecture-materials/05-sft.pdf Finetuning],~[./lecture-materials/05-rlhf.pdf RLHF]
+ | [https://arxiv.org/abs/2005.14165 GPT3]  ||
 
 
 ~~~
