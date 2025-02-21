@@ -19,7 +19,7 @@ Feb 13 | Domain Adaptation |  [./lecture-materials/03-underspecification.pdf Und
 [./lecture-materials/03-domain-adaptation.pdf Tatsu Hashimoto's slides] 
  | [./lecture-materials/Ben-David10.pdf A theory of learning from different domains]   ||
 
-Feb 20 | Invariance |   [./lecture-materials/04-invariance.pdf Invariance],~[./lecture-materials/04-domain-generalization.pdf Domain Generalization]
+Feb 20 | Invariance |   [./lecture-materials/04-invariance.pdf Invariance],~[./lecture-materials/04-irm.pdf IRM],~[./lecture-materials/04-domain-generalization.pdf Domain Generalization]
  | [https://arxiv.org/abs/2007.01434 In Search of Lost Domain Generalization]  ||
 
 Feb 27 | LLM pre-training, SFT, RLHF |   [./lecture-materials/05-operational-view.pdf Overview],~[./lecture-materials/05-sft.pdf Finetuning],~[./lecture-materials/05-rlhf.pdf RLHF]
