@@ -108,7 +108,8 @@ ug_profiles:
   - name: Jimmy Wang
     department: Computer Science, Columbia University
   - name: Leon Li
-    department: Computer Science, Columbia University
+    department: Computer Science, Columbia University\
+    link: https://scholar.google.com/citations?user=oyFNxyUAAAAJ&hl=en
   - name: Tony Haozhe Chen
     department: Computer Science, Columbia University
     link: https://tonychen.xyz/

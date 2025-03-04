@@ -150,3 +150,19 @@
   - firstname: ["Shalmali", "S."]
     url: https://shalmalijoshi.github.io/reAIM/
   - student: false
+
+"li":
+  - firstname: ["Leon", "L.", "Ang", "A."]
+    url: https://scholar.google.com/citations?user=oyFNxyUAAAAJ&hl=en
+  - student: true
+
+"yen":
+  - firstname: ["Tzu-Ching", "Thomson", "T."]
+    url: https://scholar.google.ca/citations?user=OK6RSVkAAAAJ&hl=en
+  - student: true
+
+"guetta":
+  - firstname: ["Daniel", "Charles", "C.D."]
+    url: https://daniel.guetta.com/
+  - student: false
+
