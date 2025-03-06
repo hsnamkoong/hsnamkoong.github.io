@@ -25,7 +25,7 @@ Feb 20 | Invariance |   [./lecture-materials/04-invariance.pdf Invariance],~[./l
 Feb 27 | LLM pre-training, SFT, RLHF |   [./lecture-materials/05-operational-view.pdf Overview],~[./lecture-materials/05-sft.pdf Finetuning],~[./lecture-materials/05-rlhf.pdf RLHF]
  | [https://arxiv.org/abs/2005.14165 GPT3]  ||
 
-Mar 6 | LLM reasoning, test-time compute |   [./lecture-materials/06-reasoning.pdf Slides]
+Mar 6 | LLM reasoning, inference-time operations |   [./lecture-materials/06-reasoning.pdf Slides]
  |  ||
 
 
