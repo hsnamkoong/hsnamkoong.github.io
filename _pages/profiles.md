@@ -59,13 +59,6 @@ profiles:
     department: Decision, Risk, and Operations
     link:
   - align: left
-    image: team/irene-chang.jpeg
-    content: none
-    image_circular: false
-    name: Irene Chang
-    department: Statistics
-    link: 
-  - align: left
     image: team/isaac-scheinfeld.jpeg
     content: none
     image_circular: false
