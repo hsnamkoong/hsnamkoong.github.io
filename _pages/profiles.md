@@ -50,14 +50,14 @@ profiles:
     image_circular: false
     name: Daksh Mittal
     department: Decision, Risk, and Operations
-    link: "https://scholar.google.com/citations?user=ug78g5YAAAAJ&hl=en"
+    link: "https://sites.google.com/view/dakshmittal/home"
   - align: left
     image: team/naimeng-ye.jpeg
     content: none
     image_circular: false
     name: Naimeng Ye
     department: Decision, Risk, and Operations
-    link:
+    link: "https://scholar.google.com/citations?user=eb3G6B0AAAAJ&hl=en"
   - align: left
     image: team/isaac-scheinfeld.jpeg
     content: none
@@ -100,7 +100,7 @@ phd_collaborator_profiles:
 ug_profiles:
   - name: Jimmy Wang
     department: Computer Science, Columbia University
-  - name: Leon Li
+  - name: Leon Ang Li
     department: Computer Science, Columbia University\
     link: https://scholar.google.com/citations?user=oyFNxyUAAAAJ&hl=en
   - name: Tony Haozhe Chen
