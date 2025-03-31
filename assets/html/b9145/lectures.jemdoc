@@ -28,6 +28,8 @@ Feb 27 | LLM pre-training, SFT, RLHF |   [./lecture-materials/05-operational-vie
 Mar 6 | LLM reasoning, inference-time operations |   [./lecture-materials/06-reasoning.pdf Slides]
  |  ||
 
+Mar 27 | Pre-training data and scaling laws |   [./lecture-materials/07-pretraining-data.pdf Pre-training Data], [./lecture-materials/07-pretraining-data.pdf Scaling Laws]
+ |  ||
 
 ~~~
 
