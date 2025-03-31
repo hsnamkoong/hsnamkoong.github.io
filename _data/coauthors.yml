@@ -117,7 +117,7 @@
   - student: false
 
 "siah":
-  - firstname: ["Andrew", "A."]
+  - firstname: ["Andrew", "A.", "Andrew Wei Tung"]
     url: https://andrewsiah.com/about/
   - student: true
 
@@ -137,7 +137,7 @@
   - student: false
 
 "chen":
-  - firstname: ["Tony", "T."]
+  - firstname: ["Tony", "T.", "Haozhe", "H."]
     url: https://tonychen.xyz/
   - student: true
 
@@ -164,5 +164,10 @@
 "guetta":
   - firstname: ["Daniel", "Charles", "C.D."]
     url: https://daniel.guetta.com/
+  - student: false
+
+"peng":
+  - firstname: ["Tianyi", "T."]
+    url: https://tianyipeng.github.io/
   - student: false
 
