@@ -562,10 +562,35 @@ Learning Representations}}
 @string{msom = {Manufacturing and Service Operations Management}}
 @string{qs = {Queueing Systems}}
 
+@article{YenSiChPeGuNa25,
+  title={Data Mixture Optimization: A Multi-fidelity Multi-scale Bayesian Framework},
+  author={Yen, Thomson and Siah, Andrew Wei Tung and Chen, Haozhe and Peng, Tianyi and Guetta, Daniel and Namkoong, Hongseok},
+  journal={arXiv:2503.21023 [cs.LG]},
+  year={2025},
+  abbr={tai},
+  bibtex_show={true},
+  arxiv={2503.21023},
+  url={https://arxiv.org/abs/2503.21023},
+  abstract={A central challenge in AI is deciding how best to combine different data sources when training large models, as the performance of these models strongly depends on the composition of their training data. Historically, choosing optimal data mixtures has relied on intuition or expensive trial-and-error, limiting systematic progress even for resource-rich corporations. This research introduces a significant intellectual innovation: a novel Bayesian optimization framework based on probabilistic scaling laws that explicitly models uncertainty in how small-scale experiments inform large-scale training decisions. Enabled by substantial computational resources afforded by Empire AI, this framework adaptively selects data mixtures, model sizes, and training durations, efficiently balancing cost and information gain. By replacing brittle deterministic scaling laws with a flexible, probabilistic approach, this research enables optimal data curation through principled decision-making. Ultimately, this work sets a new scientific foundation for data mixture optimization, broadly advancing the efficiency, accessibility, and effectiveness of AI development across sectors.},
+  code={https://github.com/namkoong-lab/data-recipes}
+}
+
+@article{LiChNaPe25,
+  title={LLM Generated Persona is a Promise with a Catch},
+  author={Li, Ang and Chen, Haozhe and Namkoong, Hongseok and Peng, Tianyi},
+  journal={arXiv:2503.16527 [cs.CL]},
+  year={2025},
+  abbr={tai},
+  bibtex_show={true},
+  arxiv={2503.16527},
+  url={https://arxiv.org/abs/2503.16527},
+  abstract={Large language model (LLM)-generated digital twins—synthetic personas that simulate real-world human behavior—have the potential to replace costly, time-intensive surveys with scalable, dynamic simulations. These “digital twins” can provide unprecedented insights into consumer behavior, political trends, and social dynamics, enabling businesses and researchers to test ideas, optimize products, and forecast societal shifts with greater speed and precision. However, this promise comes with a fundamental challenge: current LLM-driven persona generation methods lack rigor, introducing systematic biases that can misrepresent population-level behaviors and lead to flawed conclusions. This study reveals that widely used heuristic approaches to persona creation fail to capture the complexity of real-world diversity, sometimes producing distortions significant enough to alter election forecasts and public opinion studies. Addressing these flaws requires a scientific approach to persona generation—grounded in empirical validation, methodological innovation, and interdisciplinary collaboration—to ensure these digital twins accurately reflect human populations. This work was made possible by the computational infrastructure Empire AI provides, providing an order of magnitude more computational power than previous studies, enabling large-scale analysis of biases and reliability in LLM-generated personas.},
+  code={https://huggingface.co/datasets/Tianyi-Lab/Personas}
+}
 
 @article{MittalLiYeGuNa25,
   title={Architectural and Inferential Inductive Biases For Exchangeable Sequence Modeling},
-  author={Mittal$^*$, Daksh and Li$^*$, Ang and Yen$^*$, Tzu-Ching and Guetta, Daniel and Namkoong, Hongseok},
+  author={Mittal$*$, Daksh and Li$^*$, Ang and Yen$^*$, Tzu-Ching and Guetta, Daniel and Namkoong, Hongseok},
   journal={arXiv:2503.01215 [cs.LG]},
   year={2025},
   abbr=aid,
@@ -880,7 +905,7 @@ neural networks, XGBoost) and hyperparameter selection have a first-order impact
 despite being overlooked by DRO researchers. To further bridge that gap between methodological
 research and practice, we design case studies that illustrate how such a refined understanding of
 distribution shifts can enhance both data-centric and algorithmic interventions.},
-note={Conference version appeared in NeurIPS 2023.},
+note={Major revision in Management Science; Conference version appeared in NeurIPS 2023},
 slides={LiuWaCuNa24-slides.pdf},
 website={https://github.com/namkoong-lab/whyshift},
 video={https://gsb-columbia-edu.zoom.us/rec/play/sKowK1a0T6cGx8IJELKEISEZs9MbUPB58xtmOmBjs09MfLY3RjEmUQ16AHdGL8PaipX2KAkW_gr4XIMT.T1PcyxmM_7XVve5H?canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fgsb-columbia-edu.zoom.us%2Frec%2Fshare%2F_Dqv3yqQl8Gj27n-c8j5Cdpp9MJPoQGRNIUyFHQGskOhGsa6KneLYgmH3Qx-ogK2.-Qp9jC6bs7_RCZWA},
@@ -928,7 +953,7 @@ title = {Diagnosing Model Performance Under Distribution Shift},
 author = {Tiffany Cai and Hongseok Namkoong and Steve Yadlowsky},
 year = 2023,
 journal = {arXiv:2303.02011 [stat.ML]},
-note = {Second round review in Operations Research; Conference version appeared Symposium on Foundations of Responsible Computing 2023},
+note = {Minor revision in Operations Research; Conference version appeared Symposium on Foundations of Responsible Computing 2023},
 abbr = tai,
 bibtex_show={true},
 url={https://arxiv.org/abs/2303.02011},
@@ -1019,7 +1044,8 @@ journal = {arXiv:2212.06338 [stat.ML]},
 note={To appear in Operations Research},
 abbr= tai,
 url={https://arxiv.org/abs/2212.06338},
-arxiv={2212.06338}
+arxiv={2212.06338},
+code={https://github.com/namkoong-lab/stability_estimation/}
 }
 
 @inproceedings{WortsmanIlGaRoGoMoNaFaCaKoSc22,
