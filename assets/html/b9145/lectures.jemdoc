@@ -34,6 +34,12 @@ Mar 27 | Pre-training data and scaling laws |   [./lecture-materials/07-pretrain
 April 3 | Uncertainty quantification |   [./lecture-materials/08-uncertainty.pdf Slides]
  | [./lecture-materials/08-uncertainty-reading.pdf List of references] ||
 
+April 10 | Adaptive data collection: bandits |   [./lecture-materials/09-bandits.pdf Slides]
+ |  ||
+
+April 17 | Adaptive data collection: Bayesian optimization \& active learning |   
+ |  ||
+
 ~~~
 
 
