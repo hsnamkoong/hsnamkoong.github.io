@@ -37,8 +37,12 @@ April 3 | Uncertainty quantification |   [./lecture-materials/08-uncertainty.pdf
 April 10 | Adaptive data collection: bandits |   [./lecture-materials/09-bandits.pdf Slides]
  |  ||
 
-April 17 | Adaptive data collection: Bayesian optimization \& active learning |   
- |  ||
+April 17 | Adaptive data collection: Bayesian optimization \& active learning | [./lecture-materials/10-bayes-opt.pdf BayesOpt],~[./lecture-materials/10-active-learning.pdf Active Learning]  
+ | [https://arxiv.org/abs/1609.04436 Bayesian RL] ||
+
+April 23 | Adaptive data collectin: sequence modeling |   [./lecture-materials/11-proactive.pdf Slides]
+ | [https://arxiv.org/abs/2405.19466 Uncertainty as missing data] ||
+
 
 ~~~
 
