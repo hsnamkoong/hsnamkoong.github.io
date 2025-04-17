@@ -1,4 +1,5 @@
 repos:
+  - namkoong-lab/adaptive-elicitation
   - namkoong-lab/QGym
   - namkoong-lab/PersonalLLM
   - namkoong-lab/LLM-Tabular-Shifts
