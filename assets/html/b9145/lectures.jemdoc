@@ -40,7 +40,7 @@ April 10 | Adaptive data collection: bandits |   [./lecture-materials/09-bandits
 April 17 | Adaptive data collection: Bayesian optimization \& active learning | [./lecture-materials/10-bayes-opt.pdf BayesOpt],~[./lecture-materials/10-active-learning.pdf Active Learning]  
  | [https://arxiv.org/abs/1609.04436 Bayesian RL] ||
 
-April 24 | Adaptive data collection: autoregressive generation, LLM moderation |   [./lecture-materials/11-interactive.pdf Part 1: Autoregressive generation as posterior inference], \n [./lecture-materials/11-moderation.pdf Part 2: Moderation]
+April 24 | Adaptive data collection: MDP view \& UQ as generative modeling, \n LLM moderation |   [./lecture-materials/11-mdp-view.pdf Part 1: Bayesian Adaptive MDP], \n [./lecture-materials/11-interactive.pdf Part 2: Autoregressive generation as posterior inference], \n [./lecture-materials/11-moderation.pdf Part 3: Moderation]
  | [https://arxiv.org/abs/2405.19466 Uncertainty as missing data] ||
 
 
