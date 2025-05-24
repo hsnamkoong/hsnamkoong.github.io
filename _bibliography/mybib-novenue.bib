@@ -455,6 +455,9 @@ Symposium on Discrete Algorithms (SODA)}}
 @string{icml21 = {Proceedings of the 38th International Conference on Machine Learning}}
 @string{icml22 = {Proceedings of the 39th International Conference on Machine Learning}}
 @string{icml23 = {Proceedings of the 40th International Conference on Machine Learning}}
+@string{icml24 = {Proceedings of the 41st International Conference on Machine Learning}}
+@string{icml25 = {Proceedings of the 42nd International Conference on Machine Learning}}
+
 
 @string{iclr14 = {Proceedings of the Second International Conference on 
 Learning Representations}}
@@ -564,10 +567,10 @@ Learning Representations}}
 
 
 
-@article{WangZoZeNa25,
+@inproceedings{WangZoZeNa25,
   title={Adaptive Elicitation of Latent Information Using Natural Language},
   author={Wang$*$, Jimmy and Zollo$*$, Thomas and Zemel, Richard and Namkoong, Hongseok},
-  journal={arXiv:2504.04204 [cs.CL]},
+  booktitle=icml25,
   year={2025},
   abbr=tai,
   bibtex_show={true},
@@ -585,6 +588,7 @@ Learning Representations}}
   abbr=tai,
   bibtex_show={true},
   arxiv={2503.21023},
+  selected={true},
   url={https://arxiv.org/abs/2503.21023},
   abstract={A central challenge in AI is deciding how best to combine different data sources when training large models, as the performance of these models strongly depends on the composition of their training data. Historically, choosing optimal data mixtures has relied on intuition or expensive trial-and-error, limiting systematic progress even for resource-rich corporations. This research introduces a significant intellectual innovation: a novel Bayesian optimization framework based on probabilistic scaling laws that explicitly models uncertainty in how small-scale experiments inform large-scale training decisions. Enabled by substantial computational resources afforded by Empire AI, this framework adaptively selects data mixtures, model sizes, and training durations, efficiently balancing cost and information gain. By replacing brittle deterministic scaling laws with a flexible, probabilistic approach, this research enables optimal data curation through principled decision-making. Ultimately, this work sets a new scientific foundation for data mixture optimization, broadly advancing the efficiency, accessibility, and effectiveness of AI development across sectors.},
   code={https://github.com/namkoong-lab/data-recipes}
@@ -779,7 +783,7 @@ performance across problem instances.}
   bibtex_show={true},
   arxiv={2408.03307},
   url={https://arxiv.org/abs/2408.03307},
-  selected=true,
+  selected=false,
   abstract={  AI models are omni-present yet extrapolate in unexpected ways, 
   posing a significant barrier to robust and fair systems. 
   Building AI systems that can articulate their own uncertainty has been 
