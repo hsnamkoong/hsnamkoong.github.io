@@ -6,4 +6,4 @@ related_posts: false
 show: true
 ---
 
-I'm also looking for motivated undergraduate and master's students to work on ML research. Fill [this form](https://docs.google.com/forms/d/e/1FAIpQLSe2h_h4rEn1dMzTfs7BKPsxPwvabkqm7I-RkBXv3eI9P41weA/viewform?usp=header) out if you're interested.
+I'm looking for motivated undergraduate and master's students to work on ML research. Fill [this form](https://docs.google.com/forms/d/e/1FAIpQLSe2h_h4rEn1dMzTfs7BKPsxPwvabkqm7I-RkBXv3eI9P41weA/viewform?usp=header) out if you're interested.
