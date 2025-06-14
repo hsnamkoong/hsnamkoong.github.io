@@ -24,13 +24,6 @@ profiles:
     department: Statistics
     link: "https://tc2718.github.io/"
   - align: left
-    image: team/ethan-che.jpeg
-    content: none
-    image_circular: false
-    name: Ethan Che
-    department: Decision, Risk, and Operations
-    link: "https://ethche.github.io/"
-  - align: left
     image: team/ari-boyarsky.png
     content: none
     image_circular: false
@@ -75,6 +68,13 @@ profiles:
 
 alumni_profiles:
   - align: left
+    image: team/ethan-che.jpeg
+    content: none
+    image_circular: false
+    name: Ethan Che
+    department: Meta Adaptive Experimentation
+    link: "https://ethche.github.io/"
+  - align: left
     image: team/kelly-zhang.png
     content: none
     image_circular: false
@@ -86,7 +86,7 @@ alumni_profiles:
     content: none
     image_circular: false
     name: Yibo Zeng
-    department: Virtual Reality Labs, Meta
+    department: Meta Virtual Reality Labs
     link: https://scholar.google.com/citations?user=4bIBeOgAAAAJ&hl=en
 
 phd_collaborator_profiles:
