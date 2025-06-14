@@ -72,23 +72,67 @@ alumni_profiles:
     content: none
     image_circular: false
     name: Ethan Che
-    department: Meta Adaptive Experimentation
+    department: DRO Ph.D., now Research Scientist at Meta Adaptive Experimentation
     link: "https://ethche.github.io/"
-  - align: left
-    image: team/kelly-zhang.png
-    content: none
-    image_circular: false
-    name: Kelly Zhang
-    department: Imperial College London
-    link: https://kellywzhang.github.io/
   - align: left
     image: team/yibo-zeng.jpeg
     content: none
     image_circular: false
     name: Yibo Zeng
-    department: Meta Virtual Reality Labs
+    department: IEOR Ph.D., now Research Scientist at Meta Virtual Reality Labs
     link: https://scholar.google.com/citations?user=4bIBeOgAAAAJ&hl=en
+  - align: left
+    image: team/kelly-zhang.png
+    content: none
+    image_circular: false
+    name: Kelly Zhang
+    department: Postdoc, now Assistant Professor at Imperial College London
+    link: https://kellywzhang.github.io/
 
+ug_alumni_profiles:
+  - align: left
+    image: team/tony-chen.jpeg
+    content: none
+    image_circular: false
+    name: Tony Chen
+    department: CS B.S., now Ph.D. student at Princeton
+    link: https://tonychen.xyz/
+  - align: left
+    image: team/elise-han.png
+    content: none
+    image_circular: false
+    name: Elise Han
+    department: CS B.S., now Ph.D. student at Stanford
+    link: https://www.linkedin.com/in/elise-han-508021206/
+  - align: left
+    image: team/leon-li.png
+    content: none
+    image_circular: false
+    name: Leon Li
+    department: CS B.S., now Ph.D. student at NYU
+    link: https://leonlixyz.github.io/
+  - align: left
+    image: team/andrew-siah.png
+    content: none
+    image_circular: false
+    name: Andrew Siah
+    link: https://andrewsiah.com/about/
+    department: CS B.S.
+  - align: left
+    image: team/jimmy-wang.png
+    content: none
+    image_circular: false
+    name: Jimmy Wang
+    department: CS B.S., now Ph.D. student at UC Berkeley
+    link: https://www.linkedin.com/in/jameswang771/
+  - align: left
+    image: team/shunri-zheng.png
+    content: none
+    image_circular: false
+    name: Shunri Zheng
+    department: IEOR M.S., now Ph.D. student at UIUC
+    link: https://www.linkedin.com/in/shunri-zheng-070677250/
+  
 phd_collaborator_profiles:
   - name: Jiashuo Liu
     department: Computer Science, Tsinghua University
@@ -98,20 +142,5 @@ phd_collaborator_profiles:
     link: https://www.thomaszollo.com/
 
 ug_profiles:
-  - name: Jimmy Wang
-    department: Computer Science, Columbia University
-  - name: Leon Ang Li
-    department: Computer Science, Columbia University\
-    link: https://scholar.google.com/citations?user=oyFNxyUAAAAJ&hl=en
-  - name: Tony Haozhe Chen
-    department: Computer Science, Columbia University
-    link: https://tonychen.xyz/
-  - name: Andrew Siah
-    department: Physics, Columbia University
-    link: https://andrewsiah.com/about/
-  - name: Shunri Zheng
-    department: Statistics, Columbia University
-  - name: Elise Han
-    department: Computer Science, Columbia University
 
 ---

@@ -78,7 +78,44 @@ layout: default
         </div>
       </div>
     {% endif %}
+
+    {% if page.ug_alumni_profiles %}
+      <div class="container">
+        <div class="row justify-content-center">
+          {% assign random_seed = site.time | date: "%s%N" %}
+          {% assign shuffled_profiles = page.ug_alumni_profiles | sort: random_seed %}
+          {% for profile in shuffled_profiles %}
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
+              <div class="profile text-center">
+                {% if profile.image %}
+                  {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
+                  {% if profile.image_circular %}
+                    {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+                  {% else %}
+                    {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
+                  {% endif %}
+                  {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
+                  {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.name %}
+                {% endif %}
+                {% if profile.name %}
+                  {% if profile.link %}
+                    <p class="profile-name"><a href="{{ profile.link }}" target="_blank">{{ profile.name }}</a></p>
+                  {% else %}
+                    <p class="profile-name">{{ profile.name }}</p>
+                  {% endif %}
+                {% endif %}
+                {% if profile.department %}
+                  <p class="profile-department">{{ profile.department }}</p>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
     
+    {% comment %}
     <!-- Undergraduate Students Section -->
     <div class="section undergraduate-students", style="margin-bottom: 20px;">
       <h4> Undergraduate and M.S. students</h4>
@@ -92,6 +129,7 @@ layout: default
       {% endfor %}
       .
     </div>
+    {% endcomment %}
 
     <!-- PhD Collaborators Section -->
     <div class="section phd-collaborators", style="margin-bottom: 20px;">
