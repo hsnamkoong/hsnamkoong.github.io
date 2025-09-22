@@ -14,7 +14,7 @@ profiles:
     content: none
     image_circular: false
     name: Yanlin Qu
-    department: Postdoctoral Fellow
+    department: Postdoctoral Fellow; co-advised with Assaf Zeevi
     link: "https://quyanlin.github.io/"
   - align: left
     image: team/tiffany-cai.jpeg
@@ -35,28 +35,28 @@ profiles:
     content: none
     image_circular: false
     name: Yuanzhe Ma
-    department: Industrial Engineering and Operations Research
+    department: Industrial Engineering and Operations Research; co-advised with Garud Iyengar and Jay Sethuraman
     link: https://yuanzhe-ma.com/
   - align: left
     image: team/daksh-mittal.png
     content: none
     image_circular: false
     name: Daksh Mittal
-    department: Decision, Risk, and Operations
+    department: Decision, Risk, and Operations; co-advised with Jing Dong
     link: "https://sites.google.com/view/dakshmittal/home"
   - align: left
     image: team/naimeng-ye.jpeg
     content: none
     image_circular: false
     name: Naimeng Ye
-    department: Decision, Risk, and Operations
+    department: Decision, Risk, and Operations; co-advised with Tianyi Peng
     link: "https://scholar.google.com/citations?user=eb3G6B0AAAAJ&hl=en"
   - align: left
     image: team/isaac-scheinfeld.jpeg
     content: none
     image_circular: false
     name: Isaac Scheinfeld
-    department: Decision, Risk, and Operations
+    department: Decision, Risk, and Operations; co-advised with Hannah Li
     link: "https://scholar.google.com/citations?user=V1K2TnwAAAAJ&hl=en"
   - align: left
     image: team/thomson-yen.jpeg
@@ -117,7 +117,7 @@ ug_alumni_profiles:
     image_circular: false
     name: Andrew Siah
     link: https://andrewsiah.com/about/
-    department: CS B.S.
+    department: CS B.S., now co-founder at Tab AI
   - align: left
     image: team/jimmy-wang.png
     content: none
