@@ -73,7 +73,7 @@ profiles:
     department: Decision, Risk, and Operations
     link: " https://thomsonyen.github.io/"
   - align: left
-    image: team/minghui-chen.png
+    image: team/minghui-chen.jpg
     content: none
     image_circular: false
     name: Minghui Chen
