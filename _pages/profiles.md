@@ -17,6 +17,13 @@ profiles:
     department: Postdoctoral Fellow; co-advised with Assaf Zeevi
     link: "https://quyanlin.github.io/"
   - align: left
+    image: team/fangyu-wu.jpeg
+    content: none
+    image_circular: false
+    name: Fangyu Wu
+    department: Postdoctoral Fellow; AI Agents Initiative at Columbia DFI
+    link: "https://fangyuwu.com/"  
+  - align: left
     image: team/tiffany-cai.jpeg
     content: none
     image_circular: false
@@ -65,6 +72,13 @@ profiles:
     name: Thomson Yen
     department: Decision, Risk, and Operations
     link: " https://thomsonyen.github.io/"
+  - align: left
+    image: team/minghui-chen.png
+    content: none
+    image_circular: false
+    name: Minghui Chen
+    department: Research Scientist
+    link: "https://chenminghui.com/"
 
 alumni_profiles:
   - align: left
