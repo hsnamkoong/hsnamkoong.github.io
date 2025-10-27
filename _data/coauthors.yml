@@ -176,3 +176,12 @@
     url: https://www.cs.columbia.edu/~zemel/
   - student: false
 
+"qu":
+  - firstname: ["Yanlin", "Y."]
+    url: https://quyanlin.github.io/
+  - student: true
+
+"zeevi":
+  - firstname: ["Assaf", "A."]
+    url: https://business.columbia.edu/faculty/people/assaf-zeevi
+  - student: false

@@ -64,7 +64,7 @@ profiles:
     image_circular: false
     name: Thomson Yen
     department: Decision, Risk, and Operations
-    link: "https://scholar.google.ca/citations?user=OK6RSVkAAAAJ&hl=en"
+    link: " https://thomsonyen.github.io/"
 
 alumni_profiles:
   - align: left
