@@ -156,6 +156,11 @@
     url: https://scholar.google.com/citations?user=oyFNxyUAAAAJ&hl=en
   - student: true
 
+"ye":
+  - firstname: ["Naimeng", "N."]
+    url: https://naimengye.github.io/
+  - student: true
+
 "yen":
   - firstname: ["Tzu-Ching", "Thomson", "T."]
     url: https://scholar.google.ca/citations?user=OK6RSVkAAAAJ&hl=en
