@@ -57,7 +57,7 @@ profiles:
     image_circular: false
     name: Naimeng Ye
     department: Decision, Risk, and Operations; co-advised with Tianyi Peng
-    link: "https://scholar.google.com/citations?user=eb3G6B0AAAAJ&hl=en"
+    link: "https://naimengye.github.io/"
   - align: left
     image: team/isaac-scheinfeld.jpeg
     content: none
@@ -71,7 +71,7 @@ profiles:
     image_circular: false
     name: Thomson Yen
     department: Decision, Risk, and Operations
-    link: " https://thomsonyen.github.io/"
+    link: "https://thomsonyen.github.io/"
   - align: left
     image: team/minghui-chen.jpg
     content: none

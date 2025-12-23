@@ -1,4 +1,5 @@
 repos:
+  - namkoong-lab/interactive-benchmark
   - DifferentiableQueue/QueueTorch
   - namkoong-lab/adaptive-elicitation
   - namkoong-lab/QGym

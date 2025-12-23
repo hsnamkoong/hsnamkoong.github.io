@@ -163,7 +163,7 @@
 
 "yen":
   - firstname: ["Tzu-Ching", "Thomson", "T."]
-    url: https://scholar.google.ca/citations?user=OK6RSVkAAAAJ&hl=en
+    url: https://thomsonyen.github.io/
   - student: true
 
 "guetta":
@@ -190,3 +190,8 @@
   - firstname: ["Assaf", "A."]
     url: https://business.columbia.edu/faculty/people/assaf-zeevi
   - student: false
+
+"yang":
+  - firstname: ["Gilbert", "G."]
+    url: https://gilbertworld.com/
+  - student: true
