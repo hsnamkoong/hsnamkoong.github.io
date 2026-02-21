@@ -51,38 +51,17 @@
   color: #e50808;
   font-weight: bold;
   background-color: #520000;
-} /* Comment.Special */
-.highlight .gd {
-  color: #d22323;
-} /* Generic.Deleted */
+} /* Comment.Special */ /* Generic.Deleted */
 .highlight .ge {
   color: #d0d0d0;
   font-style: italic;
-} /* Generic.Emph */
-.highlight .gr {
-  color: #d22323;
-} /* Generic.Error */
-.highlight .gh {
-  color: #ffffff;
-  font-weight: bold;
-} /* Generic.Heading */
+} /* Generic.Emph */ /* Generic.Error */ /* Generic.Heading */
 .highlight .gi {
   color: #589819;
 } /* Generic.Inserted */
 .highlight .go {
   color: #cccccc;
-} /* Generic.Output */
-.highlight .gp {
-  color: #aaaaaa;
-} /* Generic.Prompt */
-.highlight .gs {
-  color: #d0d0d0;
-  font-weight: bold;
-} /* Generic.Strong */
-.highlight .gu {
-  color: #ffffff;
-  text-decoration: underline;
-} /* Generic.Subheading */
+} /* Generic.Output */ /* Generic.Prompt */ /* Generic.Strong */ /* Generic.Subheading */
 .highlight .gt {
   color: #d22323;
 } /* Generic.Traceback */
@@ -108,10 +87,7 @@
 .highlight .kt {
   color: #6ab825;
   font-weight: bold;
-} /* Keyword.Type */
-.highlight .ld {
-  color: #d0d0d0;
-} /* Literal.Date */
+} /* Keyword.Type */ /* Literal.Date */
 .highlight .m {
   color: #3677a9;
 } /* Literal.Number */
@@ -139,20 +115,14 @@
 } /* Name.Entity */
 .highlight .ne {
   color: #bbbbbb;
-} /* Name.Exception */
-.highlight .nf {
-  color: #447fcf;
-} /* Name.Function */
+} /* Name.Exception */ /* Name.Function */
 .highlight .nl {
   color: #d0d0d0;
 } /* Name.Label */
 .highlight .nn {
   color: #447fcf;
   text-decoration: underline;
-} /* Name.Namespace */
-.highlight .nx {
-  color: #d0d0d0;
-} /* Name.Other */
+} /* Name.Namespace */ /* Name.Other */
 .highlight .py {
   color: #d0d0d0;
 } /* Name.Property */
@@ -217,13 +187,7 @@
 } /* Literal.String.Symbol */
 .highlight .bp {
   color: #24909d;
-} /* Name.Builtin.Pseudo */
-.highlight .vc {
-  color: #40ffff;
-} /* Name.Variable.Class */
-.highlight .vg {
-  color: #40ffff;
-} /* Name.Variable.Global */
+} /* Name.Builtin.Pseudo */ /* Name.Variable.Class */ /* Name.Variable.Global */
 .highlight .vi {
   color: #40ffff;
 } /* Name.Variable.Instance */
