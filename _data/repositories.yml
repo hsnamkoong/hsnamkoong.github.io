@@ -11,6 +11,7 @@ repos:
   - namkoong-lab/marginal-dro
   - namkoong-lab/robustopt
   - namkoong-lab/dro
+  - namkoong-lab/distilled-thompson-sampling
   - ricvolpi/adversarial-feature-augmentation
   - StanfordAI4HI/off_policy_confounding
   - mlfoundations/wise-ft
