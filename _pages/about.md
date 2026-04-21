@@ -16,9 +16,8 @@ news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-I am an assistant professor in the [Decision, Risk, and Operations](https://www8.gsb.columbia.edu/faculty-research/divisions/decision-risk-operations) division at [Columbia Business School](https://www8.gsb.columbia.edu) and a member of the [Data Science Institute](https://datascience.columbia.edu). I work on building trustworthy AI systems that are capable of 
-solving real-world decision-making problems. I take a data-centric view of AI systems, and am a strong believer in algorithmic ideas 
-simultaneously grounded in empirical foundations and principled thinking. 
+I am an assistant professor in the [Decision, Risk, and Operations](https://www8.gsb.columbia.edu/faculty-research/divisions/decision-risk-operations) division and [Computer Science](https://www.cs.columbia.edu/people/affiliates/) (affiliate / by courtesy), and a member of the [Data Science Institute](https://datascience.columbia.edu). I work on building trustworthy AI systems that are capable of continually improving itself through interactions with the world.
+I take a data-centric view of AI systems, and am a strong believer in algorithmic ideas  simultaneously grounded in empirical foundations and principled thinking. 
 As an interdisciplinary researcher, I  connect and extend tools from machine learning, operations research, and statistics. 
 Read [this overview of my research](/research) to learn more about my impact-driven agenda.
 
