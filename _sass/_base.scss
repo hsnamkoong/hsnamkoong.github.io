@@ -37,9 +37,11 @@ table {
 a,
 table.table a {
   color: var(--global-theme-color);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
 
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-hover-color);
     text-decoration: underline;
   }
 
@@ -318,7 +320,8 @@ ul.task-list input[type="checkbox"] {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
-  opacity: 0.95;
+  opacity: 0.98;
+  backdrop-filter: blur(12px);
 }
 
 .navbar .dropdown-menu {
@@ -510,6 +513,345 @@ ul.task-list input[type="checkbox"] {
 @media only screen and (max-width: 400px) {
   .wechat-modal > img {
     width: 100%;
+  }
+}
+
+/*******************************************************************************
+ * Visual refresh
+ ******************************************************************************/
+
+::selection {
+  background: rgba(215, 181, 109, 0.45);
+}
+
+.post {
+  padding-bottom: 2rem;
+}
+
+.container {
+  max-width: min(1080px, calc(100vw - 2rem));
+}
+
+.post-header {
+  margin-bottom: 1.35rem;
+}
+
+.post-title {
+  color: var(--global-text-color);
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.post-description,
+.desc {
+  max-width: 760px;
+  color: var(--global-text-color-light);
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
+.post article > h2,
+.about-post article > h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 2.35rem;
+  margin-bottom: 1rem;
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.post article > h2::after,
+.about-post article > h2::after {
+  content: "";
+  flex: 1 1 auto;
+  height: 1px;
+  background: var(--global-divider-color);
+}
+
+.post article > h2 a,
+.about-post article > h2 a {
+  color: var(--global-text-color) !important;
+  text-decoration: none;
+}
+
+.card,
+.trajectory-figure,
+.bottleneck,
+.artifact-card,
+.agenda-aside,
+.release-card {
+  box-shadow: 0 12px 32px var(--global-shadow-color);
+}
+
+.navbar .container {
+  max-width: min(1120px, calc(100vw - 2rem));
+}
+
+.navbar.navbar-light .navbar-brand {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-size: 1.04rem;
+  letter-spacing: 0;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item .nav-link {
+  position: relative;
+  padding-right: 0.65rem;
+  padding-left: 0.65rem;
+  color: var(--global-text-color-light);
+  font-size: 0.84rem;
+  font-weight: 500;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+  color: var(--global-theme-color);
+}
+
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link::after {
+  content: "";
+  position: absolute;
+  right: 0.65rem;
+  bottom: 0.18rem;
+  left: 0.65rem;
+  height: 2px;
+  background: var(--global-soft-accent-color);
+}
+
+.navbar .dropdown-menu {
+  border-radius: 8px;
+  box-shadow: 0 16px 36px var(--global-shadow-color);
+}
+
+#light-toggle,
+#search-toggle {
+  border-radius: 999px;
+}
+
+.about-page .container[role="main"] {
+  max-width: min(1080px, calc(100vw - 2rem));
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(245px, 320px);
+  gap: clamp(1.5rem, 4vw, 3.25rem);
+  align-items: start;
+  margin-top: 0.35rem;
+  padding: clamp(1.2rem, 3vw, 2rem) 0 1.4rem;
+}
+
+.about-copy {
+  max-width: 690px;
+}
+
+.about-page .post-title {
+  font-size: clamp(2.6rem, 6vw, 5rem);
+  line-height: 0.98;
+}
+
+.about-page .post-title .font-weight-bold {
+  color: var(--global-theme-color);
+}
+
+.about-page .desc {
+  margin-top: 0.55rem;
+  padding-left: 0.9rem;
+  border-left: 4px solid var(--global-soft-accent-color);
+  color: var(--global-text-color);
+  font-size: 1.08rem;
+}
+
+.about-content {
+  font-size: 1.04rem;
+}
+
+.about-content p {
+  margin-bottom: 1rem;
+}
+
+.about-profile-panel {
+  float: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0.85rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  background: var(--global-card-bg-color);
+}
+
+.profile-about.about-profile-panel img {
+  width: 100%;
+  margin-top: 0;
+  border-radius: 6px !important;
+  box-shadow: none;
+}
+
+.about-profile-panel .more-info {
+  margin-top: 0.75rem;
+  color: var(--global-text-color-light);
+  font-family: "Roboto Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 0.82rem;
+}
+
+.about-profile-panel .social {
+  padding-top: 0.35rem;
+}
+
+.cv-link {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.35rem;
+  color: var(--global-text-color-light);
+  vertical-align: middle;
+}
+
+.cv-link:hover {
+  color: var(--global-hover-color);
+  text-decoration: none;
+}
+
+.news .table-responsive {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.news table.table {
+  margin-bottom: 0;
+}
+
+.news table.table th,
+.news table.table td {
+  padding: 0.5rem 0;
+  color: var(--global-text-color) !important;
+  border: 0;
+}
+
+.news table.table th {
+  color: var(--global-text-color-light) !important;
+  padding-right: 1.25rem;
+  font-size: 0.74rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.news table.table td {
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.publications ol.bibliography li {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.publications ol.bibliography li:first-child {
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.publications .title {
+  font-family: "Roboto Slab", Georgia, serif;
+  font-size: 1.02rem;
+  line-height: 1.4;
+}
+
+.publications .author,
+.publications .periodical {
+  color: var(--global-text-color-light);
+}
+
+.publications ol.bibliography li .abbr {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-bottom: 0;
+  padding-top: 0.12rem;
+}
+
+.publications ol.bibliography li .abbr abbr.badge {
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: 7.5rem;
+  margin-bottom: 0 !important;
+  padding: 0.08rem 0.32rem;
+  border: 1px solid rgba(88, 97, 109, 0.24);
+  border-radius: 999px !important;
+  background: transparent !important;
+  color: var(--global-text-color-light) !important;
+  box-shadow: none !important;
+  font-size: 0.56rem;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: right;
+  text-transform: uppercase;
+  white-space: normal;
+}
+
+.publications ol.bibliography li .abbr abbr.badge a,
+.publications ol.bibliography li .abbr abbr.badge div {
+  color: var(--global-text-color-light) !important;
+  font-size: inherit !important;
+  line-height: inherit;
+}
+
+.publications .links .btn,
+.release-actions a {
+  border-color: var(--global-divider-color) !important;
+  border-radius: 999px !important;
+  background: var(--global-surface-color) !important;
+  color: var(--global-text-color) !important;
+  box-shadow: none !important;
+}
+
+.publications .links .btn:hover,
+.release-actions a:hover {
+  border-color: var(--global-hover-color) !important;
+  color: var(--global-hover-color) !important;
+  text-decoration: none;
+}
+
+.publications pre,
+d-article pre,
+d-article details {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.publications code,
+d-article code {
+  overflow-wrap: anywhere;
+}
+
+footer.fixed-bottom {
+  border-top: 0;
+}
+
+footer.fixed-bottom a {
+  color: var(--global-footer-link-color);
+}
+
+@media (max-width: 767px) {
+  body.fixed-top-nav {
+    padding-top: 52px;
+  }
+
+  .about-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .about-profile-panel {
+    max-width: 360px;
+  }
+
+  .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link::after {
+    right: 0;
+    left: auto;
+    width: 2rem;
   }
 }
 

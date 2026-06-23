@@ -25,9 +25,9 @@ _styles: >
     font-size: 0.98rem;
   }
   .post article > h2 {
-    font-size: clamp(1.45rem, 2.4vw, 2rem);
-    margin-top: 1.3rem;
-    margin-bottom: 0.75rem;
+    font-size: 0.86rem;
+    margin-top: 1.9rem;
+    margin-bottom: 0.9rem;
   }
   .method-note {
     border-left: 4px solid var(--global-theme-color);
