@@ -448,6 +448,14 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+#search-toggle .search-icon-only {
+  font-size: 0;
+}
+
+#search-toggle .search-icon-only i {
+  font-size: 1.25rem;
+}
+
 // Social (bottom)
 
 .social {

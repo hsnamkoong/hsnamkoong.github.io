@@ -1,8 +1,9 @@
 ---
 layout: distill
-title: Research Overview
-permalink: /research
-description: Our research group develops AI systems that optimize real-world business objectives, with a particular focus on trustworthy and responsible learning methods. We take a systems-level perspective that spans machine learning, operations research, and statistics to address fundamental challenges in deploying AI in high-stakes domains.
+title: Research Foundations
+nav_title: Research
+permalink: /research/
+description: "An overview of the research foundations behind our group's work: trustworthy AI, AI-driven decisions, robust causality, and empirical methodology."
 nav: true
 nav_order: 2
 
@@ -366,7 +367,7 @@ We take inspiration from [Von Neumann’s perspective on mathematical sciences](
 </blockquote>
 
 Our methodological research is grounded in theoretical principles, but we do not view aesthetic mathematical results
-as the goal of our impact-driven agenda. We interweave empirical ideas in our algorithmic research, and recognize *empirical rigour* as a core part of the scientific method (induction). Correspondingly, we are passionate to build empirical foundations for the research community.
+as the goal of our impact-driven agenda. We interweave empirical ideas in our algorithmic research, and recognize *empirical rigour* as a core part of the scientific method (induction). Correspondingly, we are passionate to build empirical foundations for the research community, a perspective we develop further in our recent work on benchmarking in operations research <d-cite key="DongMiNa26"></d-cite>.
 
 <div class="img l-body">
   <div class="publications">
@@ -374,6 +375,7 @@ as the goal of our impact-driven agenda. We interweave empirical ideas in our al
       {% bibliography -q @*[key=WangChJiNa24]* %}
       {% bibliography -q @*[key=ZolloSiYeLiNa24]* %}
       {% bibliography -q @*[key=LiuWaCuNa24]* %}
+      {% bibliography -q @*[key=DongMiNa26]* %}
   </div>
 </div>
 

@@ -1,4 +1,7 @@
 repos:
+  - namkoong-lab/MBABench
+  - namkoong-lab/LatentGym
+  - namkoong-lab/OR-benchmark-experiments
   - namkoong-lab/interactive-benchmark
   - DifferentiableQueue/QueueTorch
   - namkoong-lab/adaptive-elicitation

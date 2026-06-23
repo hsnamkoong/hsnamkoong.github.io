@@ -18,7 +18,7 @@ This course surveys a range of emerging topics on reliability and robustness in 
 <h5 style="padding-bottom: 5px;"></h5>
 
 #### [[B8101] Business Analytics II: Foundations of AI](/assets/pdf/BA2-syllabus.pdf)
-##### MBA and M.S. 2020-24.
+##### MBA and M.S. 2020-2026.
 
 Business analytics refers to the ways in which enterprises such as businesses, non-profits, and
 governments use data to gain insights and make better decisions. Business analytics is applied
