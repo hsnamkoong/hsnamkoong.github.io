@@ -1,0 +1,980 @@
+---
+labels:
+- id: continual-learning
+  label: Continual Learning
+- id: benchmarks
+  label: Benchmarks
+- id: adaptive-experimentation
+  label: Adaptive Experimentation
+- id: trustworthy-ai
+  label: Trustworthy AI
+- id: causal-inference
+  label: Causal Inference
+- id: queueing
+  label: Queueing
+- id: optimization
+  label: Optimization
+- id: deployed-in-practice
+  label: Deployed in Practice
+papers:
+- id: YenPoGeMeFaShLiBaDuLiGuNa26
+  year: 2026
+  title: 'MBABench: Evaluating LLM Agents on End-to-End Spreadsheet Tasks in Finance'
+  authors: Thomson Yen, Julian Poeltl, Harshith Srinivas Gear, Yilin Meng, Joshua Fan, Adam Shen, Yili Liu, Ali Bauyrzhan, Siri Du, Haoyang Liu, Daniel Guetta, and Hongseok Namkoong
+  authors_html: <a href="https://thomsonyen.github.io/">Thomson Yen</a>, Julian Poeltl, Harshith Srinivas Gear, Yilin Meng, Joshua Fan, Adam Shen, Yili Liu, Ali Bauyrzhan, Siri Du, Haoyang Liu, <a href="https://daniel.guetta.com/">Daniel Guetta</a>, and Hongseok Namkoong
+  url: https://arxiv.org/abs/2605.22664
+  tags:
+  - LLM agents
+  - finance
+  - benchmarks
+  - spreadsheets
+  selected: true
+  links:
+  - label: Site
+    url: https://mbabench.org/
+  - label: Code
+    url: https://github.com/namkoong-lab/MBABench
+  - label: Data
+    url: https://huggingface.co/datasets/namkoong-lab/mbabench-modeloff
+  labels:
+  - continual-learning
+  sort_key: 7973-0001
+- id: MittalCaYeYeWuChCaKoZeNa26
+  year: 2026
+  title: 'LatentGym: A Testbed for Cross-Task Experiential Learning with Controllable Latent Structure'
+  authors: Daksh Mittal, Tommaso Castellani, Thomson Yen, Naimeng Ye, Fangyu Wu, Minghui Chen, Tiffany Cai, Emmanouil Koukoumidis, William Zeng, and Hongseok Namkoong
+  authors_html: <a href="https://sites.google.com/view/dakshmittal/home">Daksh Mittal</a>, <a href="https://scholar.google.com/citations?user=SHg-CF0AAAAJ&amp;hl=en">Tommaso Castellani</a>, <a href="https://thomsonyen.github.io/">Thomson Yen</a>, <a href="https://naimengye.github.io/">Naimeng Ye</a>, Fangyu Wu, Minghui Chen, <a href="https://tc2718.github.io/">Tiffany Cai</a>, Emmanouil Koukoumidis, William Zeng, and Hongseok Namkoong
+  url: https://arxiv.org/abs/2606.15306
+  tags:
+  - experiential learning
+  - benchmarks
+  - latent structure
+  - agents
+  selected: true
+  links:
+  - label: Code
+    url: https://github.com/namkoong-lab/LatentGym
+  - label: Blog
+    url: https://dakshmittal30.github.io/LatentGym-Experiential-Learning/
+  - label: Data
+    url: https://huggingface.co/collections/namkoong-lab/latentgym-6a22ddf5339b7ef0423934c6
+  labels:
+  - continual-learning
+  - benchmarks
+  sort_key: 7973-0002
+- id: DongMiNa26
+  year: 2026
+  title: Empirical Rigor Through Benchmarking in Operations Research
+  authors: Jing Dong, Daksh Mittal, and Hongseok Namkoong
+  authors_html: <a href="https://www.columbia.edu/~jd2736/">Jing Dong</a>, <a href="https://sites.google.com/view/dakshmittal/home">Daksh Mittal</a>, and Hongseok Namkoong
+  url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6974119
+  tags:
+  - operations research
+  - benchmarking
+  - empirical rigor
+  links:
+  - label: Site
+    url: https://dakshmittal30.github.io/OR-benchmark-website/
+  - label: Code
+    url: https://github.com/namkoong-lab/OR-benchmark-experiments
+  labels:
+  - benchmarks
+  sort_key: 7973-0003
+- id: Namkoong26Sensitivity
+  year: 2026
+  title: Local Sensitivity Under Transport Restrictions
+  authors: Hongseok Namkoong
+  authors_html: Hongseok Namkoong
+  url: https://arxiv.org/abs/2606.04276
+  tags:
+  - sensitivity
+  - transport
+  - statistics
+  labels:
+  - trustworthy-ai
+  sort_key: 7973-0004
+- id: LiNaSc26
+  year: 2026
+  title: 'When Representative Samples Produce Worse Outcomes: Scale-up Decisions and Testing in Small-Budget RCTs'
+  authors: Hannah Li, Hongseok Namkoong, and Isaac Scheinfeld
+  authors_html: Hannah Li, Hongseok Namkoong, and Isaac Scheinfeld
+  url: https://arxiv.org/abs/2606.13531
+  tags:
+  - RCTs
+  - policy
+  - scale-up
+  - testing
+  labels:
+  - causal-inference
+  sort_key: 7973-0005
+- id: Namkoong26EmpiricalLikelihood
+  year: 2026
+  title: Empirical Likelihood for Nonsmooth Functionals
+  authors: Hongseok Namkoong
+  authors_html: Hongseok Namkoong
+  url: https://arxiv.org/abs/2603.27743
+  tags:
+  - empirical likelihood
+  - nonsmooth statistics
+  labels:
+  - causal-inference
+  sort_key: 7973-0006
+- id: QuNaZe26
+  year: 2026
+  title: A Broader View of Thompson Sampling
+  authors: Yanlin Qu, Hongseok Namkoong, and Assaf Zeevi
+  authors_html: <a href="https://quyanlin.github.io/">Yanlin Qu</a>, Hongseok Namkoong, and <a href="https://business.columbia.edu/faculty/people/assaf-zeevi">Assaf Zeevi</a>
+  venue: ICML 2026
+  url: https://arxiv.org/abs/2510.07208
+  tags:
+  - Thompson sampling
+  - bandits
+  - adaptive decisions
+  labels:
+  - continual-learning
+  - adaptive-experimentation
+  sort_key: 7973-0007
+- id: LiuWaCuNa26
+  year: 2026
+  title: 'On the Need for a Language Describing Distribution Shifts: Illustrations on Tabular Datasets'
+  authors: Jiashuo Liu, Tianyu Wang, Peng Cui, and Hongseok Namkoong
+  authors_html: <a href="https://ljsthu.github.io/">Jiashuo Liu</a>, <a href="https://wangtianyu61.github.io/">Tianyu Wang</a>, <a href="https://pengcui.thumedialab.com/">Peng Cui</a>, and Hongseok Namkoong
+  venue: Management Science
+  note: Conference version appeared in NeurIPS 2023.
+  url: https://arxiv.org/abs/2307.05284
+  tags:
+  - distribution shift
+  - tabular data
+  - robustness
+  links:
+  - label: Site
+    url: https://github.com/namkoong-lab/whyshift
+  - label: Slides
+    url: "/assets/pdf/LiuWaCuNa24-slides.pdf"
+  - label: Video
+    url: https://gsb-columbia-edu.zoom.us/rec/play/sKowK1a0T6cGx8IJELKEISEZs9MbUPB58xtmOmBjs09MfLY3RjEmUQ16AHdGL8PaipX2KAkW_gr4XIMT.T1PcyxmM_7XVve5H?canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fgsb-columbia-edu.zoom.us%2Frec%2Fshare%2F_Dqv3yqQl8Gj27n-c8j5Cdpp9MJPoQGRNIUyFHQGskOhGsa6KneLYgmH3Qx-ogK2.-Qp9jC6bs7_RCZWA
+  labels:
+  - trustworthy-ai
+  - benchmarks
+  sort_key: 7973-0008
+- id: KobayashiJiYaNaJo26
+  year: 2026
+  title: 'Learning-To-Measure: In-context Active Feature Acquisition'
+  authors: Yuta Kobayashi, Zilin Jing, Jiayu Yao, Hongseok Namkoong, and Shalmali Joshi
+  authors_html: Yuta Kobayashi, Zilin Jing, Jiayu Yao, Hongseok Namkoong, and <a href="https://shalmalijoshi.github.io/reAIM/">Shalmali Joshi</a>
+  venue: ICML 2026
+  url: https://arxiv.org/abs/2510.12624
+  tags:
+  - active feature acquisition
+  - in-context learning
+  - measurement
+  labels:
+  - continual-learning
+  - adaptive-experimentation
+  sort_key: 7973-0009
+- id: HuEtAl26
+  year: 2026
+  title: 'FinSearchComp: Towards a Realistic, Expert-Level Evaluation of Financial Search and Reasoning'
+  authors: Liang Hu, Jianpeng Jiao, Jiashuo Liu, Yanle Ren, Zhoufutu Wen, Kaiyuan Zhang, Xuanliang Zhang, Xiang Gao, Tianci He, Fei Hu, Yali Liao, Zaiyuan Wang, Chenghao Yang, Qianyu Yang, Mingren Yin, Zhiyuan Zeng, Ge Zhang, Xinyi Zhang, Xiying Zhao, Zhenwei Zhu, Hongseok Namkoong, Wenhao Huang, and Yuwen Tang
+  authors_html: Liang Hu, Jianpeng Jiao, <a href="https://ljsthu.github.io/">Jiashuo Liu</a>, Yanle Ren, Zhoufutu Wen, Kaiyuan Zhang, Xuanliang Zhang, Xiang Gao, Tianci He, Fei Hu, Yali Liao, Zaiyuan Wang, Chenghao Yang, Qianyu Yang, Mingren Yin, Zhiyuan Zeng, Ge Zhang, Xinyi Zhang, Xiying Zhao, Zhenwei Zhu, Hongseok Namkoong, Wenhao Huang, and Yuwen Tang
+  venue: ICLR 2026
+  url: https://arxiv.org/abs/2509.13160
+  tags:
+  - financial reasoning
+  - search
+  - evaluation
+  - benchmarks
+  links:
+  - label: Site
+    url: https://randomtutu.github.io/FinSearchComp/
+  labels:
+  - benchmarks
+  sort_key: 7973-0010
+- id: MittalZhDoNa25
+  year: 2025
+  title: Data-driven Stochastic Modeling using Autoregressive Sequence Models
+  authors: Daksh Mittal, Shunri Zheng, Jing Dong, and Hongseok Namkoong
+  authors_html: <a href="https://sites.google.com/view/dakshmittal/home">Daksh Mittal</a>, Shunri Zheng, <a href="https://www.columbia.edu/~jd2736/">Jing Dong</a>, and Hongseok Namkoong
+  url: https://arxiv.org/abs/2509.05839
+  tags:
+  - sequence models
+  - stochastic modeling
+  - simulation
+  labels:
+  - queueing
+  sort_key: 7974-0001
+- id: LiuWaLaNaBl25
+  year: 2025
+  title: 'DRO: A Python Library for Distributionally Robust Optimization in Machine Learning'
+  authors: Jiashuo Liu, Tianyu Wang, Henry Lam, Hongseok Namkoong, and Jose Blanchet
+  authors_html: <a href="https://ljsthu.github.io/">Jiashuo Liu</a>, <a href="https://wangtianyu61.github.io/">Tianyu Wang</a>, <a href="https://www.columbia.edu/~khl2114/">Henry Lam</a>, Hongseok Namkoong, and Jose Blanchet
+  url: https://arxiv.org/abs/2505.23565
+  tags:
+  - distributionally robust optimization
+  - software
+  - machine learning
+  links:
+  - label: Code
+    url: https://github.com/namkoong-lab/dro
+  labels:
+  - trustworthy-ai
+  - optimization
+  sort_key: 7974-0002
+- id: YangChYeNa25
+  year: 2025
+  title: Benchmarking In-context Experiential Learning Through Repeated Product Recommendations
+  authors: Gilbert Yang, Yaqin Chen, Thomson Yen, and Hongseok Namkoong
+  authors_html: <a href="https://gilbertworld.com/">Gilbert Yang</a>, Yaqin Chen, <a href="https://thomsonyen.github.io/">Thomson Yen</a>, and Hongseok Namkoong
+  url: https://arxiv.org/abs/2511.22130
+  tags:
+  - experiential learning
+  - recommendations
+  - benchmarks
+  links:
+  - label: Site
+    url: https://www.experiential-learning-benchmark.com/
+  - label: Code
+    url: https://github.com/namkoong-lab/interactive-benchmark
+  labels:
+  - continual-learning
+  - benchmarks
+  - adaptive-experimentation
+  sort_key: 7974-0003
+- id: CastellaniYeMiYeNa25
+  year: 2025
+  title: 'SynthTools: A Framework for Scaling Synthetic Tools for Agent Development'
+  authors: Tommaso Castellani, Naimeng Ye, Daksh Mittal, Thomson Yen, and Hongseok Namkoong
+  authors_html: <a href="https://scholar.google.com/citations?user=SHg-CF0AAAAJ&amp;hl=en">Tommaso Castellani</a>, <a href="https://naimengye.github.io/">Naimeng Ye</a>, <a href="https://sites.google.com/view/dakshmittal/home">Daksh Mittal</a>, <a href="https://thomsonyen.github.io/">Thomson Yen</a>, and Hongseok Namkoong
+  url: https://arxiv.org/abs/2511.09572
+  tags:
+  - synthetic tools
+  - agents
+  - scaling
+  labels:
+  - continual-learning
+  - benchmarks
+  sort_key: 7974-0004
+- id: MaNa25
+  year: 2025
+  title: A Sensitivity Approach to Causal Inference Under Limited Overlap
+  authors: Yuanzhe Ma and Hongseok Namkoong
+  authors_html: <a href="https://yuanzhe-ma.com/">Yuanzhe Ma</a> and Hongseok Namkoong
+  url: https://arxiv.org/abs/2511.22003
+  tags:
+  - causal inference
+  - sensitivity
+  - limited overlap
+  labels:
+  - causal-inference
+  sort_key: 7974-0005
+- id: WangZoZeNa25
+  year: 2025
+  title: Adaptive Elicitation of Latent Information Using Natural Language
+  authors: Jimmy Wang, Thomas Zollo, Richard Zemel, and Hongseok Namkoong
+  authors_html: Jimmy Wang, <a href="https://www.thomaszollo.com/">Thomas Zollo</a>, <a href="https://www.cs.columbia.edu/~zemel/">Richard Zemel</a>, and Hongseok Namkoong
+  venue: ICML 2025
+  note: Best Paper Award at ICLR 2025 Workshop on Quantify Uncertainty and Hallucination in Foundation Models.
+  url: https://arxiv.org/abs/2504.04204
+  tags:
+  - natural language
+  - elicitation
+  - latent information
+  - uncertainty
+  links:
+  - label: Code
+    url: https://github.com/namkoong-lab/adaptive-elicitation
+  labels:
+  - continual-learning
+  - adaptive-experimentation
+  sort_key: 7974-0006
+- id: YenSiChPeGuNa25
+  year: 2025
+  title: 'Data Mixture Optimization: A Multi-fidelity Multi-scale Bayesian Framework'
+  authors: Thomson Yen, Andrew Wei Tung Siah, Haozhe Chen, Tianyi Peng, Daniel Guetta, and Hongseok Namkoong
+  authors_html: <a href="https://thomsonyen.github.io/">Thomson Yen</a>, <a href="https://andrewsiah.com/about/">Andrew Wei Tung Siah</a>, <a href="https://tonychen.xyz/">Haozhe Chen</a>, <a href="https://tianyipeng.github.io/">Tianyi Peng</a>, <a href="https://daniel.guetta.com/">Daniel Guetta</a>, and Hongseok Namkoong
+  venue: NeurIPS 2025
+  url: https://arxiv.org/abs/2503.21023
+  tags:
+  - data mixture optimization
+  - scaling laws
+  - Bayesian optimization
+  links:
+  - label: Code
+    url: https://github.com/namkoong-lab/data-recipes
+  labels:
+  - adaptive-experimentation
+  - optimization
+  sort_key: 7974-0007
+- id: LiChNaPe25
+  year: 2025
+  title: LLM Generated Persona is a Promise with a Catch
+  authors: Ang Li, Haozhe Chen, Hongseok Namkoong, and Tianyi Peng
+  authors_html: <a href="https://scholar.google.com/citations?user=oyFNxyUAAAAJ&amp;hl=en">Ang Li</a>, <a href="https://tonychen.xyz/">Haozhe Chen</a>, Hongseok Namkoong, and <a href="https://tianyipeng.github.io/">Tianyi Peng</a>
+  venue: NeurIPS 2025
+  url: https://arxiv.org/abs/2503.16527
+  tags:
+  - LLM personas
+  - surveys
+  - synthetic populations
+  links:
+  - label: Data
+    url: https://huggingface.co/datasets/Tianyi-Lab/Personas
+  labels:
+  - trustworthy-ai
+  sort_key: 7974-0008
+- id: MittalLiYeGuNa25
+  year: 2025
+  title: Architectural and Inferential Inductive Biases For Exchangeable Sequence Modeling
+  authors: Daksh Mittal, Ang Li, Tzu-Ching Yen, Daniel Guetta, and Hongseok Namkoong
+  authors_html: <a href="https://sites.google.com/view/dakshmittal/home">Daksh Mittal</a>, <a href="https://scholar.google.com/citations?user=oyFNxyUAAAAJ&amp;hl=en">Ang Li</a>, <a href="https://thomsonyen.github.io/">Tzu-Ching Yen</a>, <a href="https://daniel.guetta.com/">Daniel Guetta</a>, and Hongseok Namkoong
+  venue: NeurIPS 2025
+  url: https://arxiv.org/abs/2502.06076
+  tags:
+  - exchangeable sequence modeling
+  - inductive bias
+  - inference
+  labels:
+  - continual-learning
+  - adaptive-experimentation
+  sort_key: 7974-0009
+- id: MittalMaJoNa25
+  year: 2025
+  title: A Planning Framework for Adaptive Labeling
+  authors: Daksh Mittal, Yuanzhe Ma, Shalmali Joshi, and Hongseok Namkoong
+  authors_html: <a href="https://sites.google.com/view/dakshmittal/home">Daksh Mittal</a>, <a href="https://yuanzhe-ma.com/">Yuanzhe Ma</a>, <a href="https://shalmalijoshi.github.io/reAIM/">Shalmali Joshi</a>, and Hongseok Namkoong
+  venue: NeurIPS 2024
+  note: Journal version under review.
+  url: https://arxiv.org/abs/2502.06076
+  tags:
+  - adaptive labeling
+  - planning
+  - decision making
+  labels:
+  - continual-learning
+  - adaptive-experimentation
+  sort_key: 7974-0010
+- id: ZhangCaNaRu25
+  year: 2025
+  title: Contextual Thompson Sampling via Generation of Missing Data
+  authors: Kelly Zhang, Tiffany Cai, Hongseok Namkoong, and Daniel Russo
+  authors_html: <a href="https://kellywzhang.github.io/">Kelly Zhang</a>, <a href="https://tc2718.github.io/">Tiffany Cai</a>, Hongseok Namkoong, and <a href="https://djrusso.github.io/">Daniel Russo</a>
+  venue: NeurIPS 2025
+  url: https://arxiv.org/abs/2502.07064
+  tags:
+  - Thompson sampling
+  - missing data
+  - contextual bandits
+  labels:
+  - continual-learning
+  - adaptive-experimentation
+  sort_key: 7974-0011
+- id: JoshiEtAl25
+  year: 2025
+  title: 'AI as an intervention: improving clinical outcomes relies on a causal approach to AI development and validation'
+  authors: Shalmali Joshi, Inigo Urteaga, Wouter A C van Amsterdam, George Hripcsak, Pierre Elias, Benjamin Recht, Noemie Elhadad, James Fackler, Mark P Sendak, Jenna Wiens, Kaivalya Deshpande, Yoav Wald, Madalina Fiterau, Zachary Lipton, Daniel Malinsky, Madhur Nayan, Hongseok Namkoong, Soojin Park, Julia E Vogt, and Rajesh Ranganath
+  authors_html: <a href="https://shalmalijoshi.github.io/reAIM/">Shalmali Joshi</a>, Inigo Urteaga, Wouter A C van Amsterdam, George Hripcsak, Pierre Elias, Benjamin Recht, Noemie Elhadad, James Fackler, Mark P Sendak, Jenna Wiens, Kaivalya Deshpande, Yoav Wald, Madalina Fiterau, Zachary Lipton, Daniel Malinsky, Madhur Nayan, Hongseok Namkoong, Soojin Park, Julia E Vogt, and Rajesh Ranganath
+  venue: Journal of the American Medical Informatics Association
+  url: https://academic.oup.com/jamia/article/32/3/589/7945189
+  tags:
+  - clinical AI
+  - causal inference
+  - validation
+  labels:
+  - trustworthy-ai
+  - causal-inference
+  sort_key: 7974-0012
+- id: HsuDiSiNa24
+  year: 2024
+  title: 'From Models to Systems: A Comprehensive Framework for AI System Fairness in Compositional Recommender Systems'
+  authors: Brian Hsu, Cyrus DiCiccio, Natesh Sivasubramoniapillai, and Hongseok Namkoong
+  authors_html: Brian Hsu, Cyrus DiCiccio, Natesh Sivasubramoniapillai, and Hongseok Namkoong
+  venue: PMLR 2024
+  url: https://arxiv.org/abs/2412.04655
+  tags:
+  - AI fairness
+  - recommender systems
+  - evaluation
+  - systems
+  labels:
+  - trustworthy-ai
+  sort_key: 7975-0001
+- id: ZengLiLaNa24
+  year: 2024
+  title: LLM Embeddings Improve Test-time Adaptation to Tabular Y|X-Shifts
+  authors: Yibo Zeng, Jiashuo Liu, Henry Lam, and Hongseok Namkoong
+  authors_html: <a href="https://scholar.google.com/citations?user=4bIBeOgAAAAJ&amp;hl=en">Yibo Zeng</a>, <a href="https://ljsthu.github.io/">Jiashuo Liu</a>, <a href="https://www.columbia.edu/~khl2114/">Henry Lam</a>, and Hongseok Namkoong
+  url: https://arxiv.org/abs/2410.07395
+  tags:
+  - LLM embeddings
+  - tabular data
+  - test-time adaptation
+  - distribution shift
+  links:
+  - label: Code
+    url: https://github.com/namkoong-lab/LLM-Tabular-Shifts
+  labels:
+  - continual-learning
+  - trustworthy-ai
+  sort_key: 7975-0002
+- id: ChenLiChPeDoNa24
+  year: 2024
+  title: 'QGym: Scalable Simulation and Benchmarking of Queuing Network Controllers'
+  authors: Haozhe Chen, Ang Li, Ethan Che, Tianyi Peng, Jing Dong, and Hongseok Namkoong
+  authors_html: <a href="https://tonychen.xyz/">Haozhe Chen</a>, <a href="https://scholar.google.com/citations?user=oyFNxyUAAAAJ&amp;hl=en">Ang Li</a>, <a href="https://ethche.github.io/">Ethan Che</a>, <a href="https://tianyipeng.github.io/">Tianyi Peng</a>, <a href="https://www.columbia.edu/~jd2736/">Jing Dong</a>, and Hongseok Namkoong
+  venue: NeurIPS 2024 Datasets and Benchmarks
+  url: https://arxiv.org/abs/2410.06170
+  tags:
+  - queueing networks
+  - simulation
+  - benchmarks
+  - control
+  links:
+  - label: Code
+    url: https://github.com/namkoong-lab/QGym
+  labels:
+  - queueing
+  - benchmarks
+  sort_key: 7975-0003
+- id: CheDoNa24
+  year: 2024
+  title: Differentiable Discrete Event Simulation for Queuing Network Control
+  authors: Ethan Che, Jing Dong, and Hongseok Namkoong
+  authors_html: <a href="https://ethche.github.io/">Ethan Che</a>, <a href="https://www.columbia.edu/~jd2736/">Jing Dong</a>, and Hongseok Namkoong
+  note: Major revision in Operations Research.
+  url: https://arxiv.org/abs/2409.03740
+  tags:
+  - queueing networks
+  - simulation
+  - control
+  links:
+  - label: Code
+    url: https://github.com/DifferentiableQueue/QueueTorch
+  labels:
+  - queueing
+  - optimization
+  sort_key: 7975-0004
+- id: ZolloSiYeLiNa24
+  year: 2025
+  title: 'PersonalLLM: Tailoring LLMs to Individual Preferences'
+  authors: Thomas Zollo, Andrew Siah, Naimeng Ye, Ang Li, and Hongseok Namkoong
+  authors_html: <a href="https://www.thomaszollo.com/">Thomas Zollo</a>, <a href="https://andrewsiah.com/about/">Andrew Siah</a>, <a href="https://naimengye.github.io/">Naimeng Ye</a>, <a href="https://scholar.google.com/citations?user=oyFNxyUAAAAJ&amp;hl=en">Ang Li</a>, and Hongseok Namkoong
+  venue: ICLR 2025
+  url: https://arxiv.org/abs/2409.20296
+  tags:
+  - personalization
+  - LLMs
+  - preferences
+  links:
+  - label: Code
+    url: https://github.com/namkoong-lab/PersonalLLM
+  labels:
+  - continual-learning
+  - benchmarks
+  sort_key: 7974-0013
+- id: CheJiNaWa24
+  year: 2024
+  title: Optimization-Driven Adaptive Experimentation
+  authors: Ethan Che, Daniel Jiang, Hongseok Namkoong, and Jimmy Wang
+  authors_html: <a href="https://ethche.github.io/">Ethan Che</a>, <a href="https://danielrjiang.github.io/">Daniel Jiang</a>, Hongseok Namkoong, and Jimmy Wang
+  note: 'Selected for oral presentations at the Econometric Society Interdisciplinary Frontiers: Economics and AI+ML conference and Conference on Digital Experimentation.'
+  url: https://arxiv.org/abs/2408.04570
+  tags:
+  - adaptive experimentation
+  - optimization
+  - batched experiments
+  links:
+  - label: Code
+    url: https://github.com/namkoong-lab/aexgym
+  - label: Slides
+    url: "/assets/pdf/CheJiNaWa24-slides.pdf"
+  labels:
+  - adaptive-experimentation
+  - optimization
+  sort_key: 7975-0005
+- id: WangChJiNa24
+  year: 2024
+  title: 'AExGym: Benchmarks and Environments for Adaptive Experimentation'
+  authors: Jimmy Wang, Ethan Che, Daniel Jiang, and Hongseok Namkoong
+  authors_html: Jimmy Wang, <a href="https://ethche.github.io/">Ethan Che</a>, <a href="https://danielrjiang.github.io/">Daniel Jiang</a>, and Hongseok Namkoong
+  url: https://arxiv.org/abs/2408.04531
+  tags:
+  - adaptive experimentation
+  - benchmarks
+  - environments
+  links:
+  - label: Code
+    url: https://github.com/namkoong-lab/aexgym
+  labels:
+  - adaptive-experimentation
+  - benchmarks
+  sort_key: 7975-0006
+- id: YeNa24
+  year: 2024
+  title: Exchangeable Sequence Models Quantify Uncertainty Over Latent Concepts
+  authors: Naimeng Ye and Hongseok Namkoong
+  authors_html: <a href="https://naimengye.github.io/">Naimeng Ye</a> and Hongseok Namkoong
+  url: https://arxiv.org/abs/2408.03307
+  tags:
+  - exchangeability
+  - uncertainty
+  - sequence models
+  - latent concepts
+  labels:
+  - continual-learning
+  - adaptive-experimentation
+  sort_key: 7975-0007
+- id: CaiFoHoNa24
+  year: 2024
+  title: Constrained Learning for Causal Inference and Semiparametric Statistics
+  authors: Tiffany Cai, Yuri Fonseca, Kaiwen Hou, and Hongseok Namkoong
+  authors_html: <a href="https://tc2718.github.io/">Tiffany Cai</a>, <a href="https://yuriresende.github.io/">Yuri Fonseca</a>, Kaiwen Hou, and Hongseok Namkoong
+  url: https://arxiv.org/abs/2405.09493
+  tags:
+  - causal inference
+  - semiparametric statistics
+  - constrained learning
+  labels:
+  - causal-inference
+  - optimization
+  sort_key: 7975-0008
+- id: CaiNaRuZh25
+  year: 2025
+  title: Active Exploration via Autoregressive Generation of Missing Data
+  authors: Tiffany Cai, Hongseok Namkoong, Daniel Russo, and Kelly Zhang
+  authors_html: <a href="https://tc2718.github.io/">Tiffany Cai</a>, Hongseok Namkoong, <a href="https://djrusso.github.io/">Daniel Russo</a>, and <a href="https://kellywzhang.github.io/">Kelly Zhang</a>
+  note: 'Selected for presentation at the Econometric Society Interdisciplinary Frontiers: Economics and AI+ML conference.'
+  url: https://arxiv.org/abs/2405.19466
+  tags:
+  - active exploration
+  - autoregressive generation
+  - missing data
+  selected: true
+  links:
+  - label: Slides
+    url: "/assets/pdf/ZhangCaNaRu24-slides.pdf"
+  labels:
+  - continual-learning
+  - adaptive-experimentation
+  sort_key: 7974-0014
+- id: LeeNaZe24
+  year: 2024
+  title: Design and Scheduling of an AI-based Queueing System
+  authors: Jiung Lee, Hongseok Namkoong, and Yibo Zeng
+  authors_html: Jiung Lee, Hongseok Namkoong, and <a href="https://scholar.google.com/citations?user=4bIBeOgAAAAJ&amp;hl=en">Yibo Zeng</a>
+  note: Major revision in Management Science; selected for presentation at SIG day 2025.
+  url: https://arxiv.org/abs/2406.06855
+  tags:
+  - queueing systems
+  - AI systems
+  - scheduling
+  labels:
+  - queueing
+  sort_key: 7975-0009
+- id: CheNa23
+  year: 2023
+  title: 'Adaptive Experimentation at Scale: A Computational Framework for Flexible Batches'
+  authors: Ethan Che and Hongseok Namkoong
+  authors_html: <a href="https://ethche.github.io/">Ethan Che</a> and Hongseok Namkoong
+  note: Major revision in Operations Research.
+  url: https://arxiv.org/abs/2303.11582
+  tags:
+  - adaptive experimentation
+  - batched experiments
+  - optimization
+  links:
+  - label: Site
+    url: https://aes-batch.streamlit.app/
+  - label: Slides
+    url: "/assets/pdf/CheNa23-slides.pdf"
+  - label: Video
+    url: https://youtu.be/CLzRcOw9eyk
+  labels:
+  - adaptive-experimentation
+  - optimization
+  - deployed-in-practice
+  sort_key: 7976-0001
+- id: CaiNaYa25
+  year: 2025
+  title: Diagnosing Model Performance Under Distribution Shift
+  authors: Tiffany Cai, Hongseok Namkoong, and Steve Yadlowsky
+  authors_html: <a href="https://tc2718.github.io/">Tiffany Cai</a>, Hongseok Namkoong, and <a href="https://www.syadlowsky.com/">Steve Yadlowsky</a>
+  venue: Operations Research
+  note: Conference version appeared at FORC 2023.
+  url: https://arxiv.org/abs/2303.02011
+  tags:
+  - distribution shift
+  - model evaluation
+  - responsible computing
+  links:
+  - label: Code
+    url: https://github.com/namkoong-lab/disde
+  - label: Slides
+    url: "/assets/pdf/LiuWaCuNa24-slides.pdf"
+  - label: Video
+    url: https://gsb-columbia-edu.zoom.us/rec/play/sKowK1a0T6cGx8IJELKEISEZs9MbUPB58xtmOmBjs09MfLY3RjEmUQ16AHdGL8PaipX2KAkW_gr4XIMT.T1PcyxmM_7XVve5H?canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fgsb-columbia-edu.zoom.us%2Frec%2Fshare%2F_Dqv3yqQl8Gj27n-c8j5Cdpp9MJPoQGRNIUyFHQGskOhGsa6KneLYgmH3Qx-ogK2.-Qp9jC6bs7_RCZWA
+  labels:
+  - trustworthy-ai
+  - deployed-in-practice
+  sort_key: 7974-0015
+- id: BoyarskyNaPo23
+  year: 2023
+  title: Modeling Interference via Experiment Rollout
+  authors: Ari Boyarsky, Hongseok Namkoong, and Jean Pouget-Abadie
+  authors_html: <a href="https://www.ariboyarsky.com/">Ari Boyarsky</a>, Hongseok Namkoong, and <a href="https://jean.pouget-abadie.com/">Jean Pouget-Abadie</a>
+  venue: ACM EC 2023
+  url: https://arxiv.org/abs/2305.10728
+  tags:
+  - interference
+  - experimentation
+  - causal inference
+  links:
+  - label: Slides
+    url: "/assets/pdf/BoyarskyNaPo23-slides.pdf"
+  labels:
+  - causal-inference
+  sort_key: 7976-0002
+- id: NamkoongDaBa26
+  year: 2026
+  title: 'Distilled Thompson Sampling: Practical and Efficient Thompson Sampling via Imitation Learning'
+  authors: Hongseok Namkoong, Samuel Daulton, and Eytan Bakshy
+  authors_html: Hongseok Namkoong, <a href="https://sdaulton.github.io/">Samuel Daulton</a>, and <a href="https://eytan.github.io/">Eytan Bakshy</a>
+  venue: Transactions on Machine Learning Research
+  note: Selected for an oral presentation at the NeurIPS 2020 OfflineRL Workshop.
+  url: https://arxiv.org/abs/2011.14266
+  tags:
+  - Thompson sampling
+  - imitation learning
+  - offline RL
+  links:
+  - label: Code
+    url: https://github.com/namkoong-lab/distilled-thompson-sampling
+  labels:
+  - adaptive-experimentation
+  - deployed-in-practice
+  sort_key: 7973-0011
+- id: JeongNa22
+  year: 2022
+  title: Assessing External Validity via Worst-case Subpopulation Treatment Effects
+  authors: Sookyo Jeong and Hongseok Namkoong
+  authors_html: <a href="https://eytan.github.io/">Sookyo Jeong</a> and Hongseok Namkoong
+  venue: COLT 2020
+  note: Major revision in Management Science.
+  url: https://arxiv.org/abs/2007.02411
+  tags:
+  - external validity
+  - treatment effects
+  - unobserved confounding
+  links:
+  - label: Code
+    url: https://github.com/sookyojeong/worst-ate
+  - label: Slides
+    url: "/assets/pdf/JeongNa22-slides.pdf"
+  - label: Video
+    url: https://youtu.be/FqdH75RazNQ?si=x0H5IOyf-Iy8h7g4
+  labels:
+  - causal-inference
+  - trustworthy-ai
+  - deployed-in-practice
+  sort_key: 7977-0001
+- id: LiNaXi24
+  year: 2024
+  title: Evaluating Model Performance Under Worst-case Subpopulations
+  authors: Mike Li, Daksh Mittal, Hongseok Namkoong, and Shangzhou Xia
+  authors_html: Mike Li, <a href="https://sites.google.com/view/dakshmittal/home">Daksh Mittal</a>, Hongseok Namkoong, and Shangzhou Xia
+  venue: NeurIPS 2021
+  note: Major revision in Mathematics of Operations Research.
+  url: https://arxiv.org/abs/2407.01316
+  tags:
+  - worst-case subpopulations
+  - model evaluation
+  - robustness
+  labels:
+  - trustworthy-ai
+  sort_key: 7975-0010
+- id: NamkoongMaGl25
+  year: 2025
+  title: Minimax Optimal Estimation of Stability Under Distribution Shift
+  authors: Hongseok Namkoong, Yuanzhe Ma, and Peter W. Glynn
+  authors_html: Hongseok Namkoong, <a href="https://yuanzhe-ma.com/">Yuanzhe Ma</a>, and <a href="http://web.stanford.edu/~glynn">Peter W. Glynn</a>
+  venue: Operations Research
+  url: https://pubsonline.informs.org/doi/10.1287/opre.2022.0658
+  tags:
+  - stability
+  - distribution shift
+  - minimax estimation
+  links:
+  - label: Code
+    url: https://github.com/namkoong-lab/stability_estimation/
+  labels:
+  - trustworthy-ai
+  sort_key: 7974-0016
+- id: WortsmanIlGaRoGoMoNaFaCaKoSc22
+  year: 2022
+  title: 'Model Soups: Averaging Weights of Multiple Fine-tuned Models Improves Accuracy Without Increasing Inference Time'
+  authors: Mitchell Wortsman, Gabriel Ilharco, Samir Yitzhak Gadre, Rebecca Roelofs, Raphael Gontijo-Lopes, Ari S Morcos, Hongseok Namkoong, Ali Farhadi, Yair Carmon, Simon Kornblith, and Ludwig Schmidt
+  authors_html: <a href="https://mitchellnw.github.io/">Mitchell Wortsman</a>, <a href="http://gabrielilharco.com/">Gabriel Ilharco</a>, Samir Yitzhak Gadre, Rebecca Roelofs, Raphael Gontijo-Lopes, Ari S Morcos, Hongseok Namkoong, Ali Farhadi, Yair Carmon, Simon Kornblith, and <a href="https://people.csail.mit.edu/ludwigs/">Ludwig Schmidt</a>
+  venue: ICML 2022
+  url: https://arxiv.org/abs/2203.05482
+  tags:
+  - fine-tuning
+  - model averaging
+  - robustness
+  links:
+  - label: Code
+    url: https://github.com/mlfoundations/model-soups
+  - label: Video
+    url: https://www.youtube.com/live/brHeIKX8ayw?si=nzlq_6l8RUcQuLPq
+  labels:
+  - trustworthy-ai
+  - deployed-in-practice
+  sort_key: 7977-0002
+- id: WortsmanIlLiKiHaFaNaSc22
+  year: 2022
+  title: Robust Fine-tuning of Zero-shot Models
+  authors: Mitchell Wortsman, Gabriel Ilharco, Jong Wook Kim, Mike Li, Simon Kornblith, Rebecca Roelofs, Raphael Gontijo-Lopes, Hannaneh Hajishirzi, Ali Farhadi, Hongseok Namkoong, and Ludwig Schmidt
+  authors_html: <a href="https://mitchellnw.github.io/">Mitchell Wortsman</a>, <a href="http://gabrielilharco.com/">Gabriel Ilharco</a>, Jong Wook Kim, Mike Li, Simon Kornblith, Rebecca Roelofs, Raphael Gontijo-Lopes, Hannaneh Hajishirzi, Ali Farhadi, Hongseok Namkoong, and <a href="https://people.csail.mit.edu/ludwigs/">Ludwig Schmidt</a>
+  venue: CVPR 2022
+  note: CVPR Best Paper Finalist.
+  url: https://arxiv.org/abs/2109.01903
+  tags:
+  - zero-shot models
+  - fine-tuning
+  - robustness
+  links:
+  - label: Code
+    url: https://github.com/mlfoundations/wise-ft
+  - label: Video
+    url: https://www.youtube.com/live/brHeIKX8ayw?si=nzlq_6l8RUcQuLPq
+  labels:
+  - trustworthy-ai
+  - deployed-in-practice
+  sort_key: 7977-0003
+- id: YadlowskyNaBaDuTi22
+  year: 2022
+  title: Bounds on the Conditional and Average Treatment Effect with Unobserved Confounding Factors
+  authors: Steve Yadlowsky, Hongseok Namkoong, Sanjay Basu, John Duchi, and Lu Tian
+  authors_html: <a href="https://www.syadlowsky.com/">Steve Yadlowsky</a>, Hongseok Namkoong, Sanjay Basu, <a href="http://stanford.edu/~jduchi">John Duchi</a>, and Lu Tian
+  venue: Annals of Statistics
+  url: https://arxiv.org/abs/1808.09521
+  tags:
+  - treatment effects
+  - unobserved confounding
+  - bounds
+  links:
+  - label: Slides
+    url: "/assets/pdf/YadlowskyNaBaDuTi22-slides.pdf"
+  - label: Video
+    url: https://youtu.be/FqdH75RazNQ?si=x0H5IOyf-Iy8h7g4
+  labels:
+  - causal-inference
+  - trustworthy-ai
+  sort_key: 7977-0004
+- id: NamkoongKeYaBr20
+  year: 2020
+  title: Off-policy Policy Evaluation For Sequential Decisions Under Unobserved Confounding
+  authors: Hongseok Namkoong, Ramtin Keramati, Steve Yadlowsky, and Emma Brunskill
+  authors_html: Hongseok Namkoong, Ramtin Keramati, <a href="https://www.syadlowsky.com/">Steve Yadlowsky</a>, and <a href="https://cs.stanford.edu/people/ebrun/">Emma Brunskill</a>
+  venue: NeurIPS 2020
+  url: https://arxiv.org/abs/2003.05623
+  tags:
+  - off-policy evaluation
+  - sequential decisions
+  - unobserved confounding
+  links:
+  - label: Code
+    url: https://github.com/StanfordAI4HI/off_policy_confounding
+  labels:
+  - causal-inference
+  - trustworthy-ai
+  sort_key: 7979-0001
+- id: DuchiHaNa22
+  year: 2022
+  title: Distributionally Robust Losses Against Mixture Covariate Shifts
+  authors: John C. Duchi, Tatsunori Hashimoto, and Hongseok Namkoong
+  authors_html: <a href="http://stanford.edu/~jduchi">John C. Duchi</a>, <a href="https://thashim.github.io/">Tatsunori Hashimoto</a>, and Hongseok Namkoong
+  venue: Operations Research
+  url: https://arxiv.org/abs/2007.13982
+  tags:
+  - distributionally robust optimization
+  - covariate shift
+  - robustness
+  links:
+  - label: Code
+    url: https://github.com/namkoong-lab/marginal-dro
+  - label: Video
+    url: https://youtu.be/DRlF5sdCkKY?si=U8J_zUzrPaRAoNLj
+  labels:
+  - trustworthy-ai
+  - optimization
+  sort_key: 7977-0005
+- id: DuchiNa21
+  year: 2021
+  title: Learning Models with Uniform Performance via Distributionally Robust Optimization
+  authors: John C. Duchi and Hongseok Namkoong
+  authors_html: <a href="http://stanford.edu/~jduchi">John C. Duchi</a> and Hongseok Namkoong
+  venue: Annals of Statistics
+  url: https://arxiv.org/abs/1810.08750
+  tags:
+  - distributionally robust optimization
+  - uniform performance
+  - statistics
+  links:
+  - label: Code
+    url: https://github.com/namkoong-lab/chi-squared-dro
+  - label: Slides
+    url: "/assets/pdf/dro-slides.pdf"
+  - label: Video
+    url: https://youtu.be/DRlF5sdCkKY?si=U8J_zUzrPaRAoNLj
+  labels:
+  - trustworthy-ai
+  - optimization
+  sort_key: 7978-0001
+- id: DuchiGlNa21
+  year: 2021
+  title: 'Statistics of Robust Optimization: A Generalized Empirical Likelihood Approach'
+  authors: John C. Duchi, Peter W. Glynn, and Hongseok Namkoong
+  authors_html: <a href="http://stanford.edu/~jduchi">John C. Duchi</a>, <a href="http://web.stanford.edu/~glynn">Peter W. Glynn</a>, and Hongseok Namkoong
+  venue: Mathematics of Operations Research
+  note: APS Best Student Paper Prize, and featured in Mathematics of Operations Research's 50th anniversary selection.
+  url: https://arxiv.org/abs/1610.03425
+  tags:
+  - robust optimization
+  - empirical likelihood
+  - statistics
+  links:
+  - label: Video
+    url: https://youtu.be/JBrrRFwi-yg?si=X1_GxFwSLfJviu4N
+  labels:
+  - trustworthy-ai
+  - optimization
+  sort_key: 7978-0002
+- id: SinhaNaVoDu18
+  year: 2018
+  title: Certifiable Distributional Robustness with Principled Adversarial Training
+  authors: Aman Sinha, Hongseok Namkoong, Riccardo Volpi, and John Duchi
+  authors_html: Aman Sinha, Hongseok Namkoong, Riccardo Volpi, and <a href="http://stanford.edu/~jduchi">John Duchi</a>
+  venue: ICLR 2018
+  note: Selected for a full oral presentation.
+  url: https://arxiv.org/abs/1710.10571
+  tags:
+  - distributional robustness
+  - adversarial training
+  - certification
+  links:
+  - label: Code
+    url: https://github.com/duchi-lab/certifiable-distributional-robustness
+  - label: Video
+    url: https://youtu.be/JBrrRFwi-yg?si=X1_GxFwSLfJviu4N
+  labels:
+  - trustworthy-ai
+  - optimization
+  sort_key: 7981-0001
+- id: DuchiNa19
+  year: 2019
+  title: Variance-based regularization with convex objectives
+  authors: John C. Duchi and Hongseok Namkoong
+  authors_html: <a href="http://stanford.edu/~jduchi">John C. Duchi</a> and Hongseok Namkoong
+  venue: Journal of Machine Learning Research
+  note: Conference version won NeurIPS 2017 Best Paper Award.
+  url: https://arxiv.org/abs/1610.02581
+  tags:
+  - variance regularization
+  - convex optimization
+  - robust learning
+  links:
+  - label: Code
+    url: https://github.com/namkoong-lab/chi-squared-dro
+  - label: Slides
+    url: "/assets/pdf/NamkoongDu17-slides.pdf"
+  - label: Video
+    url: https://youtu.be/2j0rrgr4bUc?si=3l_TQYLDPdwnnIW6
+  labels:
+  - trustworthy-ai
+  - optimization
+  sort_key: 7980-0001
+- id: VolpiNaSeDuMuSa18
+  year: 2018
+  title: Generalizing to Unseen Domains via Adversarial Data Augmentation
+  authors: Riccardo Volpi, Hongseok Namkoong, John Duchi, Vittorio Murino, and Silvio Savarese
+  authors_html: Riccardo Volpi, Hongseok Namkoong, <a href="http://stanford.edu/~jduchi">John Duchi</a>, Vittorio Murino, and Silvio Savarese
+  venue: NeurIPS 2018
+  url: https://arxiv.org/abs/1805.12018
+  tags:
+  - domain generalization
+  - adversarial data augmentation
+  - robustness
+  links:
+  - label: Code
+    url: https://github.com/ricvolpi/adversarial-feature-augmentation
+  labels:
+  - trustworthy-ai
+  sort_key: 7981-0002
+- id: OKellySiNaDuTe18
+  year: 2018
+  title: Scalable End-to-End Autonomous Vehicle Testing via Rare-event Simulation
+  authors: Mathew O'Kelly, Aman Sinha, Hongseok Namkoong, John Duchi, and Russ Tedrake
+  authors_html: Mathew O&#39;Kelly, Aman Sinha, Hongseok Namkoong, <a href="http://stanford.edu/~jduchi">John Duchi</a>, and Russ Tedrake
+  venue: NeurIPS 2018
+  url: https://arxiv.org/abs/1811.00145
+  tags:
+  - autonomous vehicles
+  - rare-event simulation
+  - testing
+  labels:
+  - trustworthy-ai
+  - deployed-in-practice
+  sort_key: 7981-0003
+- id: HashimotoSrNaLi18
+  year: 2018
+  title: Fairness Without Demographics in Repeated Loss Minimization
+  authors: Tatsunori Hashimoto, Megha Srivastava, Hongseok Namkoong, and Percy Liang
+  authors_html: <a href="https://thashim.github.io/">Tatsunori Hashimoto</a>, Megha Srivastava, Hongseok Namkoong, and Percy Liang
+  venue: ICML 2018
+  note: Best Paper Runner-up Award.
+  url: https://arxiv.org/abs/1806.08010
+  tags:
+  - fairness
+  - repeated loss minimization
+  - distributional robustness
+  links:
+  - label: Code
+    url: https://bit.ly/2sFkDpE
+  labels:
+  - trustworthy-ai
+  - optimization
+  sort_key: 7981-0004
+- id: NamkoongSiYaDu17
+  year: 2017
+  title: Adaptive sampling probabilities for non-smooth optimization
+  authors: Hongseok Namkoong, Aman Sinha, Steve Yadlowsky, and John C. Duchi
+  authors_html: Hongseok Namkoong, Aman Sinha, <a href="https://www.syadlowsky.com/">Steve Yadlowsky</a>, and <a href="http://stanford.edu/~jduchi">John C. Duchi</a>
+  venue: ICML 2017
+  url: https://proceedings.mlr.press/v70/namkoong17a/namkoong17a.pdf
+  tags:
+  - adaptive sampling
+  - nonsmooth optimization
+  - stochastic optimization
+  links:
+  - label: Code
+    url: https://github.com/duchi-lab/adaptive-sampling-descent
+  labels:
+  - optimization
+  sort_key: 7982-0001
+- id: NamkoongDu16
+  year: 2016
+  title: Stochastic Gradient Methods for Distributionally Robust Optimization with f-divergences
+  authors: Hongseok Namkoong and John C. Duchi
+  authors_html: Hongseok Namkoong and <a href="http://stanford.edu/~jduchi">John C. Duchi</a>
+  venue: NeurIPS 2016
+  url: https://papers.nips.cc/paper_files/paper/2016/hash/4588e674d3f0faf985047d4c3f13ed0d-Abstract.html
+  tags:
+  - distributionally robust optimization
+  - stochastic gradients
+  - f-divergences
+  links:
+  - label: Slides
+    url: "/assets/pdf/NamkoongDu16-slides.pdf"
+  labels:
+  - trustworthy-ai
+  - optimization
+  sort_key: 7983-0001

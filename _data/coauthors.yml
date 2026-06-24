@@ -167,9 +167,14 @@
   - student: true
 
 "guetta":
-  - firstname: ["Daniel", "Charles", "C.D."]
+  - firstname: ["Daniel", "D.", "Charles", "C.D."]
     url: https://daniel.guetta.com/
   - student: false
+
+"castellani":
+  - firstname: ["Tommaso", "T."]
+    url: https://scholar.google.com/citations?user=SHg-CF0AAAAJ&hl=en
+  - student: true
 
 "peng":
   - firstname: ["Tianyi", "T."]

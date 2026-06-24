@@ -4,6 +4,11 @@
 {%- if site.enable_publication_thumbnails and entry.preview -%}
   {%- assign has_publication_preview = true -%}
 {%- endif -%}
+{%- assign display_title = entry.title | replace: '{', '' | replace: '}', '' -%}
+{%- assign display_url = entry.url | default: '' -%}
+{%- if display_url contains 'arxiv.org' -%}
+  {%- assign display_url = '' -%}
+{%- endif -%}
 <div class="row publication-entry">
   {% if has_publication_preview %}
     <div class="col-12 col-sm-2 publication-media">
@@ -27,10 +32,10 @@
   <div id="{{entry.key}}" class="{% if has_publication_preview %}col-12 col-sm-10{% else %}col-12{% endif %}">
     <!-- Title -->
     <div class="title">
-      {% if entry.url %}
-        <a href="{{ entry.url }}" target="_blank">{{ entry.title }}</a>
+      {% if display_url != '' %}
+        <a href="{{ display_url }}" target="_blank">{{ display_title }}</a>
       {% else %}
-        {{ entry.title }}
+        {{ display_title }}
       {% endif %}
     </div>
     {% if entry.abbr %}
@@ -130,10 +135,42 @@
     <!-- Journal/Book title and date -->
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
+    {% assign journal_is_arxiv = false %}
+    {% assign entry_journal = entry.journal | default: '' %}
+    {% assign entry_journal_downcase = entry_journal | downcase %}
+    {% if entry_journal_downcase contains 'arxiv' %}
+      {% assign journal_is_arxiv = true %}
+    {% endif %}
+    {% assign short_venue = false %}
+    {% assign display_booktitle = entry.booktitle %}
+    {% if entry.booktitle contains 'International Conference on Machine Learning' %}
+      {% assign display_booktitle = 'ICML' %}
+      {% assign short_venue = true %}
+    {% elsif entry.booktitle contains 'Learning Representations' %}
+      {% assign display_booktitle = 'ICLR' %}
+      {% assign short_venue = true %}
+    {% elsif entry.booktitle contains 'Neural Information Processing Systems' %}
+      {% assign display_booktitle = 'NeurIPS' %}
+      {% assign short_venue = true %}
+    {% elsif entry.booktitle contains 'Computer Vision and Pattern Recognition' %}
+      {% assign display_booktitle = 'CVPR' %}
+      {% assign short_venue = true %}
+    {% elsif entry.booktitle contains 'Proceedings of Machine Learning Research' %}
+      {% assign display_booktitle = 'PMLR' %}
+      {% assign short_venue = true %}
+    {% endif %}
     {% if entry.type == 'article' %}
-      {% capture entrytype %}<em>{{entry.journal}}</em>{% endcapture %}
+      {% if journal_is_arxiv %}
+        {% capture entrytype %}{% endcapture %}
+      {% else %}
+        {% capture entrytype %}<em>{{entry.journal}}</em>{% endcapture %}
+      {% endif %}
     {% elsif proceedings contains entry.type %}
-      {% capture entrytype %}<em>In {{entry.booktitle}}</em> {% endcapture %}
+      {% if short_venue %}
+        {% capture entrytype %}<em>{{ display_booktitle }}</em>{% endcapture %}
+      {% else %}
+        {% capture entrytype %}<em>In {{ display_booktitle }}</em>{% endcapture %}
+      {% endif %}
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{entry.school}}</em> {% endcapture %}
     {% else %}
@@ -156,7 +193,17 @@
       {% include hook/bib.liquid %}
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
-    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
+    {% assign display_entrymonth = entrymonth %}
+    {% assign display_entryyear = entryyear %}
+    {% if journal_is_arxiv and entrytype_text == '' %}
+      {% assign display_entrymonth = '' %}
+      {% assign display_entryyear = '' %}
+    {% endif %}
+    {% assign periodical_separator = ',' %}
+    {% if short_venue %}
+      {% assign periodical_separator = '' %}
+    {% endif %}
+    {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and display_entryyear != "" %}{{ periodical_separator }}{% endif %}{{ display_entrymonth }}{{ display_entryyear }}{% endcapture %}
     <div class="periodical">
       {{ periodical | strip }}
     </div>
@@ -173,9 +220,6 @@
       {% endif %}
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-      {% endif %}
-      {% if entry.arxiv %}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>

@@ -7,6 +7,11 @@ module Jekyll
 		    input = input.gsub(/^.*\b#{keyword}\b *= *\{.*$\n/, '')
 	    end
 
+      input = input.gsub(/^.*\burl\b *= *\{https?:\/\/(?:www\.)?arxiv\.org\/abs\/.*$\n/i, '')
+      input = input.gsub(/^(\s*title\s*=\s*\{)(.*)(\},?\s*)$/) do
+        "#{$1}#{$2.gsub(/[{}]/, '')}#{$3}"
+      end
+
       return input
     end
   end

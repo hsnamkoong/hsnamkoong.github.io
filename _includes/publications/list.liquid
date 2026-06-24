@@ -1,0 +1,97 @@
+{% assign catalog = site.data.publications %}
+{% assign papers = catalog.papers | sort: 'sort_key' %}
+
+<div class="publication-database" data-publications-app>
+  <div class="publication-controls" aria-label="Publication filters">
+    <div class="publication-search">
+      <label class="publication-search-label" for="publication-search">Search</label>
+      <input
+        id="publication-search"
+        class="publication-search-input"
+        type="search"
+        placeholder="Search publications"
+        autocomplete="off"
+        data-publication-search
+      >
+    </div>
+
+    <div class="publication-filter-row" aria-label="Publication labels">
+      <button class="publication-filter active" type="button" data-publication-filter="label" data-filter-value="all" aria-pressed="true">All</button>
+      {% for label in catalog.labels %}
+        <button class="publication-filter" type="button" data-publication-filter="label" data-filter-value="{{ label.id }}" aria-pressed="false">
+          {{ label.label }}
+        </button>
+      {% endfor %}
+    </div>
+  </div>
+
+  <ol class="bibliography publication-database-list">
+    {% for paper in papers %}
+      {% capture paper_label_names %}
+        {% for paper_label in paper.labels %}
+          {% for catalog_label in catalog.labels %}
+            {% if catalog_label.id == paper_label %} {{ catalog_label.label }}{% endif %}
+          {% endfor %}
+        {% endfor %}
+      {% endcapture %}
+      {% capture search_blob %}{{ paper.title }} {{ paper.authors }} {{ paper.venue }} {{ paper.note }} {{ paper_label_names }}{% endcapture %}
+      {% assign label_values = paper.labels | join: ' ' %}
+      <li
+        id="{{ paper.id }}"
+        class="publication-record"
+        data-publication-entry
+        data-labels="{{ label_values }}"
+        data-search="{{ search_blob | strip_html | downcase | escape }}"
+      >
+        <div class="publication-record-header">
+          <div class="publication-record-meta">
+            <div class="publication-year">{{ paper.year }}</div>
+            {% if paper.labels %}
+              <div class="publication-label-list" aria-label="Labels">
+                {% for paper_label in paper.labels %}
+                  {% for catalog_label in catalog.labels %}
+                    {% if catalog_label.id == paper_label %}
+                      <span class="publication-label-chip">{{ catalog_label.label }}</span>
+                    {% endif %}
+                  {% endfor %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+          <div class="publication-record-body">
+            <div class="title">
+              {% if paper.url and paper.url != '' %}
+                <a href="{{ paper.url }}" target="_blank" rel="external nofollow noopener">{{ paper.title }}</a>
+              {% else %}
+                {{ paper.title }}
+              {% endif %}
+            </div>
+
+            <div class="author">{% if paper.authors_html %}{{ paper.authors_html }}{% else %}{{ paper.authors }}{% endif %}</div>
+
+            {% if paper.venue or paper.note %}
+              <div class="periodical">
+                {% if paper.venue and paper.venue != '' %}<em>{{ paper.venue }}</em>{% endif %}{% if paper.note and paper.venue and paper.venue != '' %}. {% endif %}{% if paper.note %}{{ paper.note }}{% endif %}
+              </div>
+            {% endif %}
+
+            {% if paper.links %}
+              <div class="links publication-links">
+                {% for link in paper.links %}
+                  {% assign link_url = link.url %}
+                  {% unless link_url contains '://' %}
+                    {% assign link_url = link_url | relative_url %}
+                  {% endunless %}
+                  <a href="{{ link_url }}" class="btn btn-sm z-depth-0" role="button"{% if link.url contains '://' %} target="_blank" rel="external nofollow noopener"{% endif %}>{{ link.label }}</a>
+                {% endfor %}
+              </div>
+            {% endif %}
+
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+  </ol>
+
+  <p class="publication-empty" data-publication-empty hidden>No publications match the current filters.</p>
+</div>
