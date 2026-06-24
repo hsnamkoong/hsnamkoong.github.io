@@ -38,13 +38,23 @@
         {{ display_title }}
       {% endif %}
     </div>
-    {% if entry.abbr %}
-      <div class="publication-meta">
-        {% if site.data.venues[entry.abbr].url %}
-          <a href="{{site.data.venues[entry.abbr].url}}" class="publication-topic">{{ entry.abbr }}</a>
-        {% else %}
-          <span class="publication-topic">{{ entry.abbr }}</span>
-        {% endif %}
+    {%- assign pub_catalog = site.data.publications -%}
+    {%- assign pub_record = nil -%}
+    {%- for paper in pub_catalog.papers -%}
+      {%- if paper.id == entry.key -%}
+        {%- assign pub_record = paper -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {% if pub_record and pub_record.labels %}
+      <div class="publication-label-list" aria-label="Labels">
+        {% for paper_label in pub_record.labels %}
+          {% for catalog_label in pub_catalog.labels %}
+            {% if catalog_label.id == paper_label %}
+              <span class="publication-label-chip">{{ catalog_label.label }}</span>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
       </div>
     {% endif %}
     <!-- Author -->

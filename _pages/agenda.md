@@ -2,7 +2,7 @@
 layout: distill
 title: "Agents That Never Stop Learning"
 nav_title: Agenda
-permalink: /current-agenda/
+permalink: /agenda/
 description: "My current research agenda on continually learning agents. My research group builds AI systems that build persistent state, learn from experience through experiential learning, and improve over their lifetime."
 nav: true
 nav_order: 3
