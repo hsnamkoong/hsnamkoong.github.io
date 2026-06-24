@@ -77,10 +77,11 @@
 
 
 
+    
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav ">
+  <body class="fixed-top-nav  ">
     <!-- Header -->
     <header>
   <!-- Nav Bar -->
@@ -147,7 +148,18 @@
               
                 <li class="nav-item ">
                   
-                  <a class="nav-link" href="/research">Research Overview
+                  <a class="nav-link" href="/research/">Research
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/current-agenda/">Agenda
                     
                   </a>
                 </li>
@@ -184,7 +196,7 @@
               
                 <li class="nav-item ">
                   
-                  <a class="nav-link" href="/repositories/">Code &amp; Data
+                  <a class="nav-link" href="/repositories/">Resources
                     
                   </a>
                 </li>
@@ -207,8 +219,8 @@
           
             <!-- Search -->
             <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
-                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+              <button id="search-toggle" title="Search (Ctrl+K)" aria-label="Search" data-icon-only="true" onclick="openSearchModal()">
+                <span class="nav-link search-icon-only"><i class="ti ti-search"></i></span>
               </button>
             </li>
           
@@ -290,7 +302,7 @@ to build a scalable framework based on autoregressive models. Watch this recent 
       © Copyright 2026
       Hongseok
       
-      Namkoong. Jekyll <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
+      Namkoong. Built with Jekyll.
 
       
       
@@ -505,12 +517,19 @@ to build a scalable framework based on autoregressive models. Watch this recent 
         handler: () => {
           window.location.href = "/";
         },
-      },{id: "nav-research-overview",
-              title: "Research Overview",
-              description: "Our research group develops AI systems that optimize real-world business objectives, with a particular focus on trustworthy and responsible learning methods. We take a systems-level perspective that spans machine learning, operations research, and statistics to address fundamental challenges in deploying AI in high-stakes domains.",
+      },{id: "nav-research-foundations",
+              title: "Research Foundations",
+              description: "An overview of the research foundations behind our group&#39;s work: trustworthy AI, AI-driven decisions, robust causality, and empirical methodology.",
               section: "Navigation",
               handler: () => {
-                window.location.href = "/research";
+                window.location.href = "/research/";
+              },
+            },{id: "nav-agents-that-never-stop-learning",
+              title: "Agents That Never Stop Learning",
+              description: "My current research agenda on continually learning agents. My research group builds AI systems that build persistent state, learn from experience through experiential learning, and improve over their lifetime.",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/current-agenda/";
               },
             },{id: "nav-publications",
               title: "Publications",
@@ -528,7 +547,7 @@ to build a scalable framework based on autoregressive models. Watch this recent 
               },
             },{id: "nav-code-amp-data",
               title: "Code &amp; Data",
-              description: "I am passionate about building empirical foundations for methodological progress. My group leads several open-source projects based on our research.",
+              description: "I am passionate about building empirical foundations for methodological progress. My group leads open-source projects, benchmarks, and data releases based on our research.",
               section: "Navigation",
               handler: () => {
                 window.location.href = "/repositories/";
@@ -566,7 +585,12 @@ to build a scalable framework based on autoregressive models. Watch this recent 
               window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
             
           },
-        },{id: "news-we-39-re-hiring-multiple-postdoctoral-research-fellows-at-the-columbia-ai-agents-initiative-https-columbia-agents-initiative-com-apply-to-work-with-me-on-data-centric-ai",
+        },{id: "news-mbabench-evaluating-llms-on-spreadsheet-tasks-across-critical-dimensions",
+          title: 'MBABench: Evaluating LLMs on Spreadsheet Tasks Across Critical Dimensions',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/mbabench-v1/";
+            },},{id: "news-we-39-re-hiring-multiple-postdoctoral-research-fellows-at-the-columbia-ai-agents-initiative-https-columbia-agents-initiative-com-apply-to-work-with-me-on-data-centric-ai",
           title: 'We&#39;re hiring multiple Postdoctoral Research Fellows at the [Columbia AI Agents Initiative](https://columbia-agents-initiative.com/). Apply to work with me on data-centric AI!',
           description: "",
           section: "News",},{id: "news-i-39-m-looking-for-motivated-undergraduate-and-master-39-s-students-to-work-on-ml-research-fill-this-form-https-docs-google-com-forms-d-e-1faipqlse2h-h4ren1dmztfs7bkpsxpwvabkqm7i-rkbxv3ei9p41wea-viewform-usp-header-out-if-you-39-re-interested",

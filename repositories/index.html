@@ -22,7 +22,7 @@
   
 </title>
 <meta name="author" content="Hongseok Namkoong">
-<meta name="description" content="I am passionate about building empirical foundations for methodological progress. My group leads several open-source projects based on our research.">
+<meta name="description" content="I am passionate about building empirical foundations for methodological progress. My group leads open-source projects, benchmarks, and data releases based on our research.">
 
   <meta name="keywords" content="Hongseok Namkoong, Hongseok, Namkoong, Hong Namkoong, Hongseok Namkoong Stanford, Hongseok Stanford, Namkoong Stanford, Hong Namkoong Stanford, Hongseok Namkoong MS&amp;E, Hongseok MS&amp;E, Namkoong MS&amp;E, Hong Namkoong MS&amp;E, Hongseok Namkoong Machine Learning, Hongseok Machine Learning, Namkoong Machine Learning, Hong Namkoong Machine Learning, Hongseok Namkoong Operations Research, Hongseok Operations Research, Namkoong  Operations Research, Hong Namkoong  Operations Research, Hongseok Namkoong Columbia, Hongseok Columbia, Namkoong Columbia, Hong Namkoong Columbia, Hong Columbia, Hongseok Namkoong Columbia Business School, Hongseok Columbia Business School, Namkoong Columbia Business School, Hong Namkoong Columbia Business School, Hong Columbia Business School, Hongseok Namkoong Columbia DRO, Hongseok Columbia DRO, Namkoong Columbia DRO, Hong Namkoong Columbia DRO, Hong Columbia DRO, Hongseok Namkoong Decision Risk and Operations Division, Hongseok Decision Risk and Operations Division, Namkoong Decision Risk and Operations Division, Hong Namkoong Decision Risk and Operations Division, Hong Decision Risk and Operations Division, Hong Namkoong Columbia Decision Risk and Operations Division, Hong Columbia Decision Risk and Operations Division, Hongseok Namkoong Facebook, Hongseok Facebook, Namkoong Facebook, Hong Namkoong Facebook, Hongseok Namkoong Columbia Business, Hongseok Columbia Business, Namkoong  Columbia Business, Hong Namkoong  Columbia Business, Hongseok Namkoong DRO, Hongseok DRO, Namkoong  DRO, Hong Namkoong  DRO, Hongseok Namkoong AI, Hongseok AI, Namkoong  AI, Hong Namkoong  AI, Hong Namkoong ML, Uncertainty quantification, autoregressive modeling, de finetti, adaptive experimentation, autodifferentiation planning, agentic systems, AI Agents Initiative">
 
@@ -76,10 +76,103 @@
 
 
 
+    
+      <style type="text/css">
+        .post-header {
+  margin-bottom: 1rem;
+} .post-title {
+  font-size: clamp(2.1rem, 3.5vw, 3.25rem);
+  line-height: 1.05;
+} .post-description {
+  max-width: 900px;
+  line-height: 1.45;
+} .post article > p {
+  max-width: 900px;
+  line-height: 1.5;
+  font-size: 0.98rem;
+} .post article > h2 {
+  font-size: 0.86rem;
+  margin-top: 1.9rem;
+  margin-bottom: 0.9rem;
+} .method-note {
+  border-left: 4px solid var(--global-theme-color);
+  padding: 0.45rem 0 0.45rem 0.8rem;
+  margin: 0.8rem 0 1.5rem;
+  max-width: 900px;
+  font-size: 0.92rem;
+  line-height: 1.45;
+} .release-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin: 0.75rem auto 2rem;
+  max-width: 920px;
+} .release-card {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--global-card-bg-color);
+  min-height: 132px;
+} .release-card img {
+  width: 100%;
+  height: 100%;
+  min-height: 132px;
+  object-fit: cover;
+  object-position: left center;
+  display: block;
+  border-right: 1px solid var(--global-divider-color);
+} .release-card img.release-card-img-contain {
+  object-fit: contain;
+  object-position: center;
+  padding: 0.5rem;
+  background: #eef5fb;
+} .release-card img.release-card-img-focus {
+  object-position: top center;
+} .release-card-body {
+  padding: 0.85rem 0.95rem 0.95rem;
+} .release-card h3 {
+  font-size: 1.08rem;
+  margin: 0 0 0.4rem;
+} .release-card p {
+  font-size: 0.88rem;
+  line-height: 1.45;
+  margin-bottom: 0.8rem;
+} .release-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+} .release-actions a {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 6px;
+  padding: 0.22rem 0.55rem;
+  color: var(--global-text-color) !important;
+  font-size: 0.82rem;
+  line-height: 1.3;
+  background: var(--global-bg-color);
+} .release-actions a:hover {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color) !important;
+  text-decoration: none;
+} @media (max-width: 640px) {
+  .release-card {
+    grid-template-columns: 1fr;
+  }
+  .release-card img {
+    height: 8.5rem;
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+}
+
+      </style>
+    
   </head>
 
   <!-- Body -->
-  <body class="fixed-top-nav ">
+  <body class="fixed-top-nav  ">
     <!-- Header -->
     <header>
   <!-- Nav Bar -->
@@ -148,7 +241,18 @@
               
                 <li class="nav-item ">
                   
-                  <a class="nav-link" href="/research">Research Overview
+                  <a class="nav-link" href="/research/">Research
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/current-agenda/">Agenda
                     
                   </a>
                 </li>
@@ -185,7 +289,7 @@
               
                 <li class="nav-item active">
                   
-                  <a class="nav-link" href="/repositories/">Code &amp; Data
+                  <a class="nav-link" href="/repositories/">Resources
                     
                       <span class="sr-only">(current)</span>
                     
@@ -210,8 +314,8 @@
           
             <!-- Search -->
             <li class="nav-item">
-              <button id="search-toggle" title="Search" onclick="openSearchModal()">
-                <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
+              <button id="search-toggle" title="Search (Ctrl+K)" aria-label="Search" data-icon-only="true" onclick="openSearchModal()">
+                <span class="nav-link search-icon-only"><i class="ti ti-search"></i></span>
               </button>
             </li>
           
@@ -237,12 +341,109 @@
         <div class="post">
   <header class="post-header">
     <h1 class="post-title">Code &amp; Data</h1>
-    <p class="post-description">I am passionate about building empirical foundations for methodological progress. My group leads several open-source projects based on our research.</p>
+    <p class="post-description">I am passionate about building empirical foundations for methodological progress. My group leads open-source projects, benchmarks, and data releases based on our research.</p>
   </header>
 
   <article>
-    
+    <p>The GitHub pins below are the primary index of our open-source work. This page also highlights larger public releases with companion datasets or project pages.</p>
+
+<div class="method-note">
+  <strong>Methodological context:</strong> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6974119" rel="external nofollow noopener" target="_blank">Empirical Rigor Through Benchmarking in Operations Research</a> describes the philosophy behind building reusable empirical artifacts.
+</div>
+
+<h2 id="flagship-releases">Flagship releases</h2>
+
+<div class="release-grid">
+  <div class="release-card">
+    <img src="/assets/img/mbabench-model-thumb.png" alt="MBABench financial spreadsheet benchmark preview">
+    <div class="release-card-body">
+      <h3>MBABench</h3>
+      <p>End-to-end financial spreadsheet tasks for evaluating professional-quality agent workflows.</p>
+      <div class="release-actions">
+        <a href="https://arxiv.org/abs/2605.22664" rel="external nofollow noopener" target="_blank">Paper</a>
+        <a href="/news/mbabench-v1/">Blog</a>
+        <a href="https://github.com/namkoong-lab/MBABench" rel="external nofollow noopener" target="_blank">Code</a>
+        <a href="https://huggingface.co/datasets/namkoong-lab/mbabench-modeloff" rel="external nofollow noopener" target="_blank">Data</a>
+        <a href="https://mbabench.org/" rel="external nofollow noopener" target="_blank">Website</a>
+      </div>
+    </div>
+  </div>
+  <div class="release-card">
+    <img src="/assets/img/latentgym-overview-thumb.png" alt="LatentGym Task 10 cross-task learning example" class="release-card-img-focus">
+    <div class="release-card-body">
+      <h3>LatentGym</h3>
+      <p>A controllable testbed for cross-task experiential learning with latent structure.</p>
+      <div class="release-actions">
+        <a href="https://arxiv.org/abs/2606.15306" rel="external nofollow noopener" target="_blank">Paper</a>
+        <a href="https://dakshmittal30.github.io/LatentGym-Experiential-Learning/" rel="external nofollow noopener" target="_blank">Blog</a>
+        <a href="https://github.com/namkoong-lab/LatentGym" rel="external nofollow noopener" target="_blank">Code</a>
+        <a href="https://huggingface.co/collections/namkoong-lab/latentgym-6a22ddf5339b7ef0423934c6" rel="external nofollow noopener" target="_blank">Data</a>
+      </div>
+    </div>
+  </div>
+  <div class="release-card">
+    <img src="/assets/img/synthtools-framework-thumb.png" alt="SynthTools top-down tool generation overview" class="release-card-img-focus">
+    <div class="release-card-body">
+      <h3>SynthTools</h3>
+      <p>A framework for scaling synthetic tool environments for agent development and evaluation.</p>
+      <div class="release-actions">
+        <a href="https://arxiv.org/abs/2511.09572" rel="external nofollow noopener" target="_blank">Paper</a>
+        <a href="https://github.com/namkoong-lab/SynthTools" rel="external nofollow noopener" target="_blank">Code</a>
+        <a href="https://github.com/namkoong-lab/SynthTools/blob/main/task_content.jsonl" rel="external nofollow noopener" target="_blank">Data</a>
+        <a href="https://github.com/namkoong-lab/SynthTools" rel="external nofollow noopener" target="_blank">Website</a>
+      </div>
+    </div>
+  </div>
+  <div class="release-card">
+    <img src="/assets/img/bela-exploratory-thumb.png" alt="BELA exploratory without context example" class="release-card-img-focus">
+    <div class="release-card-body">
+      <h3>In-context experiential learning</h3>
+      <p>A repeated product-recommendation benchmark for studying agents that improve from interaction.</p>
+      <div class="release-actions">
+        <a href="https://arxiv.org/abs/2511.22130" rel="external nofollow noopener" target="_blank">Paper</a>
+        <a href="https://github.com/namkoong-lab/interactive-benchmark" rel="external nofollow noopener" target="_blank">Code</a>
+        <a href="https://www.experiential-learning-benchmark.com/" rel="external nofollow noopener" target="_blank">Website</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 id="repositories">Repositories</h2>
+
 <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  
+    
+
+
+<div class="repo p-2 text-center">
+  <a href="https://github.com/namkoong-lab/MBABench" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="namkoong-lab/MBABench" src="https://github-readme-stats-chi-eight-19.vercel.app/api/pin/?username=namkoong-lab&amp;repo=MBABench&amp;theme=default&amp;show_owner=true&amp;cache_seconds=21600">
+    <img class="repo-img-dark w-100" alt="namkoong-lab/MBABench" src="https://github-readme-stats-chi-eight-19.vercel.app/api/pin/?username=namkoong-lab&amp;repo=MBABench&amp;theme=dark&amp;show_owner=true&amp;cache_seconds=21600">
+  </a>
+</div>
+
+  
+    
+
+
+<div class="repo p-2 text-center">
+  <a href="https://github.com/namkoong-lab/LatentGym" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="namkoong-lab/LatentGym" src="https://github-readme-stats-chi-eight-19.vercel.app/api/pin/?username=namkoong-lab&amp;repo=LatentGym&amp;theme=default&amp;show_owner=true&amp;cache_seconds=21600">
+    <img class="repo-img-dark w-100" alt="namkoong-lab/LatentGym" src="https://github-readme-stats-chi-eight-19.vercel.app/api/pin/?username=namkoong-lab&amp;repo=LatentGym&amp;theme=dark&amp;show_owner=true&amp;cache_seconds=21600">
+  </a>
+</div>
+
+  
+    
+
+
+<div class="repo p-2 text-center">
+  <a href="https://github.com/namkoong-lab/OR-benchmark-experiments" rel="external nofollow noopener" target="_blank">
+    <img class="repo-img-light w-100" alt="namkoong-lab/OR-benchmark-experiments" src="https://github-readme-stats-chi-eight-19.vercel.app/api/pin/?username=namkoong-lab&amp;repo=OR-benchmark-experiments&amp;theme=default&amp;show_owner=true&amp;cache_seconds=21600">
+    <img class="repo-img-dark w-100" alt="namkoong-lab/OR-benchmark-experiments" src="https://github-readme-stats-chi-eight-19.vercel.app/api/pin/?username=namkoong-lab&amp;repo=OR-benchmark-experiments&amp;theme=dark&amp;show_owner=true&amp;cache_seconds=21600">
+  </a>
+</div>
+
   
     
 
@@ -462,7 +663,7 @@
       © Copyright 2026
       Hongseok
       
-      Namkoong. Jekyll <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme.
+      Namkoong. Built with Jekyll.
 
       
       
@@ -677,12 +878,19 @@
         handler: () => {
           window.location.href = "/";
         },
-      },{id: "nav-research-overview",
-              title: "Research Overview",
-              description: "Our research group develops AI systems that optimize real-world business objectives, with a particular focus on trustworthy and responsible learning methods. We take a systems-level perspective that spans machine learning, operations research, and statistics to address fundamental challenges in deploying AI in high-stakes domains.",
+      },{id: "nav-research-foundations",
+              title: "Research Foundations",
+              description: "An overview of the research foundations behind our group&#39;s work: trustworthy AI, AI-driven decisions, robust causality, and empirical methodology.",
               section: "Navigation",
               handler: () => {
-                window.location.href = "/research";
+                window.location.href = "/research/";
+              },
+            },{id: "nav-agents-that-never-stop-learning",
+              title: "Agents That Never Stop Learning",
+              description: "My current research agenda on continually learning agents. My research group builds AI systems that build persistent state, learn from experience through experiential learning, and improve over their lifetime.",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/current-agenda/";
               },
             },{id: "nav-publications",
               title: "Publications",
@@ -700,7 +908,7 @@
               },
             },{id: "nav-code-amp-data",
               title: "Code &amp; Data",
-              description: "I am passionate about building empirical foundations for methodological progress. My group leads several open-source projects based on our research.",
+              description: "I am passionate about building empirical foundations for methodological progress. My group leads open-source projects, benchmarks, and data releases based on our research.",
               section: "Navigation",
               handler: () => {
                 window.location.href = "/repositories/";
@@ -738,7 +946,12 @@
               window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
             
           },
-        },{id: "news-we-re-hiring-multiple-postdoctoral-research-fellows-at-the-lt-a-href-quot-https-columbia-agents-initiative-com-quot-gt-columbia-ai-agents-initiative-lt-a-gt-apply-to-work-with-me-on-data-centric-ai",
+        },{id: "news-mbabench-evaluating-llms-on-spreadsheet-tasks-across-critical-dimensions",
+          title: 'MBABench: Evaluating LLMs on Spreadsheet Tasks Across Critical Dimensions',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/mbabench-v1/";
+            },},{id: "news-we-re-hiring-multiple-postdoctoral-research-fellows-at-the-lt-a-href-quot-https-columbia-agents-initiative-com-quot-gt-columbia-ai-agents-initiative-lt-a-gt-apply-to-work-with-me-on-data-centric-ai",
           title: 'We’re hiring multiple Postdoctoral Research Fellows at the &lt;a href=&quot;https://columbia-agents-initiative.com/&quot;&gt;Columbia AI Agents Initiative&lt;/a&gt;. Apply to work with me on data-centric AI!',
           description: "",
           section: "News",},{id: "news-i-m-looking-for-motivated-undergraduate-and-master-s-students-to-work-on-ml-research-fill-lt-a-href-quot-https-docs-google-com-forms-d-e-1faipqlse2h-h4ren1dmztfs7bkpsxpwvabkqm7i-rkbxv3ei9p41wea-viewform-usp-header-quot-gt-this-form-lt-a-gt-out-if-you-re-interested",

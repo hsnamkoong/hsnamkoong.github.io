@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head -->
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- Metadata, OpenGraph and Schema.org -->
+
+
+
+
+<!-- Standard metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>
+  
+  
+    
+      MBABench: Evaluating LLMs on Spreadsheet Tasks Across Critical Dimensions | Hongseok Namkoong
+    
+  
+</title>
+<meta name="author" content="Hongseok Namkoong">
+<meta name="description" content="Hongseok Namkoong, Columbia University
+">
+
+  <meta name="keywords" content="Hongseok Namkoong, Hongseok, Namkoong, Hong Namkoong, Hongseok Namkoong Stanford, Hongseok Stanford, Namkoong Stanford, Hong Namkoong Stanford, Hongseok Namkoong MS&amp;E, Hongseok MS&amp;E, Namkoong MS&amp;E, Hong Namkoong MS&amp;E, Hongseok Namkoong Machine Learning, Hongseok Machine Learning, Namkoong Machine Learning, Hong Namkoong Machine Learning, Hongseok Namkoong Operations Research, Hongseok Operations Research, Namkoong  Operations Research, Hong Namkoong  Operations Research, Hongseok Namkoong Columbia, Hongseok Columbia, Namkoong Columbia, Hong Namkoong Columbia, Hong Columbia, Hongseok Namkoong Columbia Business School, Hongseok Columbia Business School, Namkoong Columbia Business School, Hong Namkoong Columbia Business School, Hong Columbia Business School, Hongseok Namkoong Columbia DRO, Hongseok Columbia DRO, Namkoong Columbia DRO, Hong Namkoong Columbia DRO, Hong Columbia DRO, Hongseok Namkoong Decision Risk and Operations Division, Hongseok Decision Risk and Operations Division, Namkoong Decision Risk and Operations Division, Hong Namkoong Decision Risk and Operations Division, Hong Decision Risk and Operations Division, Hong Namkoong Columbia Decision Risk and Operations Division, Hong Columbia Decision Risk and Operations Division, Hongseok Namkoong Facebook, Hongseok Facebook, Namkoong Facebook, Hong Namkoong Facebook, Hongseok Namkoong Columbia Business, Hongseok Columbia Business, Namkoong  Columbia Business, Hong Namkoong  Columbia Business, Hongseok Namkoong DRO, Hongseok DRO, Namkoong  DRO, Hong Namkoong  DRO, Hongseok Namkoong AI, Hongseok AI, Namkoong  AI, Hong Namkoong  AI, Hong Namkoong ML, Uncertainty quantification, autoregressive modeling, de finetti, adaptive experimentation, autodifferentiation planning, agentic systems, AI Agents Initiative">
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap & MDB -->
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css?a4b3f509e79c54a512b890d73235ef04">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous">
+
+<!-- Bootstrap Table -->
+
+
+<!-- Fonts & Icons -->
+<link defer rel="stylesheet" href="/assets/css/academicons.min.css?f0b7046b84e425c55f3463ac249818f5">
+<link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap">
+
+<!-- Code Syntax Highlighting -->
+<link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light">
+
+
+
+<!-- Styles -->
+
+<!-- pseudocode -->
+
+
+
+  <link rel="shortcut icon" href="/assets/img/ai-ops.png?95e81b98820a4b52480a374dca055d6a">
+
+<link rel="stylesheet" href="/assets/css/main.css?d41d8cd98f00b204e9800998ecf8427e">
+<link rel="canonical" href="https://hsnamkoong.github.io/news/mbabench-v1/">
+
+<!-- Dark Mode -->
+<script src="/assets/js/theme.js?9a0c749ec5240d9cda97bc72359a72c0"></script>
+
+
+<!-- GeoJSON support via Leaflet -->
+
+
+<!-- diff2html -->
+
+
+
+
+
+
+    
+  </head>
+
+  <!-- Body -->
+  <body class="fixed-top-nav  ">
+    <!-- Header -->
+    <header>
+  <!-- Nav Bar -->
+  <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation">
+    <div class="container">
+      
+        <a class="navbar-brand title font-weight-lighter" href="/">
+          
+            
+              <span class="font-weight-bold">Hongseok</span>
+            
+            
+            Namkoong
+          
+        </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          
+
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">Bio
+              
+            </a>
+          </li>
+
+          <!-- Other pages -->
+          
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/research/">Research
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/current-agenda/">Agenda
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/publications/">Publications
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/people/">Team
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/repositories/">Resources
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+              
+                <li class="nav-item ">
+                  
+                  <a class="nav-link" href="/teaching/">Teaching
+                    
+                  </a>
+                </li>
+              
+            
+          
+            
+          
+          
+            <!-- Search -->
+            <li class="nav-item">
+              <button id="search-toggle" title="Search (Ctrl+K)" aria-label="Search" data-icon-only="true" onclick="openSearchModal()">
+                <span class="nav-link search-icon-only"><i class="ti ti-search"></i></span>
+              </button>
+            </li>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+    <!-- Scrolling Progress Bar -->
+    <progress id="progress" value="0">
+      <div class="progress-container">
+        <span class="progress-bar"></span>
+      </div>
+    </progress>
+  
+</header>
+
+
+    <!-- Content -->
+    <div class="container mt-5" role="main">
+      
+        
+
+
+
+
+
+
+
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">MBABench: Evaluating LLMs on Spreadsheet Tasks Across Critical Dimensions</h1>
+    <p class="post-meta">
+      Created in June 23, 2026
+      
+      
+      
+    </p>
+    <p class="post-tags">
+      
+        <i class="fa-solid fa-calendar fa-sm"></i> 2026
+      
+      
+
+      
+    </p>
+  </header>
+
+  <article class="post-content">
+    
+    <div id="markdown-content">
+      <p>TL;DR: Current LLM evaluations fail to capture the high-level qualities that matter to practitioners. In finance, where spreadsheets are the primary deliverable, these qualities determine whether a model is usable in practice. MBABench evaluates LLM agents on full spreadsheet construction, with a particular focus on the usability dimensions that matter in practice.</p>
+
+<figure style="max-width: 680px; margin: 1.25rem auto; text-align: center;">
+	<img src="../news-assets/mbabench_model.gif" alt="MBABench animation showing an end-to-end financial spreadsheet task." style="width: 100%; height: auto; border-radius: 8px;">
+	<figcaption style="font-size: 0.9rem; margin-top: 0.6rem;">MBABench evaluates agents on complete spreadsheet construction, not isolated cell edits or formula questions.</figcaption>
+</figure>
+
+<h2 id="why-spreadsheets-matter">Why Spreadsheets Matter</h2>
+
+<p>Over a billion people work in spreadsheets, and in many white-collar workflows, the spreadsheet is the deliverable itself: fresh MBA grads are commonly tasked with creating DCFs, LBO models, and three-statement projections, which are then passed from analyst to VP to decision-maker. AI agents stand to revolutionize this workflow by automating spreadsheet construction, and frontier models can already build a full workbook end to end. The pressing question is whether what they produce meets the standard a practitioner would accept. That’s what MBABench sets out to answer.</p>
+
+<p>Before turning to the specifics of the spreadsheet tasks and the benchmark, we first lay out the broader perspective on LLM evaluation that motivates this work.</p>
+
+<h2 id="llm-evals-miss-what-practitioners-actually-want">LLM Evals Miss What Practitioners Actually Want</h2>
+
+<p>Consider code as an example. When an agent ships a codebase, the desired outcome is not solely passing a fixed test suite for the requested feature. The deliverable is a complete codebase that aligns with practitioners’ “taste”, a loaded term that admits more concrete characterizations in software engineering:</p>
+
+<ul>
+  <li>The codebase should remain readable when a developer returns to it later to debug or extend it.</li>
+  <li>Components should be modular, with reusable elements cleanly separated.</li>
+  <li>Similar problems should be solved with consistent patterns.</li>
+  <li>Abstractions should decouple logic such that modifying one module does not cascade through the others.</li>
+  <li>The design should leave sufficient flexibility to absorb reasonable new features without rewrites, given prior expectations about likely extensions.</li>
+</ul>
+
+<p>A handful of test functions cannot capture any of this, yet evaluation schemes built on test functions dominate the current coding benchmark landscape.</p>
+
+<p>This is why agent-generated code still falls short when code quality is the priority. Producing a high-quality codebase in practice requires careful prompting, review, and iteration by experienced engineers. <a href="https://x.com/karpathy/status/1977758204139331904" rel="external nofollow noopener" target="_blank">Andrej Karpathy’s public experience with NanoGPT</a> illustrates the pattern.</p>
+
+<p>The same applies to white-collar spreadsheet tasks, if not more.</p>
+
+<h2 id="creating-spreadsheets-in-finance">Creating Spreadsheets in Finance</h2>
+
+<p>For many white-collar workstreams, spreadsheets are the deliverables. In finance, a DCF, an LBO model, or a three-statement projection are regularly shared, audited, and extended by other analysts, VPs, and decision-makers. A model that lands the right valuation with flawed formulas, hard-codes its assumptions, or breaks under a scenario toggle is an unusable model.</p>
+
+<p>When a senior banker reviews an analyst’s spreadsheet, they look for:</p>
+
+<ul>
+  <li>Are inputs separated from calculations and outputs?</li>
+  <li>Do formulas reference cells consistently, or do values appear hard-coded mid-formula?</li>
+  <li>Are sign conventions consistent across the model?</li>
+  <li>Does formatting communicate structure: shaded inputs, bordered outputs, consistent number formats?</li>
+  <li>Can the model run a scenario by toggling one cell, or does it require significant modifications?</li>
+</ul>
+
+<p>Existing spreadsheet benchmarks miss almost all of this. They check whether a target cell holds the right number, or whether a function returns the expected output. The artifact’s quality, the property that determines its usability in practice, escapes the evaluation entirely.</p>
+
+<figure style="max-width: 680px; margin: 1.25rem auto; text-align: center;">
+	<img src="../news-assets/mbabench_artifact_animated.gif" alt="MBABench animation framing spreadsheets as collaborative artifacts." style="width: 100%; height: auto; border-radius: 8px;">
+	<figcaption style="font-size: 0.9rem; margin-top: 0.6rem;">The benchmark focuses on the workbook as a collaborative artifact: something another professional can audit, modify, and extend.</figcaption>
+</figure>
+
+<h2 id="what-is-mbabench">What is MBABench?</h2>
+
+<p>MBABench 1.0 is a benchmark on end-to-end spreadsheet construction in finance, where tasks ask LLM agents to produce a full workbook from a brief case description, and where evaluation reports performance along three independent dimensions:</p>
+
+<ul>
+  <li>Accuracy. Final answers match the reference solution, and the underlying calculations that produce them are correct.</li>
+  <li>Formula quality. Formulas reference inputs and assumptions cleanly, propagate correctly, and avoid hard-coded constants.</li>
+  <li>Formatting. The workbook follows conventions a reviewer expects: separated input, calculation, and output regions, consistent number formats, and clear labels and borders.</li>
+</ul>
+
+<p>A workbook that scores well on numerical accuracy alone is not a usable artifact. MBABench rewards workbooks that a time-constrained decision-maker could open and extend. Each of the major dimensions above is further broken down into sub-criteria.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Accuracy</th>
+      <th style="text-align: right">50%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Final Calculations</td>
+      <td style="text-align: right">35%</td>
+    </tr>
+    <tr>
+      <td>Starting Values</td>
+      <td style="text-align: right">25%</td>
+    </tr>
+    <tr>
+      <td>Task Completed</td>
+      <td style="text-align: right">25%</td>
+    </tr>
+    <tr>
+      <td>Sign Consistency</td>
+      <td style="text-align: right">15%</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Formula</th>
+      <th style="text-align: right">35%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Logic Readability &amp; Size</td>
+      <td style="text-align: right">20%</td>
+    </tr>
+    <tr>
+      <td>Handle Edge Cases</td>
+      <td style="text-align: right">20%</td>
+    </tr>
+    <tr>
+      <td>Avoid Hardcoding</td>
+      <td style="text-align: right">20%</td>
+    </tr>
+    <tr>
+      <td>Range Hygiene</td>
+      <td style="text-align: right">20%</td>
+    </tr>
+    <tr>
+      <td>Using Absolute References</td>
+      <td style="text-align: right">20%</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Format</th>
+      <th style="text-align: right">15%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Workbook &amp; Sheet Structure</td>
+      <td style="text-align: right">20%</td>
+    </tr>
+    <tr>
+      <td>Number Notation</td>
+      <td style="text-align: right">20%</td>
+    </tr>
+    <tr>
+      <td>Readability</td>
+      <td style="text-align: right">10%</td>
+    </tr>
+    <tr>
+      <td>Color Standards</td>
+      <td style="text-align: right">10%</td>
+    </tr>
+    <tr>
+      <td>Information Alignment</td>
+      <td style="text-align: right">10%</td>
+    </tr>
+    <tr>
+      <td>Style Consistency</td>
+      <td style="text-align: right">10%</td>
+    </tr>
+    <tr>
+      <td>Borders &amp; Shading</td>
+      <td style="text-align: right">10%</td>
+    </tr>
+    <tr>
+      <td>Output Presentation</td>
+      <td style="text-align: right">10%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="task-example-the-macrohard-acquisition">Task Example: The Macrohard Acquisition</h2>
+
+<p>Consider a task drawn from MBABench: you are evaluating whether to acquire a company called Macrohard. The input is a PDF containing business assumptions (revenue growth, cost structure, debt terms, tax rates) and a partially formatted Excel template. The output should be a complete workbook that answers a single question: should we acquire this company, and at what price?</p>
+
+<p>The answer hinges on IRR, which shows how much the company is expected to grow each year. But any single IRR number is a prediction about the future, and predictions change dramatically based on your assumptions: what if revenue grows at 3% instead of 5%? What if interest rates rise? What if the company sells for a lower multiple than expected? The point of a financial model is not to produce one number. It is to expose the assumptions behind the number, cover the dimensions along which the future might plausibly differ, and let decision-makers see exactly how sensitive the conclusion is to each assumption. This is why, as argued above, the qualities of the model as a system (modularity, readability, extensibility) are not secondary to getting the right answer. They are what makes the workbook usable in practice.</p>
+
+<p>To support this, the agent must construct an income statement (revenue minus costs, year by year), a balance sheet (what the company owns vs. what it owes), a cash flow statement (actual cash moving in and out), a debt schedule (how loans are drawn and repaid over time), depreciation tranches, and an equity waterfall, all projected over a 10-year horizon. Each component must be structured so that changing any input assumption propagates cleanly through the entire workbook, and so that a reader can trace any output back to the assumptions that produced it.</p>
+
+<p><img src="https://mbabench.org/concepts/summary_sheet_excel.png" alt="Summary sheet from a completed MBABench workbook: a final-answers tab whose values link back to the model with no hard-coded numbers."></p>
+
+<p>A completed workbook’s summary sheet: every answer cell links back to model_main, with no hard-coded numbers, so a reviewer can trace each figure to its source.</p>
+
+<h2 id="evaluation">Evaluation</h2>
+
+<p>Having established the importance of these high-level desiderata in practice, a natural question arises: can these structural properties be graded with deterministic rules? Most of the dimensions described above require an evaluation that accounts for the context. Whether a reference should be absolute or relative depends on how the formula will be copied. Whether an IFERROR wrapper is needed depends on whether the denominator can plausibly be zero given the case context. Whether a layout is acceptable depends on what the relevant quantities are and whether their reading order matches the logical flow. Evaluating these criteria requires reasoning about workbook structure and case context.</p>
+
+<p>This is why MBABench uses LLM-as-judge evaluation. An LLM judge can read the case PDF, examine the workbook’s formula graph, and assess whether a particular structural choice is appropriate given the task. We develop and validate an LLM judge to match expert human ratings with high accuracy (see <a href="https://arxiv.org/abs/2605.22664" rel="external nofollow noopener" target="_blank">the paper</a>).</p>
+
+<h2 id="agent-performance">Agent Performance</h2>
+
+<p>Qualitatively, our experts found that spreadsheet-native agents frequently introduce formatting inconsistencies and tend to hard-code values rather than express the underlying calculations as formulas. The hard-coded numbers are usually correct, which suggests these agents can do the math in some other environment but fail to express it natively in the spreadsheet, exactly the failure mode the formula-quality dimension is designed to surface.</p>
+
+<p>Quantitatively, we found performance degrades significantly with task difficulty across all agents, suggesting substantial headroom for agents to improve on sophisticated spreadsheet tasks that experts are expected to complete.</p>
+
+<figure style="max-width: 760px; margin: 1.25rem auto; text-align: center;">
+	<img src="../news-assets/leaderboard_v2.png" alt="MBABench leaderboard showing composite scores across evaluated agents." style="width: 100%; height: auto; border-radius: 8px;">
+	<figcaption style="font-size: 0.9rem; margin-top: 0.6rem;">Overall MBABench leaderboard. Claude Web leads across the three evaluation dimensions, while API-only harnesses lag far behind GUI spreadsheet workflows.</figcaption>
+</figure>
+
+<figure style="max-width: 620px; margin: 1.25rem auto; text-align: center;">
+	<img src="../news-assets/leaderboard_difficulty_emh.png" alt="MBABench leaderboard showing composite scores by task difficulty." style="width: 100%; height: auto; border-radius: 8px;">
+	<figcaption style="font-size: 0.9rem; margin-top: 0.6rem;">Performance falls sharply as tasks move from easy to medium to hard, highlighting the gap between current agents and expert-level spreadsheet work.</figcaption>
+</figure>
+
+<h2 id="future-roadmap--collaboration">Future Roadmap &amp; Collaboration</h2>
+
+<p>MBABench 1.0 is a starting point for evaluating agents on end-to-end white-collar workflows. The current benchmark focuses on spreadsheet tasks in finance. From here, we are expanding along three axes:</p>
+
+<ul>
+  <li>Longer-horizon cases. Tasks that span more steps and require sustained context over the course of a workflow.</li>
+  <li>More realistic case environments. Tasks with ambiguity, incomplete information, and the kind of underspecified briefs analysts actually receive.</li>
+  <li>More domains beyond finance. Coverage of additional white-collar workflows where the deliverable is a structured artifact.</li>
+</ul>
+
+<p>If you work on agents for white-collar workflows, or you have domain expertise we should be building tasks against, <a href="https://mbabench.org/#/contributor" rel="external nofollow noopener" target="_blank">get in touch</a>. We would like to hear from you.</p>
+
+<p>Interested in partnering or contributing? Reach out at <a href="mailto:ty2531@columbia.edu">ty2531@columbia.edu</a>.</p>
+
+<p>The MBABench Team</p>
+
+    </div>
+  </article>
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+
+      
+    </div>
+
+    <!-- Footer -->
+    
+  <footer class="fixed-bottom" role="contentinfo">
+    <div class="container mt-0">
+      © Copyright 2026
+      Hongseok
+      
+      Namkoong. Built with Jekyll.
+
+      
+      
+    </div>
+  </footer>
+
+
+
+    <!-- JavaScripts -->
+    <!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Bootsrap & MDB scripts -->
+<script src="/assets/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="/assets/js/mdb.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+    
+  <!-- Masonry & imagesLoaded -->
+  <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/masonry.js" type="text/javascript"></script>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  <!-- Medium Zoom JS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script>
+  <script defer src="/assets/js/zoom.js?85ddb88934d28b74e78031fd54cf8308"></script>
+
+
+
+<!-- Bootstrap Table -->
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/no_defer.js?2781658a0a2b13ed609542042a859126"></script>
+<script defer src="/assets/js/common.js?b7816bd189846d29eded8745f9c4cf77"></script>
+<script defer src="/assets/js/copy_code.js?12775fdf7f95e901d7119054556e495f" type="text/javascript"></script>
+
+<!-- Jupyter Open External Links New Tab -->
+<script defer src="/assets/js/jupyter_new_tab.js?d9f17b6adc2311cbabd747f4538bb15f"></script>
+
+
+
+    
+  <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
+
+
+  <script async src="https://badge.dimensions.ai/badge.js"></script>
+
+
+    
+  
+    <!-- MathJax -->
+    <script type="text/javascript">
+      window.MathJax = {
+        tex: {
+          tags: 'ams',
+        },
+      };
+    </script>
+    <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.min.js" integrity="sha256-rjmgmaB99riUNcdlrDtcAiwtLIojSxNyUFdl+Qh+rB4=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
+  
+
+
+    
+
+    
+
+
+    
+  <!-- Scrolling Progress Bar -->
+  <script type="text/javascript">
+    /*
+     * This JavaScript code has been adapted from the article
+     * https://css-tricks.com/reading-position-indicator/ authored by Pankaj Parashar,
+     * published on the website https://css-tricks.com on the 7th of May, 2014.
+     * Couple of changes were made to the original code to make it compatible
+     * with the `al-foio` theme.
+     */
+    const progressBar = $('#progress');
+    /*
+     * We set up the bar after all elements are done loading.
+     * In some cases, if the images in the page are larger than the intended
+     * size they'll have on the page, they'll be resized via CSS to accomodate
+     * the desired size. This mistake, however, breaks the computations as the
+     * scroll size is computed as soon as the elements finish loading.
+     * To account for this, a minimal delay was introduced before computing the
+     * values.
+     */
+    window.onload = function () {
+      setTimeout(progressBarSetup, 50);
+    };
+    /*
+     * We set up the bar according to the browser.
+     * If the browser supports the progress element we use that.
+     * Otherwise, we resize the bar thru CSS styling
+     */
+    function progressBarSetup() {
+      if ('max' in document.createElement('progress')) {
+        initializeProgressElement();
+        $(document).on('scroll', function () {
+          progressBar.attr({ value: getCurrentScrollPosition() });
+        });
+        $(window).on('resize', initializeProgressElement);
+      } else {
+        resizeProgressBar();
+        $(document).on('scroll', resizeProgressBar);
+        $(window).on('resize', resizeProgressBar);
+      }
+    }
+    /*
+     * The vertical scroll position is the same as the number of pixels that
+     * are hidden from view above the scrollable area. Thus, a value > 0 is
+     * how much the user has scrolled from the top
+     */
+    function getCurrentScrollPosition() {
+      return $(window).scrollTop();
+    }
+
+    function initializeProgressElement() {
+      let navbarHeight = $('#navbar').outerHeight(true);
+      $('body').css({ 'padding-top': navbarHeight });
+      $('progress-container').css({ 'padding-top': navbarHeight });
+      progressBar.css({ top: navbarHeight });
+      progressBar.attr({
+        max: getDistanceToScroll(),
+        value: getCurrentScrollPosition(),
+      });
+    }
+    /*
+     * The offset between the html document height and the browser viewport
+     * height will be greater than zero if vertical scroll is possible.
+     * This is the distance the user can scroll
+     */
+    function getDistanceToScroll() {
+      return $(document).height() - $(window).height();
+    }
+
+    function resizeProgressBar() {
+      progressBar.css({ width: getWidthPercentage() + '%' });
+    }
+    // The scroll ratio equals the percentage to resize the bar
+    function getWidthPercentage() {
+      return (getCurrentScrollPosition() / getDistanceToScroll()) * 100;
+    }
+  </script>
+
+
+    
+
+    
+
+    
+
+    <script src="/assets/js/vanilla-back-to-top.min.js?f40d453793ff4f64e238e420181a1d17"></script>
+<script>
+  
+    addBackToTop();
+  
+</script>
+
+    
+  <script type="module" src="/assets/js/search/ninja-keys.min.js?601a2d3465e2a52bec38b600518d5f70"></script>
+  <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys>
+  <script>
+    let theme = determineComputedTheme();
+    const ninjaKeys = document.querySelector('ninja-keys');
+
+    if (theme === 'dark') {
+      ninjaKeys.classList.add('dark');
+    } else {
+      ninjaKeys.classList.remove('dark');
+    }
+
+    const openSearchModal = () => {
+      // collapse navbarNav if expanded on mobile
+      const $navbarNav = $('#navbarNav');
+      if ($navbarNav.hasClass('show')) {
+        $navbarNav.collapse('hide');
+      }
+      ninjaKeys.open();
+    };
+  </script>
+  <script>
+    // get the ninja-keys element
+    const ninja = document.querySelector('ninja-keys');
+
+    // add the home and posts menu items
+    ninja.data = [{
+        id: "nav-bio",
+        title: "Bio",
+        section: "Navigation",
+        handler: () => {
+          window.location.href = "/";
+        },
+      },{id: "nav-research-foundations",
+              title: "Research Foundations",
+              description: "An overview of the research foundations behind our group&#39;s work: trustworthy AI, AI-driven decisions, robust causality, and empirical methodology.",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/research/";
+              },
+            },{id: "nav-agents-that-never-stop-learning",
+              title: "Agents That Never Stop Learning",
+              description: "My current research agenda on continually learning agents. My research group builds AI systems that build persistent state, learn from experience through experiential learning, and improve over their lifetime.",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/current-agenda/";
+              },
+            },{id: "nav-publications",
+              title: "Publications",
+              description: "",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/publications/";
+              },
+            },{id: "nav-team",
+              title: "Team",
+              description: "I am fortunate to work with exceptionally talented students and postdocs.",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/people/";
+              },
+            },{id: "nav-code-amp-data",
+              title: "Code &amp; Data",
+              description: "I am passionate about building empirical foundations for methodological progress. My group leads open-source projects, benchmarks, and data releases based on our research.",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/repositories/";
+              },
+            },{id: "nav-teaching",
+              title: "Teaching",
+              description: "I teach several classes for Ph.D., M.S., and MBA students.",
+              section: "Navigation",
+              handler: () => {
+                window.location.href = "/teaching/";
+              },
+            },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
+          
+            // TODO: fix the svg icon position for external posts
+            // title: 'Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra <svg width="2rem" height="2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+            title: "Google Gemini updates: Flash 1.5, Gemma 2 and Project Astra",
+          
+          description: "We’re sharing updates across our Gemini family of models and a glimpse of Project Astra, our vision for the future of AI assistants.",
+          section: "Posts",
+          handler: () => {
+            
+              window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
+            
+          },
+        },{id: "post-displaying-external-posts-on-your-al-folio-blog",
+          
+            // TODO: fix the svg icon position for external posts
+            // title: 'Displaying External Posts on Your al-folio Blog <svg width="2rem" height="2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
+            title: "Displaying External Posts on Your al-folio Blog",
+          
+          description: "",
+          section: "Posts",
+          handler: () => {
+            
+              window.open("https://medium.com/@al-folio/displaying-external-posts-on-your-al-folio-blog-b60a1d241a0a?source=rss-17feae71c3c4------2", "_blank");
+            
+          },
+        },{id: "news-mbabench-evaluating-llms-on-spreadsheet-tasks-across-critical-dimensions",
+          title: 'MBABench: Evaluating LLMs on Spreadsheet Tasks Across Critical Dimensions',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/mbabench-v1/";
+            },},{id: "news-we-re-hiring-multiple-postdoctoral-research-fellows-at-the-lt-a-href-quot-https-columbia-agents-initiative-com-quot-gt-columbia-ai-agents-initiative-lt-a-gt-apply-to-work-with-me-on-data-centric-ai",
+          title: 'We’re hiring multiple Postdoctoral Research Fellows at the &lt;a href=&quot;https://columbia-agents-initiative.com/&quot;&gt;Columbia AI Agents Initiative&lt;/a&gt;. Apply to work with me on data-centric AI!',
+          description: "",
+          section: "News",},{id: "news-i-m-looking-for-motivated-undergraduate-and-master-s-students-to-work-on-ml-research-fill-lt-a-href-quot-https-docs-google-com-forms-d-e-1faipqlse2h-h4ren1dmztfs7bkpsxpwvabkqm7i-rkbxv3ei9p41wea-viewform-usp-header-quot-gt-this-form-lt-a-gt-out-if-you-re-interested",
+          title: 'I’m looking for motivated undergraduate and master’s students to work on ML research. Fill &lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSe2h_h4rEn1dMzTfs7BKPsxPwvabkqm7I-RkBXv3eI9P41weA/viewform?usp=header&quot;&gt;this form&lt;/a&gt; out if you’re interested.',
+          description: "",
+          section: "News",},{id: "news-ai-systems-are-omni-present-yet-extrapolate-unreliably-improving-ai-safety-and-capabilities-hinges-on-comprehension-of-uncertainty-and-actively-making-decisions-to-resolve-it-instead-of-cumbersome-probabilistic-models-my-team-leverages-a-lt-em-gt-predictive-view-of-uncertainty-lt-em-gt-to-build-a-scalable-framework-based-on-autoregressive-models-watch-this-recent-lt-a-href-quot-https-simons-berkeley-edu-talks-hongseok-namkoong-coumbia-university-2024-11-15-quot-gt-simons-talk-lt-a-gt-to-learn-more",
+          title: 'AI systems are omni-present, yet extrapolate unreliably. Improving AI safety and capabilities
+hinges on comprehension of uncertainty and actively making decisions to resolve it.
+Instead of cumbersome probabilistic models, my team leverages a &lt;em&gt;predictive view of uncertainty&lt;/em&gt;
+to build a scalable framework based on autoregressive models. Watch this recent &lt;a href=&quot;https://simons.berkeley.edu/talks/hongseok-namkoong-coumbia-university-2024-11-15&quot;&gt;Simons talk&lt;/a&gt; to learn more.',
+          description: "",
+          section: "News",},{id: "news-in-this-significantly-lt-a-href-quot-https-arxiv-org-abs-2307-05284-quot-gt-updated-paper-lt-a-gt-we-use-rigorous-and-extensive-empirical-analysis-to-highlight-the-shortcomings-of-robust-learning-algorithms-and-advocate-for-new-data-driven-inductive-paradigm-for-algorithm-development-also-check-out-our-lt-a-href-quot-https-nips-cc-virtual-2023-tutorial-73953-quot-gt-neurips-2023-tutorial-on-distribution-shifts-lt-a-gt-and-lt-a-href-quot-https-gsb-columbia-edu-zoom-us-rec-share-dqv3yqql8gj27n-c8j5cdpp9mjpoqgrniuyfhqgskohgsa6knelygmh3qx-ogk2-qp9jc6bs7-rczwa-quot-gt-my-dro-brown-bag-lt-a-gt-overviewing-my-group-s-work-in-this-direction",
+          title: 'In this significantly &lt;a href=&quot;https://arxiv.org/abs/2307.05284&quot;&gt;updated paper&lt;/a&gt;, we use rigorous and extensive
+empirical analysis to highlight the shortcomings of robust learning algorithms
+and advocate for new data-driven inductive paradigm for algorithm development.
+
+Also check out our &lt;a href=&quot;https://nips.cc/virtual/2023/tutorial/73953&quot;&gt;NeurIPS 2023 tutorial on distribution shifts&lt;/a&gt;
+and &lt;a href=&quot;https://gsb-columbia-edu.zoom.us/rec/share/_Dqv3yqQl8Gj27n-c8j5Cdpp9MJPoQGRNIUyFHQGskOhGsa6KneLYgmH3Qx-ogK2.-Qp9jC6bs7_RCZWA&quot;&gt;my DRO brown bag&lt;/a&gt;  overviewing my group’s work in this direction.',
+          description: "",
+          section: "News",},{id: "news-watch-my-snapp-talk-on-lt-a-href-quot-https-youtu-be-clzrcow9eyk-quot-gt-adaptive-experimentation-at-scale-lt-a-gt",
+          title: 'Watch my SNAPP talk on &lt;a href=&quot;https://youtu.be/CLzRcOw9eyk&quot;&gt;Adaptive Experimentation at Scale&lt;/a&gt;.',
+          description: "",
+          section: "News",},{id: "news-watch-my-talk-on-lt-a-href-quot-https-youtu-be-clzrcow9eyk-quot-gt-robust-causal-inference-lt-a-gt-that-i-gave-at-the-lt-a-href-quot-https-ifds-tripods-github-io-drds-workshop-2022-quot-gt-ifds-workshop-on-distributional-robustness-in-data-science-lt-a-gt",
+          title: 'Watch my talk on &lt;a href=&quot;https://youtu.be/CLzRcOw9eyk&quot;&gt;Robust Causal Inference&lt;/a&gt;
+that I gave at the &lt;a href=&quot;https://ifds-tripods.github.io/drds-workshop-2022/&quot;&gt;IFDS workshop on distributional robustness in data science&lt;/a&gt;.',
+          description: "",
+          section: "News",},{id: "projects-research-highlight",
+              title: 'research highlight',
+              description: "with background image",
+              section: "Projects",handler: () => {
+                  window.location.href = "/projects/overview-scratch/";
+                },},{
+            id: 'socials-email',
+            title: 'Send email',
+            section: 'Socials',
+            handler: () => {
+              window.open("mailto:%6E%61%6D%6B%6F%6F%6E%67@%67%73%62.%63%6F%6C%75%6D%62%69%61.%65%64%75", "_blank");
+            },
+          },{
+            id: 'socials-google-scholar',
+            title: 'Google Scholar',
+            section: 'Socials',
+            handler: () => {
+              window.open("https://scholar.google.com/citations?user=dyXX1EgAAAAJ", "_blank");
+            },
+          },{
+            id: 'socials-github',
+            title: 'GitHub',
+            section: 'Socials',
+            handler: () => {
+              window.open("https://github.com/namkoong-lab", "_blank");
+            },
+          },{
+            id: 'socials-x',
+            title: 'X',
+            description: 'Twitter',
+            section: 'Socials',
+            handler: () => {
+              window.open("https://twitter.com/hsnamkoong", "_blank");
+            },
+          },];
+  </script>
+
+
+    <script src="/assets/js/shortcut-key.js"></script>
+  </body>
+</html>
