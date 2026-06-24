@@ -1,31 +1,38 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-        <a href="/assets/pdf/cv.pdf" title="cv">
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-cv" width="55" height="55" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-          <path d="M14 3v4a1 1 0 0 0 1 1h4" />
-          <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
-          <path d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
-          <path d="M13 11l1.5 6l1.5 -6" />
-          </svg>
-        </a>
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }} </p>
-  </header>
-
+<div class="post about-post">
   <article>
-    {% if page.profile-about %}
-      <div class="profile-about float-{% if page.profile-about.align == 'left' %}left{% else %}right{% endif %}">
+    <section class="about-hero">
+      <div class="about-copy">
+        <header class="post-header">
+          <h1 class="post-title">
+            {% if site.title == 'blank' %}
+              <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
+              {{ site.last_name }}
+              <a href="/assets/pdf/cv.pdf" title="cv" class="cv-link" aria-label="Download CV">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-cv" width="42" height="42" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                <path d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
+                <path d="M13 11l1.5 6l1.5 -6" />
+                </svg>
+              </a>
+            {% else %}
+              {{ site.title }}
+            {% endif %}
+          </h1>
+          <p class="desc">{{ page.subtitle }} </p>
+        </header>
+
+        <div class="about-content">
+          {{ content }}
+        </div>
+      </div>
+
+      {% if page.profile-about %}
+      <aside class="profile-about about-profile-panel">
         {% if page.profile-about.image %}
           {% assign profile_image_path = page.profile-about.image | prepend: 'assets/img/' %}
           {% if page.profile-about.image_circular %}
@@ -51,17 +58,14 @@ layout: default
             {% include social.liquid %}
           </div>
         {% endif %}
-      </div>
-    {% endif %}
-
-    <div class="clearfix">
-    {{ content }}
-    </div>
+      </aside>
+      {% endif %}
+    </section>
 
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: black">news</a>
+        <a href="{{ '/news/' | relative_url }}">news</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}

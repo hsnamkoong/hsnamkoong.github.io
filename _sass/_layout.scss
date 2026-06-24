@@ -6,6 +6,9 @@ body {
   padding-bottom: 70px;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
+  font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.65;
 
   h1,
   h2,
@@ -14,6 +17,8 @@ body {
   h5,
   h6 {
     scroll-margin-top: 66px;
+    font-family: "Roboto Slab", Georgia, serif;
+    font-weight: 500;
   }
 }
 
@@ -28,7 +33,7 @@ body.sticky-bottom-footer {
 }
 
 .container {
-  max-width: $max-content-width;
+  max-width: min(#{$max-content-width}, calc(100vw - 2rem));
 }
 
 // Profile

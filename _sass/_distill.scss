@@ -96,10 +96,11 @@ d-article {
     grid-row: auto / span 4;
     justify-self: end;
     margin-top: 0em;
-    padding-left: 2em;
-    padding-right: 3em;
+    padding-left: 0.75rem;
+    padding-right: 1rem;
     border-right: 1px solid var(--global-divider-color);
-    width: calc(max(60%, 290px));
+    width: clamp(13.75rem, 18vw, 18rem);
+    box-sizing: border-box;
     margin-right: 0px;
     margin-top: 0em;
     display: grid;
@@ -107,7 +108,7 @@ d-article {
       minmax(8px, 1fr) [toc] auto
       minmax(8px, 1fr) [toc-line] 1px
       minmax(32px, 2fr);
-      overflow-x: auto; /* Add horizontal scrolling */
+      overflow-x: visible;
 
     nav {
       grid-column: toc;
@@ -127,6 +128,7 @@ d-article {
         margin-bottom: 0.8em;
         color: rgba(0, 0, 0, 0.8);
         font-weight: bold;
+        overflow-wrap: anywhere;
       }
       ul {
         padding-left: 1em;
@@ -169,7 +171,7 @@ d-appendix {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1279px) {
   d-article {
     d-contents {
       display: block;
