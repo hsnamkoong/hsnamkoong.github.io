@@ -37,7 +37,7 @@ papers:
   - label: Data
     url: https://huggingface.co/datasets/namkoong-lab/mbabench-modeloff
   labels:
-  - continual-learning
+  - benchmarks
   sort_key: 7973-0001
 - id: MittalCaYeYeWuChCaKoZeNa26
   year: 2026
