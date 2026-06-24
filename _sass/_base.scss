@@ -966,6 +966,34 @@ ul.task-list input[type="checkbox"] {
   white-space: normal;
 }
 
+// Bib entries (Agenda / Research / Selected papers) show their labels in a
+// left gutter, matching the Papers page layout.
+.publications .publication-entry-labeled {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  column-gap: 1rem;
+}
+
+.publications .publication-entry-labeled > * {
+  grid-column: 2;
+}
+
+.publications .publication-entry-labeled > .publication-label-list {
+  grid-column: 1;
+  grid-row: 1 / span 99;
+  align-self: start;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 576px) {
+  .publications .publication-entry-labeled {
+    display: block;
+  }
+  .publications .publication-entry-labeled > .publication-label-list {
+    margin-top: 0.4rem;
+  }
+}
+
 .publication-links {
   margin-top: 0.45rem;
 }

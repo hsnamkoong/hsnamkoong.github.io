@@ -9,6 +9,18 @@
 {%- if display_url contains 'arxiv.org' -%}
   {%- assign display_url = '' -%}
 {%- endif -%}
+{%- assign pub_catalog = site.data.publications -%}
+{%- assign pub_record = nil -%}
+{%- for paper in pub_catalog.papers -%}
+  {%- if paper.id == entry.key -%}
+    {%- assign pub_record = paper -%}
+    {%- break -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign has_publication_labels = false -%}
+{%- if pub_record and pub_record.labels -%}
+  {%- assign has_publication_labels = true -%}
+{%- endif -%}
 <div class="row publication-entry">
   {% if has_publication_preview %}
     <div class="col-12 col-sm-2 publication-media">
@@ -29,24 +41,8 @@
     </div>
   {% endif %}
   <!-- Entry bib key -->
-  <div id="{{entry.key}}" class="{% if has_publication_preview %}col-12 col-sm-10{% else %}col-12{% endif %}">
-    <!-- Title -->
-    <div class="title">
-      {% if display_url != '' %}
-        <a href="{{ display_url }}" target="_blank">{{ display_title }}</a>
-      {% else %}
-        {{ display_title }}
-      {% endif %}
-    </div>
-    {%- assign pub_catalog = site.data.publications -%}
-    {%- assign pub_record = nil -%}
-    {%- for paper in pub_catalog.papers -%}
-      {%- if paper.id == entry.key -%}
-        {%- assign pub_record = paper -%}
-        {%- break -%}
-      {%- endif -%}
-    {%- endfor -%}
-    {% if pub_record and pub_record.labels %}
+  <div id="{{entry.key}}" class="{% if has_publication_preview %}col-12 col-sm-10{% else %}col-12{% endif %}{% if has_publication_labels %} publication-entry-labeled{% endif %}">
+    {% if has_publication_labels %}
       <div class="publication-label-list" aria-label="Labels">
         {% for paper_label in pub_record.labels %}
           {% for catalog_label in pub_catalog.labels %}
@@ -57,6 +53,14 @@
         {% endfor %}
       </div>
     {% endif %}
+    <!-- Title -->
+    <div class="title">
+      {% if display_url != '' %}
+        <a href="{{ display_url }}" target="_blank">{{ display_title }}</a>
+      {% else %}
+        {{ display_title }}
+      {% endif %}
+    </div>
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
