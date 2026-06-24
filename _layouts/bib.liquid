@@ -1,24 +1,12 @@
 ---
 ---
-<div class="row">
- {% if site.enable_publication_thumbnails %}
-    <div class="col col-sm-2 abbr">
-      {%- if entry.abbr -%}
-        {%- assign colors = "FFB3BA,FFDFBA,BAE1FF,FFCCE5,E1D4FF,D3BAFF,FFFFBA" | split: "," -%}
-        {%- assign color_index = entry.abbr | size | modulo: colors.size -%}
-        {%- assign random_color = colors[color_index] -%}
-        <abbr
-          class="badge rounded w-130"
-          style="background-color: #{{ random_color }};"
-        >
-          {% if site.data.venues[entry.abbr].url %}
-            <a href="{{site.data.venues[entry.abbr].url}}">{{ entry.abbr }}</a>
-          {% else %}
-            <div style="font-size: 14px;">{{- entry.abbr -}}</div>
-          {% endif %}
-        </abbr>
-      {% endif %}
-      {% if entry.preview %}
+{%- assign has_publication_preview = false -%}
+{%- if site.enable_publication_thumbnails and entry.preview -%}
+  {%- assign has_publication_preview = true -%}
+{%- endif -%}
+<div class="row publication-entry">
+  {% if has_publication_preview %}
+    <div class="col-12 col-sm-2 publication-media">
         {% if entry.preview contains '://' %}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
         {% else %}
@@ -33,11 +21,10 @@
             alt=entry.preview
           %}
         {% endif %}
-      {% endif %}
     </div>
   {% endif %}
   <!-- Entry bib key -->
-  <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div id="{{entry.key}}" class="{% if has_publication_preview %}col-12 col-sm-10{% else %}col-12{% endif %}">
     <!-- Title -->
     <div class="title">
       {% if entry.url %}
@@ -46,6 +33,15 @@
         {{ entry.title }}
       {% endif %}
     </div>
+    {% if entry.abbr %}
+      <div class="publication-meta">
+        {% if site.data.venues[entry.abbr].url %}
+          <a href="{{site.data.venues[entry.abbr].url}}" class="publication-topic">{{ entry.abbr }}</a>
+        {% else %}
+          <span class="publication-topic">{{ entry.abbr }}</span>
+        {% endif %}
+      </div>
+    {% endif %}
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}

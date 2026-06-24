@@ -62,6 +62,15 @@ _styles: >
     display: block;
     border-right: 1px solid var(--global-divider-color);
   }
+  .release-card img.release-card-img-contain {
+    object-fit: contain;
+    object-position: center;
+    padding: 0.5rem;
+    background: #eef5fb;
+  }
+  .release-card img.release-card-img-focus {
+    object-position: top center;
+  }
   .release-card-body {
     padding: 0.85rem 0.95rem 0.95rem;
   }
@@ -98,7 +107,7 @@ _styles: >
       grid-template-columns: 1fr;
     }
     .release-card img {
-      height: 6.75rem;
+      height: 8.5rem;
       min-height: 0;
       border-right: 0;
       border-bottom: 1px solid var(--global-divider-color);
@@ -116,7 +125,7 @@ The GitHub pins below are the primary index of our open-source work. This page a
 
 <div class="release-grid">
   <div class="release-card">
-    <img src="/news/news-assets/mbabench_model.gif" alt="MBABench financial spreadsheet benchmark preview">
+    <img src="/assets/img/mbabench-model-thumb.png" alt="MBABench financial spreadsheet benchmark preview">
     <div class="release-card-body">
       <h3>MBABench</h3>
       <p>End-to-end financial spreadsheet tasks for evaluating professional-quality agent workflows.</p>
@@ -130,7 +139,7 @@ The GitHub pins below are the primary index of our open-source work. This page a
     </div>
   </div>
   <div class="release-card">
-    <img src="/assets/img/ai-overview-480.webp" alt="LatentGym experiential learning overview">
+    <img src="/assets/img/latentgym-overview-thumb.png" alt="LatentGym Task 10 cross-task learning example" class="release-card-img-focus">
     <div class="release-card-body">
       <h3>LatentGym</h3>
       <p>A controllable testbed for cross-task experiential learning with latent structure.</p>
@@ -143,7 +152,7 @@ The GitHub pins below are the primary index of our open-source work. This page a
     </div>
   </div>
   <div class="release-card">
-    <img src="/assets/img/synthtools-framework.png" alt="SynthTools pipeline overview from the paper">
+    <img src="/assets/img/synthtools-framework-thumb.png" alt="SynthTools top-down tool generation overview" class="release-card-img-focus">
     <div class="release-card-body">
       <h3>SynthTools</h3>
       <p>A framework for scaling synthetic tool environments for agent development and evaluation.</p>
@@ -156,7 +165,7 @@ The GitHub pins below are the primary index of our open-source work. This page a
     </div>
   </div>
   <div class="release-card">
-    <img src="/assets/img/bela-setup.png" alt="BELA benchmark setup overview from the project webpage">
+    <img src="/assets/img/bela-exploratory-thumb.png" alt="BELA exploratory without context example" class="release-card-img-focus">
     <div class="release-card-body">
       <h3>In-context experiential learning</h3>
       <p>A repeated product-recommendation benchmark for studying agents that improve from interaction.</p>
