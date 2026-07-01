@@ -676,13 +676,13 @@ papers:
   - trustworthy-ai
   - deployed-in-practice
   sort_key: 7977-0001
-- id: LiNaXi24
-  year: 2024
+- id: LiMiNaXi26
+  year: 2026
   title: Evaluating Model Performance Under Worst-case Subpopulations
   authors: Mike Li, Daksh Mittal, Hongseok Namkoong, and Shangzhou Xia
   authors_html: Mike Li, <a href="https://sites.google.com/view/dakshmittal/home">Daksh Mittal</a>, Hongseok Namkoong, and Shangzhou Xia
-  venue: NeurIPS 2021
-  note: Major revision in Mathematics of Operations Research.
+  venue: Mathematics of Operations Research
+  note: Short version appeared in NeurIPS 2021.
   url: https://arxiv.org/abs/2407.01316
   tags:
   - worst-case subpopulations
@@ -690,7 +690,7 @@ papers:
   - robustness
   labels:
   - trustworthy-ai
-  sort_key: 7975-0010
+  sort_key: 7973-0012
 - id: NamkoongMaGl25
   year: 2025
   title: Minimax Optimal Estimation of Stability Under Distribution Shift
