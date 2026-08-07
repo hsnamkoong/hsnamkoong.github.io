@@ -6,8 +6,11 @@
 {%- endif -%}
 {%- assign display_title = entry.title | replace: '{', '' | replace: '}', '' -%}
 {%- assign display_url = entry.url | default: '' -%}
-{%- if display_url contains 'arxiv.org' -%}
-  {%- assign display_url = '' -%}
+{%- if display_url == '' and entry.arxiv -%}
+  {%- assign display_url = 'https://arxiv.org/abs/' | append: entry.arxiv -%}
+{%- endif -%}
+{%- if display_url == '' and entry.html -%}
+  {%- assign display_url = entry.html -%}
 {%- endif -%}
 {%- assign pub_catalog = site.data.publications -%}
 {%- assign pub_record = nil -%}
