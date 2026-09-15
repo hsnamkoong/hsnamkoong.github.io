@@ -20,7 +20,7 @@
   
 </title>
 <meta name="author" content="Hongseok Namkoong">
-<meta name="description" content="An overview of the research foundations behind our group's work: trustworthy AI, AI-driven decisions, robust causality, and empirical methodology.">
+<meta name="description" content="Data-centric methods for reliable AI systems that learn, make decisions, and improve through interaction.">
 
   <meta name="keywords" content="Hongseok Namkoong, Hongseok, Namkoong, Hong Namkoong, Hongseok Namkoong Stanford, Hongseok Stanford, Namkoong Stanford, Hong Namkoong Stanford, Hongseok Namkoong MS&amp;E, Hongseok MS&amp;E, Namkoong MS&amp;E, Hong Namkoong MS&amp;E, Hongseok Namkoong Machine Learning, Hongseok Machine Learning, Namkoong Machine Learning, Hong Namkoong Machine Learning, Hongseok Namkoong Operations Research, Hongseok Operations Research, Namkoong  Operations Research, Hong Namkoong  Operations Research, Hongseok Namkoong Columbia, Hongseok Columbia, Namkoong Columbia, Hong Namkoong Columbia, Hong Columbia, Hongseok Namkoong Columbia Business School, Hongseok Columbia Business School, Namkoong Columbia Business School, Hong Namkoong Columbia Business School, Hong Columbia Business School, Hongseok Namkoong Columbia DRO, Hongseok Columbia DRO, Namkoong Columbia DRO, Hong Namkoong Columbia DRO, Hong Columbia DRO, Hongseok Namkoong Decision Risk and Operations Division, Hongseok Decision Risk and Operations Division, Namkoong Decision Risk and Operations Division, Hong Namkoong Decision Risk and Operations Division, Hong Decision Risk and Operations Division, Hong Namkoong Columbia Decision Risk and Operations Division, Hong Columbia Decision Risk and Operations Division, Hongseok Namkoong Facebook, Hongseok Facebook, Namkoong Facebook, Hong Namkoong Facebook, Hongseok Namkoong Columbia Business, Hongseok Columbia Business, Namkoong  Columbia Business, Hong Namkoong  Columbia Business, Hongseok Namkoong DRO, Hongseok DRO, Namkoong  DRO, Hong Namkoong  DRO, Hongseok Namkoong AI, Hongseok AI, Namkoong  AI, Hong Namkoong  AI, Hong Namkoong ML, Uncertainty quantification, autoregressive modeling, de finetti, adaptive experimentation, autodifferentiation planning, agentic systems, AI Agents Initiative">
 
@@ -127,7 +127,7 @@
     <script async type="text/json">
       {
             "title": "Research Foundations",
-            "description": "An overview of the research foundations behind our group's work: trustworthy AI, AI-driven decisions, robust causality, and empirical methodology.",
+            "description": "Data-centric methods for reliable AI systems that learn, make decisions, and improve through interaction.",
             "published": "",
             "authors": [
               
@@ -317,7 +317,7 @@
     <div class="post distill">
       <d-title>
         <h1>Research Foundations</h1>
-        <p>An overview of the research foundations behind our group's work: trustworthy AI, AI-driven decisions, robust causality, and empirical methodology.</p>
+        <p>Data-centric methods for reliable AI systems that learn, make decisions, and improve through interaction.</p>
       </d-title>
       
 
@@ -394,21 +394,45 @@
             </nav>
           </d-contents>
         
-        <p>AI models pre-trained on internet data can understand text, code, audio, and video. However, as public data sources become exhausted, it is evident that enabling applications beyond consumer chatbots requires a thoughtful approach to data curation. Mistakes are costly in decision-making problems, and intelligent agents must carefully collect and leverage proprietary data, such as customer feedback and user interactions.</p>
+        <p>My research group develops trustworthy AI systems that remain reliable beyond their training conditions and learn from interaction with the world. We take a data-centric view: what data to collect, how to use it, and how to evaluate the decisions it supports are central research questions.</p>
 
-<p>The widespread adoption of AI systems across critical domains has revealed fundamental gaps between academic research and practical deployment. While large language models trained on internet data have achieved impressive capabilities in general tasks, many real-world applications require specialized domain knowledge and careful consideration of reliability, fairness, and safety. Our work addresses these challenges through three key principles:</p>
+<p>We connect machine learning, operations research, and statistics across the life of an AI system. Our work spans robust training, evaluation of downstream decision quality, diagnosis of failures under distribution shift, and adaptive experimentation to decide what to learn next. Mathematical principles guide our algorithms, and empirical studies test whether they work under the computational and operational constraints of deployment.</p>
 
-<p>My research group develops trustworthy AI-driven decision-making systems that optimize long-term outcomes. In particular, we take a holistic “process view” of AI systems.</p>
+<p>I think of methodological research as shaping both the slope and the axes of scaling laws: how quickly performance improves with scale, what we scale, and what we count as progress. For learning agents, this means asking how accumulated experience can translate into more reliable decisions.</p>
 
-<div class="img l-body">
-  <div class="text-center">
-  <img src="/assets/img/ai-overview.png" alt="AI overview" width="330" height="130" border="10">
-  </div>
-  <div class="caption">
-    <strong> Process view of AI (not just a single model)<d-cite key="HsuDiSiNa24"></d-cite> : </strong>
-        Methodological development in ML largely focuses on model training. Taking a system-level view, we identify central bottlenecks in AI systems and resolve them by building computational and data-centric foundations. 
+<figure class="scaling-research l-body-outset" aria-label="Methodological research shapes the scaling rate and the axes">
+    <div class="scaling-research-panels">
+      <div class="scaling-research-panel">
+        <h3>Improve the scaling rate</h3>
+        <svg viewbox="0 0 440 245" role="img" aria-labelledby="scaling-law-title scaling-law-desc">
+          <title id="scaling-law-title">Methods change the return on scale</title>
+          <desc id="scaling-law-desc">A schematic log-log plot compares existing methods with better methods. The steeper line represents a larger scaling exponent, so performance improves faster as resources increase.</desc>
+          <path class="scaling-axis" d="M55 37 V195 H418"></path>
+          <text x="55" y="23">Performance (log)</text>
+          <text x="418" y="224" text-anchor="end">Resources (log)</text>
+          <path class="scaling-baseline" d="M72 180 L396 120"></path>
+          <path class="scaling-improved" d="M72 180 L396 57"></path>
+          <text class="scaling-accent" x="235" y="62">Better methods</text>
+          <text class="scaling-muted" x="262" y="160">Existing methods</text>
+        </svg>
+      </div>
+      <div class="scaling-research-panel">
+        <h3>Define the axes</h3>
+        <svg viewbox="0 0 440 245" role="img" aria-labelledby="scaling-axes-title scaling-axes-desc">
+          <title id="scaling-axes-title">Research defines what to scale and what to improve</title>
+          <desc id="scaling-axes-desc">The vertical axis asks what should improve, for example reliability. The horizontal axis asks what to scale, for example experience from interacting with the world.</desc>
+          <path class="scaling-axis" d="M55 37 V195 H418"></path>
+          <text class="scaling-accent" x="55" y="23">What should improve?</text>
+          <text class="scaling-muted" x="72" y="61">e.g., reliability</text>
+          <path class="scaling-direction" d="M90 166 L280 78 M269 78 H280 V89"></path>
+          <text class="scaling-muted" x="418" y="179" text-anchor="end">e.g., experience</text>
+          <text class="scaling-accent" x="418" y="224" text-anchor="end">What can we scale?</text>
+        </svg>
+      </div>
     </div>
-</div>
+</figure>
+
+<p>These foundations inform my <a href="/agenda/">current agenda on agents that keep learning throughout their lifetime</a>.</p>
 
 <h2 id="trustworthy-ai">Trustworthy AI</h2>
 
