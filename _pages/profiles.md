@@ -10,40 +10,12 @@ text:
   
 profiles:
   - align: left
-    image: team/yanlin-qu.png
-    content: none
-    image_circular: false
-    name: Yanlin Qu
-    department: Postdoctoral Fellow; co-advised with Assaf Zeevi
-    link: "https://quyanlin.github.io/"
-  - align: left
     image: team/fangyu-wu.jpeg
     content: none
     image_circular: false
     name: Fangyu Wu
     department: Postdoctoral Fellow; AI Agents Initiative at Columbia DFI
     link: "https://fangyuwu.com/"  
-  - align: left
-    image: team/tiffany-cai.jpeg
-    content: none
-    image_circular: false
-    name: Tiffany Cai
-    department: Statistics
-    link: "https://tc2718.github.io/"
-  - align: left
-    image: team/ari-boyarsky.png
-    content: none
-    image_circular: false
-    name: Ari Boyarsky
-    department: Decision, Risk, and Operations
-    link: "https://www.ariboyarsky.com/"
-  - align: left
-    image: team/yuanzhe-ma.jpeg
-    content: none
-    image_circular: false
-    name: Yuanzhe Ma
-    department: Industrial Engineering and Operations Research; co-advised with Garud Iyengar and Jay Sethuraman
-    link: https://yuanzhe-ma.com/
   - align: left
     image: team/daksh-mittal.png
     content: none
@@ -79,82 +51,93 @@ profiles:
     name: Minghui Chen
     department: Research Scientist
     link: "https://chenminghui.com/"
+  - name: Tommaso Castellani
+    image: team/tommaso-castellani.jpeg
+    department: Computer Science
+    link: https://tommicaste.github.io/
+  - name: Max Bennett
+    image: team/max-bennett.jpeg
+    department: Computer Science
+    link: https://maxsbennett.com/
+  - name: Hanming Yang
+    image: team/hanming-yang.jpg
+    department: Decision, Risk, and Operations
+    link: https://business.columbia.edu/phd/current-students
+  - name: Qian Xie
+    image: team/qian-xie.jpg
+    department: Postdoctoral Fellow; AI Agents Initiative at Columbia DFI
+    link: https://qianjanexie.github.io/
 
 alumni_profiles:
-  - align: left
-    image: team/ethan-che.jpeg
-    content: none
-    image_circular: false
-    name: Ethan Che
+  - name: Yanlin Qu
+    sort_name: Qu, Yanlin
+    department: Postdoc, 2024–2026; now Assistant Professor at CUHK Shenzhen
+    link: "https://quyanlin.github.io/"
+  - name: Tiffany Cai
+    sort_name: Cai, Tiffany
+    department: Statistics Ph.D., 2026; now at Hudson River Trading
+    link: "https://tc2718.github.io/"
+  - name: Ari Boyarsky
+    sort_name: Boyarsky, Ari
+    department: DRO Ph.D., 2026; now at Cubist Systematic Strategies
+    link: "https://www.ariboyarsky.com/"
+  - name: Yuanzhe Ma
+    sort_name: Ma, Yuanzhe
+    department: IEOR Ph.D., 2026; now at Meta
+    link: https://yuanzhe-ma.com/
+  - name: Ethan Che
+    sort_name: Che, Ethan
     department: DRO Ph.D., now Research Scientist at Meta Adaptive Experimentation
     link: "https://ethche.github.io/"
-  - align: left
-    image: team/yibo-zeng.jpeg
-    content: none
-    image_circular: false
-    name: Yibo Zeng
+  - name: Yibo Zeng
+    sort_name: Zeng, Yibo
     department: IEOR Ph.D., now Research Scientist at Meta Virtual Reality Labs
     link: https://scholar.google.com/citations?user=4bIBeOgAAAAJ&hl=en
-  - align: left
-    image: team/kelly-zhang.png
-    content: none
-    image_circular: false
-    name: Kelly Zhang
+  - name: Kelly Zhang
+    sort_name: Zhang, Kelly
     department: Postdoc, now Assistant Professor at Imperial College London
     link: https://kellywzhang.github.io/
 
 ug_alumni_profiles:
-  - align: left
-    image: team/tony-chen.jpeg
-    content: none
-    image_circular: false
-    name: Tony Chen
+  - name: Tony Chen
+    sort_name: Chen, Tony
     department: CS B.S., now Ph.D. student at Princeton
     link: https://tonychen.xyz/
-  - align: left
-    image: team/elise-han.png
-    content: none
-    image_circular: false
-    name: Elise Han
+  - name: Elise Han
+    sort_name: Han, Elise
     department: CS B.S., now Ph.D. student at Stanford
     link: https://www.linkedin.com/in/elise-han-508021206/
-  - align: left
-    image: team/leon-li.png
-    content: none
-    image_circular: false
-    name: Leon Li
+  - name: Leon Li
+    sort_name: Li, Leon
     department: CS B.S., now Ph.D. student at NYU
     link: https://leonlixyz.github.io/
-  - align: left
-    image: team/andrew-siah.png
-    content: none
-    image_circular: false
-    name: Andrew Siah
+  - name: Andrew Siah
+    sort_name: Siah, Andrew
     link: https://andrewsiah.com/about/
     department: CS B.S., now co-founder at Tab AI
-  - align: left
-    image: team/jimmy-wang.png
-    content: none
-    image_circular: false
-    name: Jimmy Wang
+  - name: Jimmy Wang
+    sort_name: Wang, Jimmy
     department: CS B.S., now Ph.D. student at UC Berkeley
     link: https://www.linkedin.com/in/jameswang771/
-  - align: left
-    image: team/shunri-zheng.png
-    content: none
-    image_circular: false
-    name: Shunri Zheng
+  - name: Shunri Zheng
+    sort_name: Zheng, Shunri
     department: IEOR M.S., now Ph.D. student at UIUC
     link: https://www.linkedin.com/in/shunri-zheng-070677250/
-  
-phd_collaborator_profiles:
-  - name: Jiashuo Liu
-    department: Computer Science, Tsinghua University
-    link: https://ljsthu.github.io/
-  - name: Tom Zollo
-    department: Computer Science, Columbia University
-    link: https://www.thomaszollo.com/
-
-ug_profiles:
+  - name: Yaqin Chen
+    sort_name: Chen, Yaqin
+    department: B.S., Sun Yat-sen University; now Ph.D. student at Northwestern IEMS
+    link: https://chen-yaqin.github.io/
+  - name: Joshua Fan
+    sort_name: Fan, Joshua
+    department: Columbia CS undergraduate; now at UT Austin
+    link: https://dblp.uni-trier.de/pid/437/8687.html
+  - name: Tommaso Castellani
+    sort_name: Castellani, Tommaso
+    department: UChicago Statistics; now Ph.D. student at Columbia CS
+    link: https://tommicaste.github.io/
+  - name: Hanming Yang
+    sort_name: Yang, Hanming
+    department: Columbia CS undergraduate; now Ph.D. student at Columbia DRO
+    link: https://business.columbia.edu/phd/current-students
 
 ---

@@ -112,6 +112,7 @@ papers:
   title: Empirical Likelihood for Nonsmooth Functionals
   authors: Hongseok Namkoong
   authors_html: Hongseok Namkoong
+  note: 'Major revision in Operations Research.'
   url: https://arxiv.org/abs/2603.27743
   tags:
   - empirical likelihood
@@ -136,7 +137,7 @@ papers:
   sort_key: 7973-0007
 - id: LiuWaCuNa26
   year: 2026
-  title: 'On the Need for a Language Describing Distribution Shifts: Illustrations on Tabular Datasets'
+  title: 'Rethinking Distribution Shifts: Empirical Analysis and Inductive Modeling for Tabular Data'
   authors: Jiashuo Liu, Tianyu Wang, Peng Cui, and Hongseok Namkoong
   authors_html: <a href="https://ljsthu.github.io/">Jiashuo Liu</a>, <a href="https://wangtianyu61.github.io/">Tianyu Wang</a>, <a href="https://pengcui.thumedialab.com/">Peng Cui</a>, and Hongseok Namkoong
   venue: Management Science
@@ -208,6 +209,7 @@ papers:
   title: 'DRO: A Python Library for Distributionally Robust Optimization in Machine Learning'
   authors: Jiashuo Liu, Tianyu Wang, Henry Lam, Hongseok Namkoong, and Jose Blanchet
   authors_html: <a href="https://ljsthu.github.io/">Jiashuo Liu</a>, <a href="https://wangtianyu61.github.io/">Tianyu Wang</a>, <a href="https://www.columbia.edu/~khl2114/">Henry Lam</a>, Hongseok Namkoong, and Jose Blanchet
+  note: 'Revise and resubmit at Journal of Machine Learning Research.'
   url: https://arxiv.org/abs/2505.23565
   tags:
   - distributionally robust optimization
@@ -339,11 +341,11 @@ papers:
   sort_key: 7974-0009
 - id: MittalMaJoNa25
   year: 2025
-  title: A Planning Framework for Adaptive Labeling
+  title: 'Adaptive Measurement for Posterior Variance Minimization'
   authors: Daksh Mittal, Yuanzhe Ma, Shalmali Joshi, and Hongseok Namkoong
   authors_html: <a href="https://sites.google.com/view/dakshmittal/home">Daksh Mittal</a>, <a href="https://yuanzhe-ma.com/">Yuanzhe Ma</a>, <a href="https://shalmalijoshi.github.io/reAIM/">Shalmali Joshi</a>, and Hongseok Namkoong
   venue: NeurIPS 2024
-  note: Journal version under review.
+  note: 'Under second round review in Operations Research; conference version appeared in NeurIPS 2024.'
   url: https://arxiv.org/abs/2502.06076
   tags:
   - adaptive labeling
@@ -473,10 +475,10 @@ papers:
   sort_key: 7974-0013
 - id: CheJiNaWa24
   year: 2024
-  title: Optimization-Driven Adaptive Experimentation
+  title: 'A Unified Planning Framework for Short-Horizon Adaptive Experimentation'
   authors: Ethan Che, Daniel Jiang, Hongseok Namkoong, and Jimmy Wang
   authors_html: <a href="https://ethche.github.io/">Ethan Che</a>, <a href="https://danielrjiang.github.io/">Daniel Jiang</a>, Hongseok Namkoong, and Jimmy Wang
-  note: 'Selected for oral presentations at the Econometric Society Interdisciplinary Frontiers: Economics and AI+ML conference and Conference on Digital Experimentation.'
+  note: 'Under second round review in Management Science; selected for oral presentations at the Econometric Society Interdisciplinary Frontiers: Economics and AI+ML conference and Conference on Digital Experimentation.'
   url: https://arxiv.org/abs/2408.04570
   tags:
   - adaptive experimentation
@@ -513,6 +515,7 @@ papers:
   title: Exchangeable Sequence Models Quantify Uncertainty Over Latent Concepts
   authors: Naimeng Ye and Hongseok Namkoong
   authors_html: <a href="https://naimengye.github.io/">Naimeng Ye</a> and Hongseok Namkoong
+  note: 'Under second round review in Operations Research.'
   url: https://arxiv.org/abs/2408.03307
   tags:
   - exchangeability
@@ -561,7 +564,7 @@ papers:
   title: Design and Scheduling of an AI-based Queueing System
   authors: Jiung Lee, Hongseok Namkoong, and Yibo Zeng
   authors_html: Jiung Lee, Hongseok Namkoong, and <a href="https://scholar.google.com/citations?user=4bIBeOgAAAAJ&amp;hl=en">Yibo Zeng</a>
-  note: Major revision in Management Science; selected for presentation at SIG day 2025.
+  note: 'Selected for presentation at SIG Day 2025.'
   url: https://arxiv.org/abs/2406.06855
   tags:
   - queueing systems
@@ -575,7 +578,7 @@ papers:
   title: 'Adaptive Experimentation at Scale: A Computational Framework for Flexible Batches'
   authors: Ethan Che and Hongseok Namkoong
   authors_html: <a href="https://ethche.github.io/">Ethan Che</a> and Hongseok Namkoong
-  note: Major revision in Operations Research.
+  note: 'Under third round review in Operations Research.'
   url: https://arxiv.org/abs/2303.11582
   tags:
   - adaptive experimentation
@@ -654,11 +657,11 @@ papers:
   sort_key: 7973-0011
 - id: JeongNa22
   year: 2022
-  title: Assessing External Validity via Worst-case Subpopulation Treatment Effects
+  title: 'Assessing External Validity to Subpopulation Shift via Worst-case Treatment Effects'
   authors: Sookyo Jeong and Hongseok Namkoong
   authors_html: <a href="https://eytan.github.io/">Sookyo Jeong</a> and Hongseok Namkoong
   venue: COLT 2020
-  note: Major revision in Management Science.
+  note: 'Under third round review in Management Science; conference version appeared in COLT 2020.'
   url: https://arxiv.org/abs/2007.02411
   tags:
   - external validity

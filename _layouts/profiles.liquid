@@ -10,10 +10,8 @@ layout: default
     <p>{{ page.description }}</p>
     {% if page.profiles %}
       <div class="container">
-        <div class="row justify-content-center">
-          {% assign random_seed = site.time | date: "%s%N" %}
-          {% assign shuffled_profiles = page.profiles | sort: random_seed %}
-          {% for profile in shuffled_profiles %}
+        <div class="row justify-content-center" data-team-shuffle="current">
+          {% for profile in page.profiles %}
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
               <div class="profile text-center">
                 {% if profile.image %}
@@ -23,12 +21,11 @@ layout: default
                   {% else %}
                     {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
                   {% endif %}
-                  {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
-                  {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.name %}
+                  <img src="{{ profile_image_path | relative_url }}" class="{{ profile_image_class }}" width="200" height="200" alt="{{ profile.name | escape }}">
                 {% endif %}
                 {% if profile.name %}
                   {% if profile.link %}
-                    <p class="profile-name"><a href="{{ profile.link }}" target="_blank">{{ profile.name }}</a></p>
+                    <p class="profile-name"><a href="{{ profile.link }}" target="_blank" rel="noopener noreferrer">{{ profile.name }}</a></p>
                   {% else %}
                     <p class="profile-name">{{ profile.name }}</p>
                   {% endif %}
@@ -43,118 +40,41 @@ layout: default
       </div>
     {% endif %}
 
-    <h4> Alumni </h4>
-    {% if page.alumni_profiles %}
-      <div class="container">
-        <div class="row justify-content-center">
-          {% assign random_seed = site.time | date: "%s%N" %}
-          {% assign shuffled_profiles = page.alumni_profiles | sort: random_seed %}
-          {% for profile in shuffled_profiles %}
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-              <div class="profile text-center">
-                {% if profile.image %}
-                  {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-                  {% if profile.image_circular %}
-                    {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-                  {% else %}
-                    {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-                  {% endif %}
-                  {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
-                  {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.name %}
-                {% endif %}
-                {% if profile.name %}
-                  {% if profile.link %}
-                    <p class="profile-name"><a href="{{ profile.link }}" target="_blank">{{ profile.name }}</a></p>
-                  {% else %}
-                    <p class="profile-name">{{ profile.name }}</p>
-                  {% endif %}
-                {% endif %}
-                {% if profile.department %}
-                  <p class="profile-department">{{ profile.department }}</p>
-                {% endif %}
-              </div>
-            </div>
+    <section class="team-alumni" aria-labelledby="alumni-heading">
+      <h2 id="alumni-heading">Alumni</h2>
+      {% if page.alumni_profiles.size > 0 %}
+        <h3>Ph.D. Students and Postdocs</h3>
+        <ul class="team-alumni-list">
+          {% assign sorted_alumni = page.alumni_profiles | sort: "sort_name" %}
+          {% for profile in sorted_alumni %}
+            <li>
+              {% if profile.link %}
+                <a href="{{ profile.link }}" target="_blank" rel="noopener noreferrer">{{ profile.name }}</a>
+              {% else %}
+                {{ profile.name }}
+              {% endif %}
+              {% if profile.department %}<span> — {{ profile.department }}</span>{% endif %}
+            </li>
           {% endfor %}
-        </div>
-      </div>
-    {% endif %}
-
-    {% if page.ug_alumni_profiles %}
-      <div class="container">
-        <div class="row justify-content-center">
-          {% assign random_seed = site.time | date: "%s%N" %}
-          {% assign shuffled_profiles = page.ug_alumni_profiles | sort: random_seed %}
-          {% for profile in shuffled_profiles %}
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch">
-              <div class="profile text-center">
-                {% if profile.image %}
-                  {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-                  {% if profile.image_circular %}
-                    {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-                  {% else %}
-                    {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-                  {% endif %}
-                  {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
-                  {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.name %}
-                {% endif %}
-                {% if profile.name %}
-                  {% if profile.link %}
-                    <p class="profile-name"><a href="{{ profile.link }}" target="_blank">{{ profile.name }}</a></p>
-                  {% else %}
-                    <p class="profile-name">{{ profile.name }}</p>
-                  {% endif %}
-                {% endif %}
-                {% if profile.department %}
-                  <p class="profile-department">{{ profile.department }}</p>
-                {% endif %}
-              </div>
-            </div>
+        </ul>
+      {% endif %}
+      {% if page.ug_alumni_profiles.size > 0 %}
+        <h3>Undergraduate and Master's Students</h3>
+        <ul class="team-alumni-list">
+          {% assign sorted_ug_alumni = page.ug_alumni_profiles | sort: "sort_name" %}
+          {% for profile in sorted_ug_alumni %}
+            <li>
+              {% if profile.link %}
+                <a href="{{ profile.link }}" target="_blank" rel="noopener noreferrer">{{ profile.name }}</a>
+              {% else %}
+                {{ profile.name }}
+              {% endif %}
+              {% if profile.department %}<span> — {{ profile.department }}</span>{% endif %}
+            </li>
           {% endfor %}
-        </div>
-      </div>
-    {% endif %}
-
-    
-    {% comment %}
-    <!-- Undergraduate Students Section -->
-    <div class="section undergraduate-students", style="margin-bottom: 20px;">
-      <h4> Undergraduate and M.S. students</h4>
-      I also get to work with amazing undergraduate and masters students, including 
-      {% for student in page.ug_profiles %}
-        {% if student.link %}
-          <a href="{{ student.link }}" target="_blank">{{ student.name }}</a>{% unless forloop.last %}, {% endunless %}
-        {% else %}
-          {{ student.name }}{% unless forloop.last %}, {% endunless %}
-        {% endif %}
-      {% endfor %}
-      .
-    </div>
-    {% endcomment %}
-
-    <!-- PhD Collaborators Section -->
-    <div class="section phd-collaborators", style="margin-bottom: 20px;">
-      <h4>Ph.D. Collaborators</h4>
-      In addition to the students in my group, I have the privilege of 
-      collaborating with many student collaborators, including
-      {% for collaborator in page.phd_collaborator_profiles %}
-        {% if collaborator.link %}
-          <a href="{{ collaborator.link }}" target="_blank">{{ collaborator.name }}</a>{% unless forloop.last %}, {% endunless %}
-        {% else %}
-          {{ collaborator.name }}{% unless forloop.last %}, {% endunless %}
-        {% endif %}
-      {% endfor %}
-      .
-    </div>
-
-    
+        </ul>
+      {% endif %}
+    </section>
   </article>
 </div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var container = document.getElementById('profiles-row');
-    for (var i = container.children.length; i >= 0; i--) {
-      container.appendChild(container.children[Math.random() * i | 0]);
-    }
-  });
-</script>
+<script defer src="{{ '/assets/js/team.js' | relative_url | bust_file_cache }}"></script>

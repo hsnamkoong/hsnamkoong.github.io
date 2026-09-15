@@ -1871,3 +1871,31 @@ ninja-keys::part(ninja-input) {
 ninja-keys::part(ninja-input-wrapper) {
   background: var(--global-bg-color);
 }
+
+// Team directory.
+.team-page {
+  .profile {
+    width: 100%;
+  }
+
+  .team-alumni {
+    margin-top: 2rem;
+  }
+
+  .team-alumni h2 {
+    font-size: 1.5rem;
+  }
+
+  .team-alumni h3 {
+    margin-top: 1.5rem;
+    font-size: 1.15rem;
+  }
+
+  .team-alumni-list {
+    padding-left: 1.25rem;
+    line-height: 1.6;
+
+    li { margin-bottom: 0.6rem; }
+    a { font-weight: 600; }
+  }
+}
