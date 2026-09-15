@@ -62,10 +62,6 @@ My research group develops trustworthy AI systems that remain reliable beyond th
 
 We connect machine learning, operations research, and statistics across the life of an AI system. Our work spans robust training, evaluation of downstream decision quality, diagnosis of failures under distribution shift, and adaptive experimentation to decide what to learn next. Mathematical principles guide our algorithms, and empirical studies test whether they work under the computational and operational constraints of deployment.
 
-I think of methodological research as shaping both the slope and the axes of scaling laws: how quickly performance improves with scale, what we scale, and what we count as progress. For learning agents, this means asking how accumulated experience can translate into more reliable decisions.
-
-{% include scaling-research.liquid %}
-
 These foundations inform my [current agenda on agents that keep learning throughout their lifetime](/agenda/).
 
 ## Trustworthy AI

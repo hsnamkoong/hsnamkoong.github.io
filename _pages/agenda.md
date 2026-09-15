@@ -174,6 +174,10 @@ One might hope scaling would eventually bridge this gap. The bottleneck, however
 
 No amount of pretraining data can teach a model the daycare waitlist status for a specific family in a specific city. These are private, dynamic, context-dependent facts that exist only in the user's life and can only be learned through interaction. Scaling produces ever more knowledgeable encyclopedias. It does not automatically produce a system that tracks the state of your world and reasons about what to do next.
 
+I think of methodological research as shaping both the slope and the axes of scaling laws: how quickly performance improves with scale, what we scale, and what we count as progress. For learning agents, this means asking how accumulated experience can translate into more reliable decisions.
+
+{% include scaling-research.liquid %}
+
 ## Intellectual bottlenecks
 
 Today's training regime does not equip models to deal with ambiguous situations that are long-horizon, context-limited, and genuinely costly to interact with. Personalization is the canonical instance of this problem. Each interaction with a user reveals only a sliver of their preferences, and asking the wrong question wastes a scarce resource: the user's attention and patience. The system must learn to actively explore and resolve uncertainty, not merely retrieve and generate.
