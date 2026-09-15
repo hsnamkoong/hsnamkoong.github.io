@@ -398,40 +398,6 @@
 
 <p>We connect machine learning, operations research, and statistics across the life of an AI system. Our work spans robust training, evaluation of downstream decision quality, diagnosis of failures under distribution shift, and adaptive experimentation to decide what to learn next. Mathematical principles guide our algorithms, and empirical studies test whether they work under the computational and operational constraints of deployment.</p>
 
-<p>I think of methodological research as shaping both the slope and the axes of scaling laws: how quickly performance improves with scale, what we scale, and what we count as progress. For learning agents, this means asking how accumulated experience can translate into more reliable decisions.</p>
-
-<figure class="scaling-research l-body-outset" aria-label="Methodological research shapes the scaling rate and the axes">
-    <div class="scaling-research-panels">
-      <div class="scaling-research-panel">
-        <h3>Improve the scaling rate</h3>
-        <svg viewbox="0 0 440 245" role="img" aria-labelledby="scaling-law-title scaling-law-desc">
-          <title id="scaling-law-title">Methods change the return on scale</title>
-          <desc id="scaling-law-desc">A schematic log-log plot compares existing methods with better methods. The steeper line represents a larger scaling exponent, so performance improves faster as resources increase.</desc>
-          <path class="scaling-axis" d="M55 37 V195 H418"></path>
-          <text x="55" y="23">Performance (log)</text>
-          <text x="418" y="224" text-anchor="end">Resources (log)</text>
-          <path class="scaling-baseline" d="M72 180 L396 120"></path>
-          <path class="scaling-improved" d="M72 180 L396 57"></path>
-          <text class="scaling-accent" x="235" y="62">Better methods</text>
-          <text class="scaling-muted" x="262" y="160">Existing methods</text>
-        </svg>
-      </div>
-      <div class="scaling-research-panel">
-        <h3>Define the axes</h3>
-        <svg viewbox="0 0 440 245" role="img" aria-labelledby="scaling-axes-title scaling-axes-desc">
-          <title id="scaling-axes-title">Research defines what to scale and what to improve</title>
-          <desc id="scaling-axes-desc">The vertical axis asks what should improve, for example reliability. The horizontal axis asks what to scale, for example experience from interacting with the world.</desc>
-          <path class="scaling-axis" d="M55 37 V195 H418"></path>
-          <text class="scaling-accent" x="55" y="23">What should improve?</text>
-          <text class="scaling-muted" x="72" y="61">e.g., reliability</text>
-          <path class="scaling-direction" d="M90 166 L280 78 M269 78 H280 V89"></path>
-          <text class="scaling-muted" x="418" y="179" text-anchor="end">e.g., experience</text>
-          <text class="scaling-accent" x="418" y="224" text-anchor="end">What can we scale?</text>
-        </svg>
-      </div>
-    </div>
-</figure>
-
 <p>These foundations inform my <a href="/agenda/">current agenda on agents that keep learning throughout their lifetime</a>.</p>
 
 <h2 id="trustworthy-ai">Trustworthy AI</h2>
