@@ -3,7 +3,7 @@ layout: distill
 title: Research Foundations
 nav_title: Research
 permalink: /research/
-description: "An overview of the research foundations behind our group's work: trustworthy AI, AI-driven decisions, robust causality, and empirical methodology."
+description: "Data-centric methods for reliable AI systems that learn, make decisions, and improve through interaction."
 nav: true
 nav_order: 2
 
@@ -58,24 +58,15 @@ _styles: >
 ---
 
 
-AI models pre-trained on internet data can understand text, code, audio, and video. However, as public data sources become exhausted, it is evident that enabling applications beyond consumer chatbots requires a thoughtful approach to data curation. Mistakes are costly in decision-making problems, and intelligent agents must carefully collect and leverage proprietary data, such as customer feedback and user interactions.
+My research group develops trustworthy AI systems that remain reliable beyond their training conditions and learn from interaction with the world. We take a data-centric view: what data to collect, how to use it, and how to evaluate the decisions it supports are central research questions.
 
-The widespread adoption of AI systems across critical domains has revealed fundamental gaps between academic research and practical deployment. While large language models trained on internet data have achieved impressive capabilities in general tasks, many real-world applications require specialized domain knowledge and careful consideration of reliability, fairness, and safety. Our work addresses these challenges through three key principles:
+We connect machine learning, operations research, and statistics across the life of an AI system. Our work spans robust training, evaluation of downstream decision quality, diagnosis of failures under distribution shift, and adaptive experimentation to decide what to learn next. Mathematical principles guide our algorithms, and empirical studies test whether they work under the computational and operational constraints of deployment.
 
+I think of methodological research as shaping both the slope and the axes of scaling laws: how quickly performance improves with scale, what we scale, and what we count as progress. For learning agents, this means asking how accumulated experience can translate into more reliable decisions.
 
-My research group develops trustworthy AI-driven decision-making systems that optimize long-term outcomes. In particular, we take a holistic "process view" of AI systems. 
+{% include scaling-research.liquid %}
 
-<div class="img l-body">
-  <div class="text-center">
-  <img src="/assets/img/ai-overview.png" alt="AI overview" width="330" height="130" border="10" />
-  </div>
-  <div class="caption">
-    <strong> Process view of AI (not just a single model)<d-cite key="HsuDiSiNa24"></d-cite> : </strong>
-        Methodological development in ML largely focuses on model training. Taking a system-level view, we identify central bottlenecks in AI systems and resolve them by building computational and data-centric foundations. 
-    </div>
-</div>
-
-
+These foundations inform my [current agenda on agents that keep learning throughout their lifetime](/agenda/).
 
 ## Trustworthy AI
 
