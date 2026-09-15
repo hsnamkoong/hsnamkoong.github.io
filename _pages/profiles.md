@@ -87,7 +87,7 @@ alumni_profiles:
     link: https://yuanzhe-ma.com/
   - name: Ethan Che
     sort_name: Che, Ethan
-    department: DRO Ph.D., now Research Scientist at Meta Adaptive Experimentation
+    department: DRO Ph.D., now Research Scientist at Meta
     link: "https://ethche.github.io/"
   - name: Yibo Zeng
     sort_name: Zeng, Yibo
