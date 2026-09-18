@@ -71,73 +71,73 @@ profiles:
 alumni_profiles:
   - name: Yanlin Qu
     sort_name: Qu, Yanlin
-    department: Postdoc, 2024–2026; now Assistant Professor at CUHK Shenzhen
+    department: Postdoc; now Assistant Professor at CUHK Shenzhen
     link: "https://quyanlin.github.io/"
   - name: Tiffany Cai
     sort_name: Cai, Tiffany
-    department: Statistics Ph.D., 2026; now at Hudson River Trading
+    department: Statistics Ph.D.; now at Hudson River Trading
     link: "https://tc2718.github.io/"
   - name: Ari Boyarsky
     sort_name: Boyarsky, Ari
-    department: DRO Ph.D., 2026; now at Cubist Systematic Strategies
+    department: DRO Ph.D.; now at Cubist Systematic Strategies
     link: "https://www.ariboyarsky.com/"
   - name: Yuanzhe Ma
     sort_name: Ma, Yuanzhe
-    department: IEOR Ph.D., 2026; now at Meta
+    department: IEOR Ph.D.; now at Meta
     link: https://yuanzhe-ma.com/
   - name: Ethan Che
     sort_name: Che, Ethan
-    department: DRO Ph.D., now Research Scientist at Meta
+    department: DRO Ph.D.; now at Meta
     link: "https://ethche.github.io/"
   - name: Yibo Zeng
     sort_name: Zeng, Yibo
-    department: IEOR Ph.D., now Research Scientist at Meta Virtual Reality Labs
+    department: IEOR Ph.D.; now at Meta
     link: https://scholar.google.com/citations?user=4bIBeOgAAAAJ&hl=en
   - name: Kelly Zhang
     sort_name: Zhang, Kelly
-    department: Postdoc, now Assistant Professor at Imperial College London
+    department: Postdoc; now Assistant Professor at Imperial College London
     link: https://kellywzhang.github.io/
 
 ug_alumni_profiles:
   - name: Tony Chen
     sort_name: Chen, Tony
-    department: CS B.S., now Ph.D. student at Princeton
+    department: CS B.S.; now Ph.D. candidate at Princeton
     link: https://tonychen.xyz/
   - name: Elise Han
     sort_name: Han, Elise
-    department: CS B.S., now Ph.D. student at Stanford
+    department: CS B.S.; now Ph.D. candidate at Stanford
     link: https://www.linkedin.com/in/elise-han-508021206/
   - name: Leon Li
     sort_name: Li, Leon
-    department: CS B.S., now Ph.D. student at NYU
+    department: CS B.S.; now Ph.D. candidate at NYU
     link: https://leonlixyz.github.io/
   - name: Andrew Siah
     sort_name: Siah, Andrew
     link: https://andrewsiah.com/about/
-    department: CS B.S., now co-founder at Tab AI
+    department: CS B.S.; now at Tab AI
   - name: Jimmy Wang
     sort_name: Wang, Jimmy
-    department: CS B.S., now Ph.D. student at UC Berkeley
+    department: CS B.S.; now Ph.D. candidate at UC Berkeley
     link: https://www.linkedin.com/in/jameswang771/
   - name: Shunri Zheng
     sort_name: Zheng, Shunri
-    department: IEOR M.S., now Ph.D. student at UIUC
+    department: IEOR M.S.; now Ph.D. candidate at UIUC
     link: https://www.linkedin.com/in/shunri-zheng-070677250/
   - name: Yaqin Chen
     sort_name: Chen, Yaqin
-    department: B.S., Sun Yat-sen University; now Ph.D. student at Northwestern IEMS
+    department: CS B.S., Sun Yat-sen University; now Ph.D. candidate at Northwestern IEMS
     link: https://chen-yaqin.github.io/
   - name: Joshua Fan
     sort_name: Fan, Joshua
-    department: Columbia CS undergraduate; now at UT Austin
+    department: CS B.S., Columbia; now Ph.D. candidate at UT Austin
     link: https://dblp.uni-trier.de/pid/437/8687.html
   - name: Tommaso Castellani
     sort_name: Castellani, Tommaso
-    department: UChicago Statistics; now Ph.D. student at Columbia CS
+    department: Statistics M.S., UChicago; now Ph.D. candidate at Columbia CS
     link: https://tommicaste.github.io/
   - name: Hanming Yang
     sort_name: Yang, Hanming
-    department: Columbia CS undergraduate; now Ph.D. student at Columbia DRO
+    department: CS B.S., Columbia; now Ph.D. candidate at Columbia DRO
     link: https://business.columbia.edu/phd/current-students
 
 ---
