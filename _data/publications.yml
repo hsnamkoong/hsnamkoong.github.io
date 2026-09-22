@@ -17,6 +17,20 @@ labels:
 - id: deployed-in-practice
   label: Deployed in Practice
 papers:
+- id: YangMiDoNa26
+  year: 2026
+  title: Rare Event Estimation via Iterative Unalignment
+  authors: Hanming Yang, Daksh Mittal, Jing Dong, and Hongseok Namkoong
+  authors_html: <a href="https://albertyangyhm.github.io/">Hanming Yang</a>, <a href="https://sites.google.com/view/dakshmittal/home">Daksh Mittal</a>, <a href="https://www.columbia.edu/~jd2736/">Jing Dong</a>, and Hongseok Namkoong
+  url: https://arxiv.org/abs/2609.24969
+  tags:
+  - rare events
+  - importance sampling
+  - language models
+  - agent safety
+  labels:
+  - trustworthy-ai
+  sort_key: 7973-0000
 - id: YenPoGeMeFaShLiBaDuLiGuNa26
   year: 2026
   title: 'MBABench: Evaluating LLM Agents on End-to-End Spreadsheet Tasks in Finance'

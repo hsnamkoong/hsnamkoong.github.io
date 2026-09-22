@@ -197,6 +197,9 @@
   - student: false
 
 "yang":
+  - firstname: ["Hanming", "H."]
+    url: https://albertyangyhm.github.io/
+    student: true
   - firstname: ["Gilbert", "G."]
     url: https://gilbertworld.com/
   - student: true

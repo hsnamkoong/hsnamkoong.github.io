@@ -62,7 +62,7 @@ profiles:
   - name: Hanming Yang
     image: team/hanming-yang.jpg
     department: Decision, Risk, and Operations
-    link: https://business.columbia.edu/phd/current-students
+    link: https://albertyangyhm.github.io/
   - name: Qian Xie
     image: team/qian-xie.jpg
     department: Postdoctoral Fellow; AI Agents Initiative at Columbia DFI
@@ -138,6 +138,6 @@ ug_alumni_profiles:
   - name: Hanming Yang
     sort_name: Yang, Hanming
     department: CS B.S., Columbia; now Ph.D. candidate at Columbia DRO
-    link: https://business.columbia.edu/phd/current-students
+    link: https://albertyangyhm.github.io/
 
 ---
