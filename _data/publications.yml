@@ -28,6 +28,9 @@ papers:
   - importance sampling
   - language models
   - agent safety
+  links:
+  - label: Code
+    url: https://github.com/namkoong-lab/iterative-unalignment
   labels:
   - trustworthy-ai
   sort_key: 7973-0000
