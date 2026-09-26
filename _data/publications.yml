@@ -37,8 +37,9 @@ papers:
 - id: YenPoGeMeFaShLiBaDuLiGuNa26
   year: 2026
   title: 'MBABench: Evaluating LLM Agents on End-to-End Spreadsheet Tasks in Finance'
-  authors: Thomson Yen, Julian Poeltl, Harshith Srinivas Gear, Yilin Meng, Joshua Fan, Adam Shen, Yili Liu, Ali Bauyrzhan, Siri Du, Haoyang Liu, Daniel Guetta, and Hongseok Namkoong
-  authors_html: <a href="https://thomsonyen.github.io/">Thomson Yen</a>, Julian Poeltl, Harshith Srinivas Gear, Yilin Meng, Joshua Fan, Adam Shen, Yili Liu, Ali Bauyrzhan, Siri Du, Haoyang Liu, <a href="https://daniel.guetta.com/">Daniel Guetta</a>, and Hongseok Namkoong
+  authors: Thomson Yen, Julian Poeltl, Harshith Srinivas Gear, Yilin Meng, Joshua Fan, Adam Shen, Yili Liu, Ali Bauyrzhan, Patrick Shea, Siri Du, Haoyang Liu, Daniel Guetta, and Hongseok Namkoong
+  authors_html: <a href="https://thomsonyen.github.io/">Thomson Yen</a>, Julian Poeltl, Harshith Srinivas Gear, Yilin Meng, Joshua Fan, Adam Shen, Yili Liu, Ali Bauyrzhan, Patrick Shea, Siri Du, Haoyang Liu, <a href="https://daniel.guetta.com/">Daniel Guetta</a>, and Hongseok Namkoong
+  venue: NeurIPS 2026
   url: https://arxiv.org/abs/2605.22664
   tags:
   - LLM agents
