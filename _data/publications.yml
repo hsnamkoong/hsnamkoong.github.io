@@ -17,6 +17,23 @@ labels:
 - id: deployed-in-practice
   label: Deployed in Practice
 papers:
+- id: AshokEtAl26
+  year: 2026
+  title: 'GameBoyWorlds: A Testbed for Self-Improvement in Embodied Video Games'
+  authors: Dhananjay Ashok, Adam Shen, Aslan Huo Feng, Chinmay Khanna, Jun Rui Huang, Raghav Sarmukaddam, Surendira Balaji Natarajan, Xiaotong Cui, Xincan Zhang, Thomson Yen, Hongseok Namkoong, Jonathan May, and Jesse Thomason
+  url: https://arxiv.org/abs/2609.32093
+  tags:
+  - self-improvement
+  - embodied agents
+  - video games
+  - benchmarks
+  links:
+  - label: Site
+    url: https://dhananjayashok.github.io/GameBoyWorlds-Benchmark/
+  labels:
+  - continual-learning
+  - benchmarks
+  sort_key: 7973-0000
 - id: YangMiDoNa26
   year: 2026
   title: Rare Event Estimation via Iterative Unalignment
@@ -33,7 +50,7 @@ papers:
     url: https://github.com/namkoong-lab/iterative-unalignment
   labels:
   - trustworthy-ai
-  sort_key: 7973-0000
+  sort_key: 7973-0001
 - id: YenPoGeMeFaShLiBaDuLiGuNa26
   year: 2026
   title: 'MBABench: Evaluating LLM Agents on End-to-End Spreadsheet Tasks in Finance'
@@ -56,7 +73,7 @@ papers:
     url: https://huggingface.co/datasets/namkoong-lab/mbabench-modeloff
   labels:
   - benchmarks
-  sort_key: 7973-0001
+  sort_key: 7973-0002
 - id: MittalCaYeYeWuChCaKoZeNa26
   year: 2026
   title: 'LatentGym: A Testbed for Cross-Task Experiential Learning with Controllable Latent Structure'
@@ -79,7 +96,7 @@ papers:
   labels:
   - continual-learning
   - benchmarks
-  sort_key: 7973-0002
+  sort_key: 7973-0003
 - id: DongMiNa26
   year: 2026
   title: Empirical Rigor Through Benchmarking in Operations Research
@@ -97,7 +114,7 @@ papers:
     url: https://github.com/namkoong-lab/OR-benchmark-experiments
   labels:
   - benchmarks
-  sort_key: 7973-0003
+  sort_key: 7973-0004
 - id: Namkoong26Sensitivity
   year: 2026
   title: Local Sensitivity Under Transport Restrictions
@@ -110,7 +127,7 @@ papers:
   - statistics
   labels:
   - trustworthy-ai
-  sort_key: 7973-0004
+  sort_key: 7973-0005
 - id: LiNaSc26
   year: 2026
   title: 'When Representative Samples Produce Worse Outcomes: Scale-up Decisions and Testing in Small-Budget RCTs'
@@ -124,7 +141,7 @@ papers:
   - testing
   labels:
   - causal-inference
-  sort_key: 7973-0005
+  sort_key: 7973-0006
 - id: Namkoong26EmpiricalLikelihood
   year: 2026
   title: Empirical Likelihood for Nonsmooth Functionals
@@ -137,7 +154,7 @@ papers:
   - nonsmooth statistics
   labels:
   - causal-inference
-  sort_key: 7973-0006
+  sort_key: 7973-0007
 - id: QuNaZe26
   year: 2026
   title: A Broader View of Thompson Sampling
@@ -152,7 +169,7 @@ papers:
   labels:
   - continual-learning
   - adaptive-experimentation
-  sort_key: 7973-0007
+  sort_key: 7973-0008
 - id: LiuWaCuNa26
   year: 2026
   title: 'Rethinking Distribution Shifts: Empirical Analysis and Inductive Modeling for Tabular Data'
@@ -175,7 +192,7 @@ papers:
   labels:
   - trustworthy-ai
   - benchmarks
-  sort_key: 7973-0008
+  sort_key: 7973-0009
 - id: KobayashiJiYaNaJo26
   year: 2026
   title: 'Learning-To-Measure: In-context Active Feature Acquisition'
@@ -190,7 +207,7 @@ papers:
   labels:
   - continual-learning
   - adaptive-experimentation
-  sort_key: 7973-0009
+  sort_key: 7973-0010
 - id: HuEtAl26
   year: 2026
   title: 'FinSearchComp: Towards a Realistic, Expert-Level Evaluation of Financial Search and Reasoning'
@@ -208,7 +225,7 @@ papers:
     url: https://randomtutu.github.io/FinSearchComp/
   labels:
   - benchmarks
-  sort_key: 7973-0010
+  sort_key: 7973-0011
 - id: MittalZhDoNa25
   year: 2025
   title: Data-driven Stochastic Modeling using Autoregressive Sequence Models
@@ -672,7 +689,7 @@ papers:
   labels:
   - adaptive-experimentation
   - deployed-in-practice
-  sort_key: 7973-0011
+  sort_key: 7973-0012
 - id: JeongNa22
   year: 2022
   title: 'Assessing External Validity to Subpopulation Shift via Worst-case Treatment Effects'
@@ -711,7 +728,7 @@ papers:
   - robustness
   labels:
   - trustworthy-ai
-  sort_key: 7973-0012
+  sort_key: 7973-0013
 - id: NamkoongMaGl25
   year: 2025
   title: Minimax Optimal Estimation of Stability Under Distribution Shift
