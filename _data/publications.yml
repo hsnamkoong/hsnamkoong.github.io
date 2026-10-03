@@ -365,7 +365,7 @@ papers:
   authors: Daksh Mittal, Ang Li, Tzu-Ching Yen, Daniel Guetta, and Hongseok Namkoong
   authors_html: <a href="https://sites.google.com/view/dakshmittal/home">Daksh Mittal</a>, <a href="https://scholar.google.com/citations?user=oyFNxyUAAAAJ&amp;hl=en">Ang Li</a>, <a href="https://thomsonyen.github.io/">Tzu-Ching Yen</a>, <a href="https://daniel.guetta.com/">Daniel Guetta</a>, and Hongseok Namkoong
   venue: NeurIPS 2025
-  url: https://arxiv.org/abs/2502.06076
+  url: https://arxiv.org/abs/2503.01215
   tags:
   - exchangeable sequence modeling
   - inductive bias
@@ -694,7 +694,7 @@ papers:
   year: 2022
   title: 'Assessing External Validity to Subpopulation Shift via Worst-case Treatment Effects'
   authors: Sookyo Jeong and Hongseok Namkoong
-  authors_html: <a href="https://eytan.github.io/">Sookyo Jeong</a> and Hongseok Namkoong
+  authors_html: <a href="https://sookyojeong.github.io/">Sookyo Jeong</a> and Hongseok Namkoong
   venue: COLT 2020
   note: 'Under third round review in Management Science; conference version appeared in COLT 2020.'
   url: https://arxiv.org/abs/2007.02411
