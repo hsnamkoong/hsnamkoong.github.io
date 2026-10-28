@@ -17,6 +17,30 @@ labels:
 - id: deployed-in-practice
   label: Deployed in Practice
 papers:
+- id: PoeltlYeShVaRaChZhNa26
+  year: 2026
+  title: 'MBABench-2.0: Evaluating AI Agents on Constructing Financial Spreadsheets Beyond Simple Verifiability'
+  authors: Julian Poeltl, Thomson Yen, Patrick Shea, Shubham Anil Varma, Dhruv Rastogi, Zihao Chen, Mengshi Zhang, and Hongseok Namkoong
+  authors_html: Julian Poeltl, <a href="https://thomsonyen.github.io/">Thomson Yen</a>, Patrick Shea, Shubham Anil Varma, Dhruv Rastogi, Zihao Chen, Mengshi Zhang, and Hongseok Namkoong
+  url: https://arxiv.org/abs/2610.31711
+  tags:
+  - LLM agents
+  - finance
+  - benchmarks
+  - spreadsheets
+  selected: true
+  links:
+  - label: Site
+    url: https://mbabench.org/
+  - label: Code
+    url: https://github.com/namkoong-lab/mbabench-2.0/
+  - label: Blog
+    url: https://mbabench.org/#/blog/mbabench-2.0
+  - label: Data
+    url: https://huggingface.co/datasets/namkoong-lab/MBABench-2.0
+  labels:
+  - benchmarks
+  sort_key: 7973-0000
 - id: AshokEtAl26
   year: 2026
   title: 'GameBoyWorlds: A Testbed for Self-Improvement in Embodied Video Games'
@@ -33,7 +57,7 @@ papers:
   labels:
   - continual-learning
   - benchmarks
-  sort_key: 7973-0000
+  sort_key: 7973-0001
 - id: YangMiDoNa26
   year: 2026
   title: Rare Event Estimation via Iterative Unalignment
@@ -50,7 +74,7 @@ papers:
     url: https://github.com/namkoong-lab/iterative-unalignment
   labels:
   - trustworthy-ai
-  sort_key: 7973-0001
+  sort_key: 7973-0002
 - id: YenPoGeMeFaShLiBaDuLiGuNa26
   year: 2026
   title: 'MBABench: Evaluating LLM Agents on End-to-End Spreadsheet Tasks in Finance'
@@ -63,7 +87,7 @@ papers:
   - finance
   - benchmarks
   - spreadsheets
-  selected: true
+  selected: false
   links:
   - label: Site
     url: https://mbabench.org/
@@ -73,7 +97,7 @@ papers:
     url: https://huggingface.co/datasets/namkoong-lab/mbabench-modeloff
   labels:
   - benchmarks
-  sort_key: 7973-0002
+  sort_key: 7973-0003
 - id: MittalCaYeYeWuChCaKoZeNa26
   year: 2026
   title: 'LatentGym: A Testbed for Cross-Task Experiential Learning with Controllable Latent Structure'
@@ -96,7 +120,7 @@ papers:
   labels:
   - continual-learning
   - benchmarks
-  sort_key: 7973-0003
+  sort_key: 7973-0004
 - id: DongMiNa26
   year: 2026
   title: Empirical Rigor Through Benchmarking in Operations Research
@@ -114,7 +138,7 @@ papers:
     url: https://github.com/namkoong-lab/OR-benchmark-experiments
   labels:
   - benchmarks
-  sort_key: 7973-0004
+  sort_key: 7973-0005
 - id: Namkoong26Sensitivity
   year: 2026
   title: Local Sensitivity Under Transport Restrictions
@@ -127,7 +151,7 @@ papers:
   - statistics
   labels:
   - trustworthy-ai
-  sort_key: 7973-0005
+  sort_key: 7973-0006
 - id: LiNaSc26
   year: 2026
   title: 'When Representative Samples Produce Worse Outcomes: Scale-up Decisions and Testing in Small-Budget RCTs'
@@ -141,7 +165,7 @@ papers:
   - testing
   labels:
   - causal-inference
-  sort_key: 7973-0006
+  sort_key: 7973-0007
 - id: Namkoong26EmpiricalLikelihood
   year: 2026
   title: Empirical Likelihood for Nonsmooth Functionals
@@ -154,7 +178,7 @@ papers:
   - nonsmooth statistics
   labels:
   - causal-inference
-  sort_key: 7973-0007
+  sort_key: 7973-0008
 - id: QuNaZe26
   year: 2026
   title: A Broader View of Thompson Sampling
@@ -169,12 +193,12 @@ papers:
   labels:
   - continual-learning
   - adaptive-experimentation
-  sort_key: 7973-0008
+  sort_key: 7973-0009
 - id: LiuWaCuNa26
   year: 2026
-  title: 'Rethinking Distribution Shifts: Empirical Analysis and Inductive Modeling for Tabular Data'
-  authors: Jiashuo Liu, Tianyu Wang, Peng Cui, and Hongseok Namkoong
-  authors_html: <a href="https://ljsthu.github.io/">Jiashuo Liu</a>, <a href="https://wangtianyu61.github.io/">Tianyu Wang</a>, <a href="https://pengcui.thumedialab.com/">Peng Cui</a>, and Hongseok Namkoong
+  title: 'Rethinking Distribution Shifts: Empirical Analysis and Modeling for Tabular Data'
+  authors: Tianyu Wang, Jiashuo Liu, Peng Cui, and Hongseok Namkoong
+  authors_html: <a href="https://wangtianyu61.github.io/">Tianyu Wang</a>, <a href="https://ljsthu.github.io/">Jiashuo Liu</a>, <a href="https://pengcui.thumedialab.com/">Peng Cui</a>, and Hongseok Namkoong
   venue: Management Science
   note: Conference version appeared in NeurIPS 2023.
   url: https://arxiv.org/abs/2307.05284
@@ -192,7 +216,7 @@ papers:
   labels:
   - trustworthy-ai
   - benchmarks
-  sort_key: 7973-0009
+  sort_key: 7973-0010
 - id: KobayashiJiYaNaJo26
   year: 2026
   title: 'Learning-To-Measure: In-context Active Feature Acquisition'
@@ -207,7 +231,7 @@ papers:
   labels:
   - continual-learning
   - adaptive-experimentation
-  sort_key: 7973-0010
+  sort_key: 7973-0011
 - id: HuEtAl26
   year: 2026
   title: 'FinSearchComp: Towards a Realistic, Expert-Level Evaluation of Financial Search and Reasoning'
@@ -225,7 +249,7 @@ papers:
     url: https://randomtutu.github.io/FinSearchComp/
   labels:
   - benchmarks
-  sort_key: 7973-0011
+  sort_key: 7973-0012
 - id: MittalZhDoNa25
   year: 2025
   title: Data-driven Stochastic Modeling using Autoregressive Sequence Models
@@ -420,12 +444,24 @@ papers:
   - trustworthy-ai
   - causal-inference
   sort_key: 7974-0012
+- id: NamkoongXuZh25
+  year: 2025
+  title: Triply Robust Causal Estimation For Continuous Treatments
+  authors: Hongseok Namkoong, Yunbei Xu, and Shunri Zheng
+  venue: Working paper
+  tags:
+  - causal inference
+  - continuous treatments
+  - robust estimation
+  labels:
+  - causal-inference
+  sort_key: 7974-0017
 - id: HsuDiSiNa24
-  year: 2024
+  year: 2025
   title: 'From Models to Systems: A Comprehensive Framework for AI System Fairness in Compositional Recommender Systems'
-  authors: Brian Hsu, Cyrus DiCiccio, Natesh Sivasubramoniapillai, and Hongseok Namkoong
-  authors_html: Brian Hsu, Cyrus DiCiccio, Natesh Sivasubramoniapillai, and Hongseok Namkoong
-  venue: PMLR 2024
+  authors: Brian Hsu, Cyrus DiCiccio, Natesh S. Pillai, and Hongseok Namkoong
+  authors_html: Brian Hsu, Cyrus DiCiccio, Natesh S. Pillai, and Hongseok Namkoong
+  venue: Algorithmic Fairness Through the Lens of Metrics and Evaluation, PMLR 2025
   url: https://arxiv.org/abs/2412.04655
   tags:
   - AI fairness
@@ -434,7 +470,7 @@ papers:
   - systems
   labels:
   - trustworthy-ai
-  sort_key: 7975-0001
+  sort_key: 7974-0018
 - id: ZengLiLaNa24
   year: 2024
   title: LLM Embeddings Improve Test-time Adaptation to Tabular Y|X-Shifts
@@ -689,7 +725,7 @@ papers:
   labels:
   - adaptive-experimentation
   - deployed-in-practice
-  sort_key: 7973-0012
+  sort_key: 7973-0013
 - id: JeongNa22
   year: 2022
   title: 'Assessing External Validity to Subpopulation Shift via Worst-case Treatment Effects'
@@ -728,7 +764,7 @@ papers:
   - robustness
   labels:
   - trustworthy-ai
-  sort_key: 7973-0013
+  sort_key: 7973-0014
 - id: NamkoongMaGl25
   year: 2025
   title: Minimax Optimal Estimation of Stability Under Distribution Shift

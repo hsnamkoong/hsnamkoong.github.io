@@ -1,5 +1,5 @@
 repos:
-  - namkoong-lab/MBABench
+  - namkoong-lab/MBABench-2.0
   - namkoong-lab/LatentGym
   - namkoong-lab/OR-benchmark-experiments
   - namkoong-lab/interactive-benchmark

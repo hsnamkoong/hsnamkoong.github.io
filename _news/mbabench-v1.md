@@ -4,7 +4,7 @@ title: "MBABench: Evaluating LLMs on Spreadsheet Tasks Across Critical Dimension
 date: 2026-06-23 12:00:00-0400
 inline: false
 related_posts: false
-show: true
+show: false
 ---
 
 TL;DR: Current LLM evaluations fail to capture the high-level qualities that matter to practitioners. In finance, where spreadsheets are the primary deliverable, these qualities determine whether a model is usable in practice. MBABench evaluates LLM agents on full spreadsheet construction, with a particular focus on the usability dimensions that matter in practice.

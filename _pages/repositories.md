@@ -125,15 +125,15 @@ The GitHub pins below are the primary index of our open-source work. This page a
 
 <div class="release-grid">
   <div class="release-card">
-    <img src="/assets/img/mbabench-model-thumb.png" alt="MBABench financial spreadsheet benchmark preview">
+    <img src="/assets/img/mbabench-model-thumb.png" alt="MBABench 2.0 financial spreadsheet benchmark preview">
     <div class="release-card-body">
-      <h3>MBABench</h3>
-      <p>End-to-end financial spreadsheet tasks for evaluating professional-quality agent workflows.</p>
+      <h3>MBABench 2.0</h3>
+      <p>101 financial spreadsheet construction tasks, evaluated against 129 quality criteria covering accuracy, structure, readability, and auditability.</p>
       <div class="release-actions">
-        <a href="https://arxiv.org/abs/2605.22664">Paper</a>
-        <a href="/news/mbabench-v1/">Blog</a>
-        <a href="https://github.com/namkoong-lab/MBABench">Code</a>
-        <a href="https://huggingface.co/datasets/namkoong-lab/mbabench-modeloff">Data</a>
+        <a href="https://arxiv.org/abs/2610.31711">Paper</a>
+        <a href="https://mbabench.org/#/blog/mbabench-2.0">Blog</a>
+        <a href="https://github.com/namkoong-lab/mbabench-2.0/">Code</a>
+        <a href="https://huggingface.co/datasets/namkoong-lab/MBABench-2.0">Data</a>
         <a href="https://mbabench.org/">Website</a>
       </div>
     </div>

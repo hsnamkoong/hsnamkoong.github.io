@@ -9,7 +9,8 @@ module Jekyll
 
       input = input.gsub(/^.*\burl\b *= *\{https?:\/\/(?:www\.)?arxiv\.org\/abs\/.*$\n/i, '')
       input = input.gsub(/^(\s*title\s*=\s*\{)(.*)(\},?\s*)$/) do
-        "#{$1}#{$2.gsub(/[{}]/, '')}#{$3}"
+        prefix, title, suffix = Regexp.last_match.captures
+        "#{prefix}#{title.gsub(/[{}]/, '')}#{suffix}"
       end
 
       return input
