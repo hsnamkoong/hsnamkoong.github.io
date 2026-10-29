@@ -444,18 +444,6 @@ papers:
   - trustworthy-ai
   - causal-inference
   sort_key: 7974-0012
-- id: NamkoongXuZh25
-  year: 2025
-  title: Triply Robust Causal Estimation For Continuous Treatments
-  authors: Hongseok Namkoong, Yunbei Xu, and Shunri Zheng
-  venue: Working paper
-  tags:
-  - causal inference
-  - continuous treatments
-  - robust estimation
-  labels:
-  - causal-inference
-  sort_key: 7974-0017
 - id: HsuDiSiNa24
   year: 2025
   title: 'From Models to Systems: A Comprehensive Framework for AI System Fairness in Compositional Recommender Systems'
