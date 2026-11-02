@@ -581,6 +581,9 @@ papers:
   - uncertainty
   - sequence models
   - latent concepts
+  links:
+  - label: Slides
+    url: "/assets/pdf/dro-brown-bag.pptx"
   labels:
   - continual-learning
   - adaptive-experimentation
@@ -613,7 +616,7 @@ papers:
   selected: true
   links:
   - label: Slides
-    url: "/assets/pdf/ZhangCaNaRu24-slides.pdf"
+    url: "/assets/pdf/dro-brown-bag.pptx"
   labels:
   - continual-learning
   - adaptive-experimentation

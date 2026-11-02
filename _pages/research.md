@@ -86,34 +86,34 @@ areas with high epistemic uncertainty. To bound tail-risk,
 AI systems must understand when their predictions for anomalous inputs are not trustworthy
 and delegate to human experts when necessary.
 
-Systems that can reason through epistemic uncertainty based on natural language feedback
-has been a longstanding challenge. A traditional probabilistic model requires a prior and likelihood 
-over latent variables. But by definition, latents are fundamentally unobservable and often ill-defined.
+Reasoning about epistemic uncertainty from natural language feedback remains challenging.
+A traditional probabilistic model requires a prior and likelihood over latent variables,
+whose form can be difficult to justify in complex environments.
 
-On the other hand, autoregressive models pre-trained on massive web data exhibit striking predictive capabilities when conditioned on even a small number of demonstrations. Since the 1920's, De Finetti has
-advocated for modeling observables rather than latents. We take his predictive view of uncertainty as coming from future data that has not been observed yet.
-Let us illustrate with a conceptual example that crystallizes our insight (note: the example is made up and clearly devoid of clinical significance).
+Autoregressive models pre-trained on massive web data exhibit striking predictive capabilities when conditioned on even a small number of demonstrations. We use these models to implement De Finetti's predictive view: model observable responses and, under exchangeability, recover the implied beliefs about their distribution.
+Consider a consumer survey. Demographic information and a few answers leave uncertainty about how a consumer will respond to other questions. Our target is the consumer's response law—the probabilities of different answers to each question.
 
-  <div class="img l-body">
+<div class="img l-body">
   <div class="text-center">
-    <img src="/assets/img/definetti.jpeg" alt="Uncertainty" width="630" height="180" style="max-width: 120%; height: auto; border: 10px;"/>
+    <a href="{{ '/assets/img/definetti-consumer-survey.svg' | relative_url }}" aria-label="View the consumer survey figure at full size">
+      <img src="{{ '/assets/img/definetti-consumer-survey.svg' | relative_url }}" alt="Observed consumer survey answers followed by three possible generated continuations, illustrating uncertainty about the consumer's response probabilities." width="1800" height="1342" style="width: 100%; max-width: 100%; height: auto;"/>
+    </a>
   </div>
-    <div class="caption">
-    <strong> De Finetti predictive view uncertainty as coming from future data:
-     </strong>
-      We show the sequence prediction loss (perplexity) over exchangeable documents (questions and answers) measures the quality of
-      uncertainty quantification over latent environments (mental state of the
-      patient).
-      This allows us to bring to bear frontier autoregressive models to quantify uncertainty at scale! 
-    </div>
+  <div class="caption">
+    <strong>De Finetti's predictive view of uncertainty.</strong>
+    The same observed context and answers can be compatible with different response laws.
+    Under exchangeability, consistent statistics of long generated continuations approximate
+    posterior draws of quantities such as a consumer's probability of agreeing with a statement.
   </div>
+</div>
 
-Crucially, the AI agent can updatie beliefs as data is gathered. Unlike cumbersome posterior inference routines for probabilistic models, you can now simply append prior observations to the context of the sequence model.
-To learn more, watch this recent talk at Simons Institute, and the following recent paper from the group. We
+New observations update the model's beliefs by entering the sequence model's context.
+Our analysis relates the discrepancy between model and oracle posteriors to excess predictive log loss accumulated over the entire unseen future, under exchangeability and overlap conditions.
+To learn more, watch the talk below, [download the PowerPoint slides with videos]({{ '/assets/pdf/dro-brown-bag.pptx' | relative_url }}), or read the following paper from our group. We
 are actively working in this space so ping us if you'd like to chat more.
 <div class="img l-body">
   <div class="text-center">
-  {% include video.liquid path="https://www.youtube.com/embed/X1eA5sQQ-7g?si=cQ3mSPHrtGCwIuRV" class="img-fluid rounded z-depth-1"%}
+    {% include video.liquid path="https://www.youtube.com/embed/k15pPJq90Ro" title="Autoregressive Generation as a Primitive for Uncertainty Quantification" class="img-fluid rounded z-depth-1"%}
   </div>
   <div class="publications">
         {% bibliography -q @*[key=YeNa24]* %}
@@ -257,7 +257,14 @@ accrues, the agent must increasingly rely more heavily on them by updating its b
     Training good autoregressive sequence models thus allows you to 
     solve complex online decision-making problems! 
   </div>
-    <div class="publications">
+</div>
+
+To learn more, watch this talk at the Simons Institute and read the following paper from our group.
+<div class="img l-body">
+  <div class="text-center">
+    {% include video.liquid path="https://www.youtube.com/embed/X1eA5sQQ-7g?si=cQ3mSPHrtGCwIuRV" class="img-fluid rounded z-depth-1"%}
+  </div>
+  <div class="publications">
       {% bibliography -q @*[key=CaiNaRuZh25]* %}
   </div>
 </div>
