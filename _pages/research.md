@@ -323,6 +323,7 @@ While large-scale randomized studies offer a “gold standard” for internal va
 
 <div class="img l-body">
 <div class="publications">
+    {% bibliography -q @*[key=BoyarskyEgNa26]* %}
     {% bibliography -q @*[key=JeongNa22]* %}
 </div>
 </div>
